@@ -1,3 +1,5 @@
+.idea/
+.vitepress/cache
 # Logs
 logs
 *.log

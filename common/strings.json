@@ -1,0 +1,80 @@
+{
+  "ElectricConnection": {
+    "Function": {
+      "zh": "作用",
+      "en": "Function"
+    },
+    "Description": {
+      "zh": "说明",
+      "en": "Description"
+    }
+  },
+  "ElectricConnectionDisplayMode": [
+    {
+      "zh": "第 n 位",
+      "en": "Start&End"
+    },
+    {
+      "zh": "使用位宽",
+      "en": "Bit Width Used"
+    }
+  ],
+  "ElectricConnectorDirection": [
+    {
+      "zh": "上端",
+      "en": "Top"
+    },
+    {
+      "zh": "右端",
+      "en": "Right"
+    },
+    {
+      "zh": "下端",
+      "en": "Bottom"
+    },
+    {
+      "zh": "左端",
+      "en": "Left"
+    },
+    {
+      "zh": "后端",
+      "en": "In"
+    },
+    {
+      "zh": "全部",
+      "en": "All"
+    }
+  ],
+  "ElectricConnectorType": [
+    {
+      "zh": "输入",
+      "en": "Input"
+    },
+    {
+      "zh": "输出",
+      "en": "Output"
+    },
+    {
+      "zh": "输入&输出",
+      "en": "Input&Output"
+    }
+  ],
+  "ElectricElement": {
+    "imgAltSuffix": {
+      "zh": "图示",
+      "en": "Icon"
+    }
+  },
+  "tested": {
+    "zh": "已测试",
+    "en": "Tested"
+  },
+  "unTested": {
+    "zh": "未测试",
+    "en": "Untested"
+  },
+  "PosterGirl": {
+    "zh": "看板娘",
+    "en": "Yuru-chara"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "gigavolt-doc",
+  "author": {
+    "name": "销锋镝铸",
+    "url": "https://github.com/XiaofengdiZhu/"
+  },
+  "description": "Document for Gigavolt mod. 十亿伏特mod的文档",
+  "license": "Apache-2.0",
+  "homepage": "https://xiaofengdizhu.github.io/GigavoltDoc",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XiaofengdiZhu/GigavoltDoc.git"
+  },
+  "type": "module",
+  "devDependencies": {
+    "vitepress": "^1.3.0",
+    "typescript": "^5.5.3",
+    "markdown-it": "^14.1.0",
+    "markdown-it-mathjax3": "^4.3.2",
+    "markdown-it-task-lists": "^2.1.1",
+    "markdown-it-sup": "^2.0.0",
+    "vitepress-plugin-pagefind": "0.4.5",
+    "qrcode.vue": "^3.4.1"
+  },
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  }
+}
