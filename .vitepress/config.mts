@@ -1,6 +1,7 @@
 import {defineConfig} from 'vitepress';
 import taskLists from 'markdown-it-task-lists';
 import sup from 'markdown-it-sup';
+import multimd_table from 'markdown-it-multimd-table';
 import {nav as nav_zh, sidebar as sidebar_zh} from "./zh";
 import {nav as nav_en, sidebar as sidebar_en} from "./en";
 import {pagefindPlugin, chineseSearchOptimize} from 'vitepress-plugin-pagefind'
@@ -12,6 +13,7 @@ export default defineConfig({
     outDir: './docs',
     base: '/GigavoltDoc/',
     lang: 'en',
+    ignoreDeadLinks: ['./index'],
     vite: {
         plugins: [
             pagefindPlugin({
@@ -91,7 +93,10 @@ export default defineConfig({
             lazyLoading: true
         },
         config: (md) => {
-            md.use(taskLists).use(sup);
+            md.use(taskLists).use(sup).use(multimd_table, {
+                rowspan: true,
+                headerless: true
+            });
         }
     },
     locales: {

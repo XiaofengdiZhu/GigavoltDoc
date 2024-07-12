@@ -24,22 +24,38 @@ export const nav: DefaultTheme.NavItem[] = [
 ];
 export const sidebar: DefaultTheme.SidebarItem[] = [
     {
+        text: '开始之前',
+        link: '/zh/before_start'
+    },
+    {
         text: '十亿伏特',
-        collapsed: true,
         items: [
             {
-                text: '开始之前',
-                link: '/zh/before_start'
-            },
-            {text: '与原版区别'}
+                text: '原版的变体',
+                collapsed: true,
+                items: [
+                    {
+                        text: '简单元件',
+                        link: '/zh/base/shift/simple'
+                    },
+                    {
+                        text: '数模、模数转换器',
+                        link: '/zh/base/shift/converter'
+                    }
+                ]
+            }
         ]
     },
     {
         text: '十亿伏特 · 扩展',
-        collapsed: true,
         items: [
             {
+                text: '简介',
+                link: '/zh/expand/introduction'
+            },
+            {
                 text: '传感器',
+                collapsed: true,
                 items: [
                     {
                         text: '地形扫描仪',
@@ -49,6 +65,7 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
             },
             {
                 text: '显示器',
+                collapsed: true,
                 items: [
                     {
                         text: '图片显示器'

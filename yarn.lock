@@ -492,11 +492,6 @@
     "@vue/compiler-dom" "3.4.31"
     "@vue/shared" "3.4.31"
 
-"@vue/devtools-api@^6.5.1":
-  version "6.6.3"
-  resolved "https://mirrors.cloud.tencent.com/npm/@vue/devtools-api/-/devtools-api-6.6.3.tgz#b23a588154cba8986bba82b6e1d0248bde3fd1a0"
-  integrity sha512-0MiMsFma/HqA6g3KLKn+AGpL1kgKhFWszC9U29NfpWK5LE7bjeXxySWJrOJ77hBz+TBrBQ7o4QJqbPbqbs8rJw==
-
 "@vue/devtools-api@^7.3.5":
   version "7.3.5"
   resolved "https://mirrors.cloud.tencent.com/npm/@vue/devtools-api/-/devtools-api-7.3.5.tgz#afd9f3bca50cfff96aebeea3cc3853fd127267f7"
@@ -960,6 +955,12 @@ markdown-it-mathjax3@^4.3.2:
     juice "^8.0.0"
     mathjax-full "^3.2.0"
 
+"markdown-it-multimd-table\n@^4.2.3":
+  name markdown-it-multimd-table
+  version "4.2.3"
+  resolved "https://mirrors.cloud.tencent.com/npm/markdown-it-multimd-table/-/markdown-it-multimd-table-4.2.3.tgz#b81ac1f6c26482ddf0504c9e25583ad126c03dec"
+  integrity sha512-KepCr2OMJqm7IT6sOIbuqHGe+NERhgy66XMrc5lo6dHW7oaPzMDtYwR1EGwK16/blb6mCSg4jqityOe0o/H7HA==
+
 markdown-it-sup@^2.0.0:
   version "2.0.0"
   resolved "https://mirrors.cloud.tencent.com/npm/markdown-it-sup/-/markdown-it-sup-2.0.0.tgz#683b9390929f3024fcd5291799c466ce3d367f44"
@@ -1297,13 +1298,6 @@ vue-demi@*, vue-demi@>=0.14.8:
   version "0.14.8"
   resolved "https://mirrors.cloud.tencent.com/npm/vue-demi/-/vue-demi-0.14.8.tgz"
   integrity sha512-Uuqnk9YE9SsWeReYqK2alDI5YzciATE0r2SkA6iMAtuXvNTMNACJLJEXNXaEy94ECuBe4Sk6RzRU80kjdbIo1Q==
-
-vue-router@^4.4.0:
-  version "4.4.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/vue-router/-/vue-router-4.4.0.tgz#128e3fc0c84421035a9bd26027245e6bd68f69ab"
-  integrity sha512-HB+t2p611aIZraV2aPSRNXf0Z/oLZFrlygJm+sZbdJaW6lcFqEDQwnzUBXn+DApw+/QzDU/I9TeWx9izEjTmsA==
-  dependencies:
-    "@vue/devtools-api" "^6.5.1"
 
 vue@^3, vue@^3.4.31:
   version "3.4.31"

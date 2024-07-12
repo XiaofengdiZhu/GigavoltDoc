@@ -9,7 +9,9 @@ next: false
 
 # 关于
 
-源码：[GitHub](https://github.com/XiaofengdiZhu/Gigavolt/)
+mod 源码：[GitHub](https://github.com/XiaofengdiZhu/Gigavolt/)
+
+文档源码：[Github](https://github.com/XiaofengdiZhu/GigavoltDoc/)
 
 开源协议：[Apache License 2.0](https://github.com/XiaofengdiZhu/Gigavolt/blob/main/LICENSE.txt)
 
@@ -60,6 +62,7 @@ GitHub Project：[点我打开](https://github.com/users/XiaofengdiZhu/projects/
     * 数学公式：[markdown-it-mathjax3](https://github.com/nzt/markdown-it-mathjax3#readme)
     * 任务列表：[markdown-it-task-lists](https://github.com/revin/markdown-it-task-lists#readme)
     * 上标：[markdown-it-sup](https://github.com/markdown-it/markdown-it-sup#readme)
+    * 高级表格：[markdown-it-multimd-table](https://github.com/redbug312/markdown-it-multimd-table#readme)
 
 ## 依赖者
 
