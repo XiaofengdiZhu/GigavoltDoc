@@ -39,7 +39,7 @@ let connections = [
 
 ## 端口定义
 
-<ElectricElement imgAltPrefix="地形扫描仪" :connections="connections" imgSrc="/images/expand/GVTerrainScanner.png"/>
+<ElectricElement imgAltPrefix="地形扫描仪" :connections="connections" imgSrc="/images/expand/GVTerrainScannerBlock.png"/>
 
 ## 方向说明
 

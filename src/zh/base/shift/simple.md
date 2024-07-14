@@ -8,8 +8,10 @@ deep: 1
 
 ## 导线
 
-* ⭕ **原版**：创造模式物品栏提供 7 色
-* ⚡ **十亿伏特版**：创造模式物品栏提供 14 色
+* ⭕ **原版**：创造模式物品栏提供 7 种颜色的导线
+* ⚡ **十亿伏特版**：创造模式物品栏提供 14 种颜色的导线，新增 [总线](../new/features)，新增的总线和有色导线如图
+
+<img src="/images/base/shift/wire.webp" alt="新增的有色导线和总线 图示" style="max-width: min(100%, 500px); margin: 0 auto;"/>
 
 ## 可调延迟门
 
@@ -37,13 +39,22 @@ deep: 1
 ### ⚡ 十亿伏特版
 
 * 默认输出 0xFFFFFFFF V
+
+> [!CAUTION] ⚠ 不会重复的说明
+> 其他原本默认输出 1.5 V 的元件也将默认输出 0xFFFFFFFF V，包括经典版元件
+
 * 按钮可通过手动编辑，设置输出的持续周期数
 * 按钮和开关增加带颜色的版本，它们不会与异色导线相连接
 
-> [!WARNING] ⚠ 不会重复的说明
-> 其他原本默认输出 1.5 V 的元件也将默认输出 0xFFFFFFFF V，包括经典版元件
+<img src="/images/base/shift/switch_and_button.webp" alt="新增的有色导线和总线 图示" style="max-width: min(100%, 500px); margin: 0 auto;"/>
 
-# 计数器
+* 适配 32 位电压的编辑界面，如图：
+
+<img src="/images/base/shift/EditGVUintDialog.webp" alt="电压编辑界面 图示" style="max-width: min(100%, 500px); margin: 0 auto;"/>
+
+> **十进制定点数**：此处是指，按小数点在第 16、17 位之间，最高位为符号位，转换而来的结果
+
+## 计数器
 
 ### ⭕ 原版
 

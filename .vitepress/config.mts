@@ -58,7 +58,8 @@ export default defineConfig({
         },
         notFound: {
             quote: 'I Walk to where the creeks end, the water running dry. Sitting in repose to watch the rise of clouds.'
-        }/*,
+        }
+        /*,
         search: {
             provider: 'local',
             options: {

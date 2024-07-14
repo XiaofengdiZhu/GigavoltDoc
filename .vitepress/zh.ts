@@ -43,6 +43,24 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                         link: '/zh/base/shift/converter'
                     }
                 ]
+            },
+            {
+                text: '新增',
+                collapsed: true,
+                items: [
+                    {
+                        text: '元件',
+                        link: '/zh/base/new/elements'
+                    },
+                    {
+                        text: '调试功能',
+                        link: '/zh/base/new/debug'
+                    },
+                    {
+                        text: '其他特性',
+                        link: '/zh/base/new/features'
+                    }
+                ]
             }
         ]
     },

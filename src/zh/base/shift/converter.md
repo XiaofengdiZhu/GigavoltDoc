@@ -4,11 +4,22 @@
 
 变更为了 4 个合并器，分别是：
 
-* 1 位合并 4 位器
-* 2 位合并 8 位器
-* 4 位合并 16 位器
-* 8 位合并 32 位器
-
+<table :class="$style.img_width_100px">
+    <tbody>
+        <tr>
+            <td>1 位合并 4 位器</td>
+            <td>2 位合并 8 位器</td>
+            <td>4 位合并 16 位器</td>
+            <td>8 位合并 32 位器</td>
+        </tr>
+        <tr>
+            <td><img src="/images/base/shift/GVDigitalToAnalogConverterBlock1-4.webp" alt="1 位合并 4 位器 图示"/></td>
+            <td><img src="/images/base/shift/GVDigitalToAnalogConverterBlock2-8.webp" alt="2 位合并 8 位器 图示"/></td>
+            <td><img src="/images/base/shift/GVDigitalToAnalogConverterBlock4-16.webp" alt="4 位合并 16 位器 图示"/></td>
+            <td><img src="/images/base/shift/GVDigitalToAnalogConverterBlock8-32.webp" alt="8 位合并 32 位器 图示"/></td>
+        </tr>
+    </tbody>
+</table>
 对于要被合并的四个输入，分别取它们最低的 n 位，按顺序进行合并，最后从后端输出，例如按下表输入电压：
 
 <table :class="$style.td_center">
@@ -106,10 +117,22 @@
 
 同样的，变更为 4 个拆分器，分别是：
 
-* 4 位拆分 1 位器
-* 8 位拆分 2 位器
-* 16 位拆分 4 位器
-* 32 位拆分 8 位器
+<table :class="$style.img_width_100px">
+    <tbody>
+        <tr>
+            <td>4 位拆分 1 位器</td>
+            <td>8 位拆分 2 位器</td>
+            <td>16 位拆分 4 位器</td>
+            <td>32 位拆分 8 位器</td>
+        </tr>
+        <tr>
+            <td><img src="/images/base/shift/GVDigitalToAnalogConverterBlock1-4.webp" alt="4 位拆分 1 位器 图示"/></td>
+            <td><img src="/images/base/shift/GVDigitalToAnalogConverterBlock2-8.webp" alt="8 位拆分 2 位器 图示"/></td>
+            <td><img src="/images/base/shift/GVDigitalToAnalogConverterBlock4-16.webp" alt="16 位拆分 4 位器 图示"/></td>
+            <td><img src="/images/base/shift/GVDigitalToAnalogConverterBlock8-32.webp" alt="32 位拆分 8 位器 图示"/></td>
+        </tr>
+    </tbody>
+</table>
 
 后端输入在拆分前会先取其最低的 n 位，再按顺序输出拆分结果，例如后端输入电压为 0x12345678 V：
 
@@ -202,7 +225,11 @@
 </table>
 
 <style module>
-.td_center th, .td_center td{
+.td_center th, .td_center td {
     text-align: center;
+}
+.img_width_100px img {
+    width: 100px;
+    image-rendering: pixelated;
 }
 </style>

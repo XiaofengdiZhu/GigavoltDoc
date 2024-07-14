@@ -23,6 +23,18 @@ mod 源码：[GitHub](https://github.com/XiaofengdiZhu/Gigavolt/)
 
 <!--@include: ./parts/feedback.md-->
 
+## 看板娘
+
+> 使用的AI模型：[AOM3A1B](https://huggingface.co/WarriorMama777/OrangeMixs#aom3a1b)
+
+::: details 🖼️ 十亿伏特
+![十亿伏特看板娘](../public/images/poster-girl/GigavoltPosterGirl.webp)
+:::
+
+::: details 🖼️ 十亿伏特 · 扩展看板娘
+![十亿伏特 · 扩展看板娘](../public/images/poster-girl/GigavoltExpandPosterGirl.webp)
+:::
+
 ## 鸣谢
 
 感谢以下热心网友的长期支持和测试
@@ -46,6 +58,7 @@ GitHub Project：[点我打开](https://github.com/users/XiaofengdiZhu/projects/
 * 开发框架：[.NET 8](https://dotnet.microsoft.com/)
 * 游戏：[SurvivalCraft-UniAPI](https://gitee.com/THPRC/survivalcraft-api)
 * 真值表表达式计算：[NCalc2](https://github.com/XiaofengdiZhu/NCalc2)
+* 少量图标：[Google Fonts](https://fonts.google.com/icons)
 
 ### 十亿伏特 · 扩展 mod
 

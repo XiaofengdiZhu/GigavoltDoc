@@ -19,7 +19,7 @@
     "markdown-it-mathjax3": "^4.3.2",
     "markdown-it-task-lists": "^2.1.1",
     "markdown-it-sup": "^2.0.0",
-    "markdown-it-multimd-table\n": "^4.2.3",
+    "markdown-it-multimd-table": "^4.2.3",
     "vitepress-plugin-pagefind": "0.4.5",
     "qrcode.vue": "^3.4.1"
   },
