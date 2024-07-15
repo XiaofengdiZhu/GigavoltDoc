@@ -138,7 +138,7 @@ export default defineConfig({
                     next: '下一页'
                 },
                 editLink: {
-                    pattern: '路径地址？？？',
+                    pattern: 'https://github.com/XiaofengdiZhu/GigavoltDoc/edit/main/src/:path',
                     text: '对本页提出修改建议'
                 },
                 outline: {

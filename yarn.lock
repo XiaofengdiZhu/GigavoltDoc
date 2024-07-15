@@ -955,8 +955,7 @@ markdown-it-mathjax3@^4.3.2:
     juice "^8.0.0"
     mathjax-full "^3.2.0"
 
-"markdown-it-multimd-table\n@^4.2.3":
-  name markdown-it-multimd-table
+markdown-it-multimd-table@^4.2.3:
   version "4.2.3"
   resolved "https://mirrors.cloud.tencent.com/npm/markdown-it-multimd-table/-/markdown-it-multimd-table-4.2.3.tgz#b81ac1f6c26482ddf0504c9e25583ad126c03dec"
   integrity sha512-KepCr2OMJqm7IT6sOIbuqHGe+NERhgy66XMrc5lo6dHW7oaPzMDtYwR1EGwK16/blb6mCSg4jqityOe0o/H7HA==
@@ -1013,10 +1012,10 @@ mime@^2.4.6:
   resolved "https://mirrors.cloud.tencent.com/npm/mime/-/mime-2.6.0.tgz#a2a682a95cd4d0cb1d6257e28f83da7e35800367"
   integrity sha512-USPkMeET31rOMiarsBNIHZKLGgvKc/LrjofAnBlOttf5ajRvqiRA8QsenbcooctK6d6Ts6aqZXBA+XbkKthiQg==
 
-minisearch@^6.3.0:
-  version "6.3.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/minisearch/-/minisearch-6.3.0.tgz"
-  integrity sha512-ihFnidEeU8iXzcVHy74dhkxh/dn8Dc08ERl0xwoMMGqp4+LvRSCgicb+zGqWthVokQKvCSxITlh3P08OzdTYCQ==
+minisearch@^7.0.0:
+  version "7.0.0"
+  resolved "https://mirrors.cloud.tencent.com/npm/minisearch/-/minisearch-7.0.0.tgz#726410c5ac4400b67cde8113efbd69b035bff7f5"
+  integrity sha512-0OIJ3hUE+YBJNruDCqbTMFmk/IoB1CpZzuGfl11khFIel66ew9UoLF/+gfq3bdyrneqr3P7BTjFZApUbmk+9Dg==
 
 mitt@^3.0.0, mitt@^3.0.1:
   version "3.0.1"
@@ -1263,10 +1262,10 @@ vitepress-plugin-pagefind@0.4.5:
     vue "^3"
     vue-command-palette "0.1.4"
 
-vitepress@^1.3.0:
-  version "1.3.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/vitepress/-/vitepress-1.3.0.tgz#58159790059507987cbc18fd8ebd119bb4fa6fd0"
-  integrity sha512-Cbm2AgXcCrukUeV+/24g1ZDSvw8blamh/1uf2pz3ApFpaYb9T7mo4imWDZ6APn2uPo4bJ6sgOzvsJ4aH+oLbBA==
+vitepress@^1.3.1:
+  version "1.3.1"
+  resolved "https://mirrors.cloud.tencent.com/npm/vitepress/-/vitepress-1.3.1.tgz#e0b674d5a9975d10e4af8dc3da19d95976b8f077"
+  integrity sha512-soZDpg2rRVJNIM/IYMNDPPr+zTHDA5RbLDHAxacRu+Q9iZ2GwSR0QSUlLs+aEZTkG0SOX1dc8RmUYwyuxK8dfQ==
   dependencies:
     "@docsearch/css" "^3.6.0"
     "@docsearch/js" "^3.6.0"
@@ -1280,7 +1279,7 @@ vitepress@^1.3.0:
     "@vueuse/integrations" "^10.11.0"
     focus-trap "^7.5.4"
     mark.js "8.11.1"
-    minisearch "^6.3.0"
+    minisearch "^7.0.0"
     shiki "^1.10.3"
     vite "^5.3.3"
     vue "^3.4.31"

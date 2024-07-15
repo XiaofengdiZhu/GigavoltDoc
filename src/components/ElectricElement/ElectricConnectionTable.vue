@@ -18,16 +18,16 @@ let title = locale("ElectricConnectorDirection", connection.Direction) + locale(
     <table :class="[$style.electricConnectionTable, {[$style.wide] : isWide}]">
         <thead>
         <tr>
-            <th>{{ locale("ElectricConnectionDisplayMode", connection.DisplayMode) }}</th>
-            <th>{{ locale("ElectricConnection", "Function") }}</th>
+            <th v-if="connection.DisplayMode != ElectricConnectionDisplayMode.Hide">{{ locale("ElectricConnectionDisplayMode", connection.DisplayMode) }}</th>
+            <th v-if="!connection.HideFunction">{{ locale("ElectricConnection", "Function") }}</th>
             <th>{{ locale("ElectricConnection", "Description") }}</th>
         </tr>
         </thead>
         <tbody>
         <tr v-for="port in connection.Ports">
-            <td>{{ connection.DisplayMode == ElectricConnectionDisplayMode.StartAndEnd ? (port.Start + (port.End > port.Start ? " ~ " + port.End : "")) : port.Length() }}</td>
-            <td v-html="md.renderInline(port.Function)"/>
-            <td v-html="md.renderInline(port.Description)"/>
+            <td v-if="connection.DisplayMode != ElectricConnectionDisplayMode.Hide">{{ connection.DisplayMode == ElectricConnectionDisplayMode.StartAndEnd ? (port.Start + (port.End > port.Start ? " ~ " + port.End : "")) : port.Length() }}</td>
+            <td v-if="!connection.HideFunction" v-html="md.render(port.Function)"/>
+            <td v-html="md.render(port.Description)"/>
         </tr>
         </tbody>
     </table>

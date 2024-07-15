@@ -29,7 +29,7 @@ let connections = [
 ];
 </script>
 
-# 地形扫描仪
+# 地形扫描仪 <Badge text="2.0"/>
 
 ## 概述
 

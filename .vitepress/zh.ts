@@ -41,6 +41,49 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                     {
                         text: '数模、模数转换器',
                         link: '/zh/base/shift/converter'
+                    },
+                    {
+                        text: '存储器',
+                        link: '/zh/base/shift/memory_bank'
+                    },
+                    {
+                        text: '真值表',
+                        link: '/zh/base/shift/truth_table',
+                        collapsed: false,
+                        items: [
+                            {
+                                text: 'NCalc 运算符',
+                                link: '/zh/base/shift/ncalc/operators'
+                            },
+                            {
+                                text: 'NCalc 函数',
+                                link: '/zh/base/shift/ncalc/functions'
+                            },
+                            {
+                                text: 'NCalc 数值',
+                                link: '/zh/base/shift/ncalc/values'
+                            }
+                        ]
+                    },
+                    {
+                        text: '实时钟',
+                        link: '/zh/base/shift/real_time_clock'
+                    },
+                    {
+                        text: '声音发生器',
+                        link: '/zh/base/shift/sound_generator'
+                    },
+                    {
+                        text: '复杂活塞',
+                        link: '/zh/base/shift/complex_piston'
+                    },
+                    {
+                        text: '告示牌',
+                        link: '/zh/base/shift/sign'
+                    },
+                    {
+                        text: '发射器',
+                        link: '/zh/base/shift/dispenser'
                     }
                 ]
             },

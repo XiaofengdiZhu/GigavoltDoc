@@ -1,6 +1,5 @@
 enum ElectricConnectionDisplayMode {
-    StartAndEnd,
-    BitWidth
+    StartAndEnd, BitWidth, Hide
 }
 
 export default ElectricConnectionDisplayMode;

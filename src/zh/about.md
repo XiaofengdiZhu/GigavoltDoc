@@ -40,7 +40,7 @@ mod 源码：[GitHub](https://github.com/XiaofengdiZhu/Gigavolt/)
 感谢以下热心网友的长期支持和测试
 > 按名称排序
 
-* 把红色赋予黑海_
+* [把红色赋予黑海_](https://gitee.com/THPRC)
 * [钅离_LX](https://github.com/CS-LX)
 * [千反田Q](https://tieba.baidu.com/home/main/?id=tb.1.8655ef45.iDFQv1eGqmen_1Lqsi_BUg)
 * [一枚北陌本陌](https://space.bilibili.com/1766875450)
@@ -80,4 +80,4 @@ GitHub Project：[点我打开](https://github.com/users/XiaofengdiZhu/projects/
 ## 依赖者
 
 * 命令方块 mod 适配十亿伏特 mod：[AdaptCommandBlockForGigavolt](https://github.com/XiaofengdiZhu/AdaptCommandBlockForGigavolt)
-* 上端输出的真值表：ExTruthTable by 把红色赋予黑海_
+* 上端输出的真值表：ExTruthTable by [把红色赋予黑海_](https://gitee.com/THPRC)

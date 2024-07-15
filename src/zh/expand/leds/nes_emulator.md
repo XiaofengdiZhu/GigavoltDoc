@@ -20,7 +20,7 @@ let connections = [
 ];
 </script>
 
-# 红白机模拟器
+# 红白机模拟器 <Badge text="1.0"/>
 
 ## 概述
 
@@ -42,7 +42,7 @@ let connections = [
 * [ ] 合金装备
 
 同时仅能运行一个模拟器实例，即多个红白机模拟器显示的内容是一样的，每个红白机模拟器收到的手柄操作会按或计算后传输给模拟器  
-启动时会自动加载 [XamariNES](https://github.com/enusbaum/XamariNES) 的内置 [测试 ROM](https://github.com/enusbaum/XamariNES/blob/master/XamariNES.UI/XamariNES.UI.App/Resources/roms/nestest.nes)，如果要载入其他 ROM，请编辑该方块并输入 ROM 的路径，或存储器的 ID，最后点击确定，红白机模拟器将立即从指定路径、存储器读取ROM；如果路径是 `nestest`，则载入 XamariNES 内置测试 ROM
+启动时会自动加载 [XamariNES](https://github.com/enusbaum/XamariNES) 的内置 [测试 ROM](https://github.com/enusbaum/XamariNES/blob/master/XamariNES.UI/XamariNES.UI.App/Resources/roms/nestest.nes)，如果要载入其他 ROM，请编辑该方块并输入 ROM 的路径，或存储器的 ID，最后点击确定，红白机模拟器将立即从指定路径、存储器读取ROM；如果路径是`nestest`，则载入 XamariNES 内置测试 ROM
 
 ## 端口定义
 

@@ -70,7 +70,7 @@ onBeforeUnmount(() => {
 
 <template v-if="connections.length > 0">
     <template v-if="all">
-        <img :src="withBase(imgSrc)" style="width: 30%; margin: auto; image-rendering: pixelated; object-fit: contain; object-position: center;" :alt="imgAlt" :title="imgAlt" v-if="imgSrc != null"/>
+        <img :src="withBase(imgSrc)" class="center_image small" :alt="imgAlt" :title="imgAlt" v-if="imgSrc != null"/>
         <ElectricConnectionTable :connection="all" :isWide="false"/>
     </template>
     <template v-else>
