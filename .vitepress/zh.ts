@@ -31,6 +31,10 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
         text: '十亿伏特',
         items: [
             {
+                text: '简介',
+                link: '/zh/index'
+            },
+            {
                 text: '原版的变体',
                 collapsed: true,
                 items: [
@@ -100,7 +104,7 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                         link: '/zh/base/new/debug'
                     },
                     {
-                        text: '其他特性',
+                        text: '特色功能',
                         link: '/zh/base/new/features'
                     }
                 ]
@@ -113,6 +117,28 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
             {
                 text: '简介',
                 link: '/zh/expand/introduction'
+            },
+            {
+                text: '导线',
+                collapsed: true,
+                items: [
+                    {
+                        text: '铜锤 / 多面穿线块',
+                        link: '/zh/expand/wires/copper_hammer'
+                    },
+                    {
+                        text: '六面跨线块',
+                        link: '/zh/expand/wires/wire_through'
+                    },
+                    {
+                        text: '跳线',
+                        link: '/zh/expand/wires/jump_wire'
+                    },
+                    {
+                        text: '路选器',
+                        link: '/zh/expand/wires/multiplexer'
+                    }
+                ]
             },
             {
                 text: '传感器',

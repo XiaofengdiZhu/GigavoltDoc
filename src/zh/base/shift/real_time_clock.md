@@ -1,4 +1,4 @@
-# 实时钟 <Badge text="1.0"/>
+# 实时钟 <Badge text="v1.0" type="info"/>
 
 <img src="/images/base/shift/GVRealTimeClockBlock.webp" alt="GV实时钟 图示" class="center_image small"/>
 

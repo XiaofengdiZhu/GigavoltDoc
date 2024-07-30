@@ -1,4 +1,8 @@
-# 存储器 <Badge text="1.0"/>
+<script setup lang="ts">
+import UintColorConverter from "/components/UintColorConverter.vue";
+</script>
+
+# 存储器 <Badge text="v1.0" type="info"/>
 
 <img src="/images/base/shift/GVMemoryBankBlock.webp" alt="GV存储器 图示" class="center_image small"/>
 
@@ -23,6 +27,8 @@
 
 数据保存时，会按`ABGR`颜色模式保存到每个像素的颜色中，从高位到低位，分别为颜色的<span style="opacity:0.6;">Alpha 透明度通道</span>、<span style="color:blue;">Blue 蓝色通道</span>、<span style="color:green;">Green 绿色通道</span>、<span style="color:red;">Red 红色通道</span>，例如 `0xFFDD6655` 会被储存为透明度为 0xFF，蓝色为 <span style="color:#0000DD;">0xDD</span>，绿色为 <span style="color:#006600;">0x66</span>，红色为 <span style="color:#550000;">0x55</span> 的像素 <span style="display:inline-block;width:1em;height:1em;vertical-align:middle;background-color:#5566DD;"/>
 
+<UintColorConverter />
+
 ### 导入 WAV 格式音频文件
 
 具体要求为
@@ -32,7 +38,7 @@
 * 采样率：8000 \~ 48000 Hz
 * 采样深度：16位
 
-符合要求的 WAV 格式音频文件才能被导入，检测通过后将自动导入该文件的`data chunk`部分，例如`data chunk`有 6 个 16 位数据，分别为`0x0001`、`0x0002`、`0x3333`、`0x4567`、`0xBA98`、`0xCDEF`，存储器的数据将是：`0x00010002`、`0x33334567`、`0xBA98CDEF`
+符合要求的 WAV 格式音频文件才能被导入，检测通过后将自动导入该文件的`data chunk`部分，例如`data chunk`有 6 个 16 位数据，分别为`0x0001`&#8203;`0x0002`&#8203;`0x3333`&#8203;`0x4567`&#8203;`0xBA98`&#8203;`0xCDEF`，存储器的数据将是：`0x00010002`&#8203;`0x33334567`&#8203;`0xBA98CDEF`
 
 > 导入成功的数据，可配合 [声音发生器]() 使用
 

@@ -25,7 +25,7 @@ mod 源码：[GitHub](https://github.com/XiaofengdiZhu/Gigavolt/)
 
 ## 看板娘
 
-> 使用的AI模型：[AOM3A1B](https://huggingface.co/WarriorMama777/OrangeMixs#aom3a1b)
+> 使用的AI模型：[AOM3A1B by WarriorMama777](https://huggingface.co/WarriorMama777/OrangeMixs#aom3a1b)
 
 ::: details 🖼️ 十亿伏特
 ![十亿伏特看板娘](../public/images/poster-girl/GigavoltPosterGirl.webp)

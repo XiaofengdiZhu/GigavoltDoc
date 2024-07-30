@@ -1,10 +1,11 @@
-<script setup>
+<script setup lang="ts">
 import ElectricConnection from "../../../components/ElectricElement/ElectricConnection";
 import ElectricConnectorType from "../../../components/ElectricElement/ElectricConnectorType";
 import ElectricConnectorDirection from "../../../components/ElectricElement/ElectricConnectorDirection";
 import ElectricConnectionDisplayMode from "../../../components/ElectricElement/ElectricConnectionDisplayMode";
 import IOPort from "../../../components/ElectricElement/IOPort";
 import ElectricElement from "../../../components/ElectricElement/ElectricElement.vue";
+import UintColorConverter from "/components/UintColorConverter.vue";
 
 let connections = [
     new ElectricConnection(ElectricConnectorDirection.Top, ElectricConnectorType.Input, ElectricConnectionDisplayMode.BitWidth, [
@@ -30,12 +31,12 @@ let connections = [
         new IOPort(1, 32, "颜色", "设置显示的颜色，ABGR 颜色模式")
     ]),
         new ElectricConnection(ElectricConnectorDirection.In, ElectricConnectorType.Input, ElectricConnectionDisplayMode.BitWidth, [
-        new IOPort(1, 32, "存储器 ID", "变化后，将以 UTF8 编码读取指定 ID 的存储板中的数据，并立即写入到告示牌中，同时影响告示牌上直接显示和悬浮显示的文字"),
+        new IOPort(1, 32, "存储器 ID", "变化后，将以 UTF8 编码读取指定 ID 的存储器中的数据，并立即写入到告示牌中，同时影响告示牌上直接显示和悬浮显示的文字"),
     ])
 ];
 </script>
 
-# 告示牌 <Badge text="1.0"/>
+# 告示牌 <Badge text="v1.0" type="info"/>
 
 ## 概述
 
@@ -50,4 +51,10 @@ let connections = [
 > [!INFO] 💡 提示
 > 各方向的偏移范围为 ±4096.875 格
 
-<!--@include: ../../parts/abgr_color_mode.md-->
+> [!TIP] 📝 ABGR 颜色模式
+> 从高位到低位，每 8 位分别为颜色的 <span style="opacity:0.6;">Alpha 透明度通道</span>、<span style="color:blue;">Blue 蓝色通道</span>、<span style="color:green;">Green 绿色通道</span>、<span style="color:red;">Red 红色通道</span>，可使用下面的电压颜色转换器来转换
+
+::: details 🛠️ 电压颜色转换器
+
+<UintColorConverter />
+:::

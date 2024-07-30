@@ -9,7 +9,7 @@ hero:
     tagline: This is a mod for Survivalcraft that take a new Electric system with Gigavolt to the game. The original Electric system has 16 voltage levels (0 ~ 1.5 V), then Gigavolt expands it to 2<sup>32</sup> voltage levels (0 ~ 2<sup>32</sup>-1 V)<br/>这是一个为生存战争游戏带来十亿伏特电力系统的 mod，将原版的 16 个电压级别（0 ~ 1.5 V）扩展到 2<sup>32</sup> 个（0 ~ 2<sup>32</sup>-1 V）
     actions:
         -   theme: brand
-            text: English Site
+            text: English Site (Not available)
             link: /en/
         -   theme: brand
             text: 中文首页

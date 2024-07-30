@@ -76,5 +76,11 @@
   "PosterGirl": {
     "zh": "看板娘",
     "en": "Yuru-chara"
+  },
+  "UintColorConverter": {
+    "Voltage": {
+      "zh": "电压：",
+      "en": "Voltage: "
+    }
   }
 }

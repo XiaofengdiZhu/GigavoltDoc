@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import ElectricConnection from "../../../components/ElectricElement/ElectricConnection";
 import ElectricConnectorType from "../../../components/ElectricElement/ElectricConnectorType";
 import ElectricConnectorDirection from "../../../components/ElectricElement/ElectricConnectorDirection";
@@ -25,7 +25,7 @@ let connections = [
 ];
 </script>
 
-# 声音发生器 <Badge text="1.0"/>
+# 声音发生器 <Badge text="v1.0" type="info"/>
 
 ## 概述
 

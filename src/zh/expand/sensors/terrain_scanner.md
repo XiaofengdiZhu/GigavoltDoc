@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import ElectricConnection from "../../../components/ElectricElement/ElectricConnection";
 import ElectricConnectorType from "../../../components/ElectricElement/ElectricConnectorType";
 import ElectricConnectorDirection from "../../../components/ElectricElement/ElectricConnectorDirection";
@@ -29,7 +29,7 @@ let connections = [
 ];
 </script>
 
-# 地形扫描仪 <Badge text="2.0"/>
+# 地形扫描仪 <Badge text="v2.0"/>
 
 ## 概述
 

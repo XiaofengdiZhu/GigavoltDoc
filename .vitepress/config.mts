@@ -17,7 +17,7 @@ export default defineConfig({
     vite: {
         plugins: [
             pagefindPlugin({
-                indexingCommand: 'npx pagefind --site "docs" --output-subdir "pagefind" --exclude-selectors "div.aside, a.header-anchor, svg"',
+                indexingCommand: 'npx pagefind --site "docs" --output-subdir "pagefind" --exclude-selectors "div.aside, a.header-anchor, svg, .VPBadge"',
                 locales: {
                     root: {},
                     zh: {
@@ -25,6 +25,11 @@ export default defineConfig({
                         placeholder: '搜索文档',
                         emptyText: '空空如也',
                         heading: '共 {{searchResult}} 条结果',
+                        toSelect: '选择',
+                        toNavigate: '切换',
+                        toClose: '关闭',
+                        searchBy: '搜索引擎：',
+                        pageResultCount: 100,
                         showDate: true,
                         customSearchQuery: chineseSearchOptimize
                     }
@@ -41,7 +46,7 @@ export default defineConfig({
         ],
         nav: [
             {
-                text: 'English',
+                text: 'English (Not available)',
                 link: '/en/'
             },
             {
@@ -57,7 +62,10 @@ export default defineConfig({
             copyright: 'Copyright © 2023-2024 <a href="https://github.com/XiaofengdiZhu/" target="_blank">销锋镝铸 XiaofengdiZhu</a>'
         },
         notFound: {
-            quote: 'I Walk to where the creeks end, the water running dry. Sitting in repose to watch the rise of clouds.'
+            title: 'PAGE NOT FOUND 未找到页面',
+            quote: 'I Walk to where the creeks end, the water running dry. Sitting in repose to watch the rise of clouds.\u3000\u3000\u3000\u3000\u3000\u3000行到水穷处，坐看云起时',
+            linkLabel: 'go to home 返回首页',
+            linkText: 'Take me home 返回首页'
         }
         /*,
         search: {
@@ -104,7 +112,7 @@ export default defineConfig({
         en: {
             title: 'Gigavolt',
             titleTemplate: 'Gigavolt Doc',
-            label: 'English',
+            label: 'English (Not available)',
             lang: 'en',
             link: '/en/',
             themeConfig: {
@@ -142,6 +150,7 @@ export default defineConfig({
                     text: '对本页提出修改建议'
                 },
                 outline: {
+                    level: 'deep',
                     label: '目录'
                 },
                 footer: {

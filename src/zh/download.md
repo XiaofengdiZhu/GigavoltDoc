@@ -19,7 +19,7 @@ hero:
             link: /zh/before_start
 ---
 
-<script setup>
+<script setup lang="ts">
     import { onMounted } from "vue";
     import {useData} from "vitepress";
     import QrcodeVue from "qrcode.vue";

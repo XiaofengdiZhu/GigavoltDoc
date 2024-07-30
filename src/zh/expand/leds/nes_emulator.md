@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import ElectricConnection from "../../../components/ElectricElement/ElectricConnection";
 import ElectricConnectorType from "../../../components/ElectricElement/ElectricConnectorType";
 import ElectricConnectorDirection from "../../../components/ElectricElement/ElectricConnectorDirection";
@@ -12,7 +12,7 @@ let connections = [
         new IOPort(2, 2, "重置", "0 为不重置，1 为执行重置；如一直为 1，会不停重置"),
         new IOPort(3, 4, "旋转", "0 为正位，1 为顺时针旋转 90 度，2、3 同理"),
         new IOPort(5, 8, "空", "无作用"),
-        new IOPort(9, 16, "手柄 1", "从高位到低位分别对应：`→` `←` `↓` `↑` `Start` `Select` `B` `A`"),
+        new IOPort(9, 16, "手柄 1", "从高位到低位分别对应：`→`&#8203;`←`&#8203;`↓`&#8203;`↑`&#8203;`Start`&#8203;`Select`&#8203;`B`&#8203;`A`"),
         new IOPort(17, 24, "手柄 2", "无作用，因为 [XamariNES](https://github.com/enusbaum/XamariNES) 尚未支持多手柄"),
         new IOPort(25, 31, "缩放", "0、1 为 1 个方块大，2 为 2 个方块大，最大 128 方块大"),
         new IOPort(32, 32, "空", "无作用")
@@ -20,7 +20,7 @@ let connections = [
 ];
 </script>
 
-# 红白机模拟器 <Badge text="1.0"/>
+# 红白机模拟器 <Badge text="v1.0" type="info"/>
 
 ## 概述
 

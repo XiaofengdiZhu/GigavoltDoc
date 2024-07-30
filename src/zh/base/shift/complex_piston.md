@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import ElectricConnection from "../../../components/ElectricElement/ElectricConnection";
 import ElectricConnectorType from "../../../components/ElectricElement/ElectricConnectorType";
 import ElectricConnectorDirection from "../../../components/ElectricElement/ElectricConnectorDirection";
@@ -18,7 +18,7 @@ let connections = [
 ];
 </script>
 
-# 复杂活塞 <Badge text="2.0"/>
+# 复杂活塞 <Badge text="v2.0"/>
 
 ## 概述
 
@@ -27,6 +27,6 @@ let connections = [
 
 ## 端口定义
 
-<ElectricElement imgAltPrefix="复杂活塞" :connections="connections" imgSrc="/images/expand/GVNesEmulatorBlock.png"/>
+<ElectricElement imgAltPrefix="复杂活塞" :connections="connections" imgSrc="/images/base/shift/GVPistonBlock_complex.webp"/>
 
 > 速度为0时活塞将无法运作

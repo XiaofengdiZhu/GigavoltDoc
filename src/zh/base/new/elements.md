@@ -1,18 +1,18 @@
 # 新增元件
 
-## 总线
+## 总线 <Badge text="v2.0"/>
 
 外观为橙色的特殊导线，只能与有色导线、有色元件相连接，来自不同颜色导线、元件的信号能互不干扰地在总线中传输，能大幅优化排线
 
 <img src="/images/base/new/wire_harness_example.webp" alt="总线用例 图示" class="center_image"/>
 
-## 单向二极管
+## 单向二极管 <Badge text="v2.0"/>
 
 电压只能单向导通的二极管，延迟 1 个电路周期（0.01 秒，本质上是延迟门），只提供有颜色版本
 
 <img src="/images/base/new/diode.webp" alt="新增的二极管 图示" class="center_image"/>
 
-## 4 种 LED 灯
+## 4 种 LED 灯 <Badge text="v1.0" type="info"/>
 
 * **8 x 4 面 LED 灯**：原版中的 4 面 LED 灯显通过 4 个小灯来展示 4 位二进制信号的情况，该元件则通过 32个小灯来展示十亿伏特 32 位二进制信号的情况
 * **4 x 4 面 LED 灯**：取输入电压的最低 16 位后展示之
@@ -36,7 +36,7 @@
     </tbody>
 </table>
 
-## 变压器
+## 变压器 <Badge text="v1.0" type="info"/>
 
 ### 十亿伏特转原版变压器
 
@@ -50,7 +50,7 @@
 
 <img src="/images/base/new/O2GVTransformerBlock.webp" alt="十亿伏特转原版变压器 图示" style="max-width: min(100%, 80px); margin: 0 auto;"/>
 
-## 调试石碑
+## 调试台 <Badge text="v1.0" type="info"/>
 
 另见 [调试](debug.md)
 

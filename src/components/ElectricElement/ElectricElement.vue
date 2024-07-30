@@ -15,7 +15,7 @@ const {
     connections,
     imgAltPrefix
 } = defineProps<{
-    connections: ElectricConnection[], imgSrc: string | null, imgAltPrefix: string
+    connections: ElectricConnection[], imgSrc?: string, imgAltPrefix: string, gateMask?: string
 }>();
 let imgAlt = `${imgAltPrefix} ${locale('ElectricElement', 'imgAltSuffix')}`;
 if (connections.length > 0) {
@@ -70,7 +70,7 @@ onBeforeUnmount(() => {
 
 <template v-if="connections.length > 0">
     <template v-if="all">
-        <img :src="withBase(imgSrc)" class="center_image small" :alt="imgAlt" :title="imgAlt" v-if="imgSrc != null"/>
+        <img :src="withBase(imgSrc)" :class="{[$style.gate_mask]:gateMask}" class="center_image small" :alt="imgAlt" :title="imgAlt" v-if="imgSrc"/>
         <ElectricConnectionTable :connection="all" :isWide="false"/>
     </template>
     <template v-else>
@@ -87,8 +87,8 @@ onBeforeUnmount(() => {
                 <ElectricConnectionTable :connection="left" :isWide="true" v-if="isWide"/>
                 <a :class="$style.narrowA" style="writing-mode: vertical-lr;" :href="'#' + leftTitle" v-else>{{ leftTitle }}</a>
             </div>
-            <div style="grid-row-start: 2; grid-column-start: 2; place-self: stretch" v-if="imgSrc != null">
-                <img :src="withBase(imgSrc)" style="width: 100%; height: 100%; image-rendering: pixelated; object-fit: contain; object-position: center;" :alt="imgAlt" :title="imgAlt"/>
+            <div style="grid-row-start: 2; grid-column-start: 2; place-self: stretch" v-if="imgSrc">
+                <img :src="withBase(imgSrc)" style="width: 100%; height: 100%; image-rendering: pixelated; object-fit: contain; object-position: center;" :alt="imgAlt" :title="imgAlt" :class="{[$style.gate_mask]:gateMask}" class="no_hover"/>
             </div>
             <div :class="[$style.surroundConnection, bottom.Type == ElectricConnectorType.Input ? $style.input : $style.output]" style="grid-row-start: 3; grid-column: 2 / 4;" v-if="bottom != null">
                 <ElectricConnectionTable :connection="bottom" :isWide="true" v-if="isWide"/>
@@ -111,7 +111,6 @@ onBeforeUnmount(() => {
 <style module>
 .electricElementGraphic {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
     grid-gap: 8px;
     place-items: start;
 
@@ -134,5 +133,10 @@ onBeforeUnmount(() => {
     &.output {
         background-color: rgba(201, 144, 155, 0.25);
     }
+}
+
+.gate_mask {
+    mask-image: linear-gradient(2.3086rad, transparent 0% 17.5%, black 17.5% 100%), linear-gradient(-2.3086rad, transparent 0% 17.5%, black 17.5% 100%);
+    mask-composite: intersect;
 }
 </style>
