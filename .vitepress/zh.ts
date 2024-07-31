@@ -165,6 +165,36 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                         text: '示波器'
                     }
                 ]
+            },
+            {
+                text: '运输',
+                collapsed: true,
+                items: [
+                    {
+                        text: `固态空气`,
+                        link: '/zh/expand/transportation/solidified_air'
+                    },
+                    {
+                        text: `制导发射器`,
+                        link: '/zh/expand/transportation/guided_dispenser'
+                    },
+                    {
+                        text: `更多投射物`,
+                        link: '/zh/expand/transportation/more_projectiles'
+                    },
+                    {
+                        text: `吸引器`,
+                        link: '/zh/expand/transportation/attractor'
+                    },
+                    {
+                        text: `箱子提取器`,
+                        link: '/zh/expand/transportation/inventory_fetcher'
+                    },
+                    {
+                        text: `箱子控制器`,
+                        link: '/zh/expand/transportation/inventory_controller'
+                    }
+                ]
             }
         ]
     }

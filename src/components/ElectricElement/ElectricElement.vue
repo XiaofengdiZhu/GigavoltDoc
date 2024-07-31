@@ -8,9 +8,10 @@ import locale from "../../../common/locale";
 import ElectricConnectorType from "./ElectricConnectorType";
 
 const self = ref(null);
+const img = ref(null);
 const isWide = ref(false);
 
-let top: ElectricConnection | null, right: ElectricConnection | null, bottom: ElectricConnection | null, left: ElectricConnection | null, in_: ElectricConnection | null, all: ElectricConnection | null, topTitle: string | null, rightTitle: string | null, bottomTitle: string | null, leftTitle: string | null, inTitle: string | null, allTitle: string | null;
+let top: ElectricConnection | null = null, right: ElectricConnection | null = null, bottom: ElectricConnection | null = null, left: ElectricConnection | null = null, in_: ElectricConnection | null = null, all: ElectricConnection | null = null, topTitle: string | null, rightTitle: string | null, bottomTitle: string | null, leftTitle: string | null, inTitle: string | null, allTitle: string | null;
 const {
     connections,
     imgAltPrefix
@@ -54,9 +55,13 @@ if (connections.length > 0) {
         left = null;
     }
 }
+let imgHeight = ref(0);
 const checkWidth = () => {
     if (self.value) {
         isWide.value = self.value.clientWidth > 720;
+        if (img.value) {
+            imgHeight.value = img.value.clientHeight;
+        }
     }
 };
 onMounted(() => {
@@ -66,6 +71,9 @@ onMounted(() => {
 onBeforeUnmount(() => {
     window.removeEventListener('resize', checkWidth);
 });
+const imgLoaded = () => {
+    imgHeight.value = img.value.clientHeight;
+};
 </script>
 
 <template v-if="connections.length > 0">
@@ -74,8 +82,8 @@ onBeforeUnmount(() => {
         <ElectricConnectionTable :connection="all" :isWide="false"/>
     </template>
     <template v-else>
-        <div :class="$style.electricElementGraphic" :style="{gridTemplateColumns:isWide?'2fr 1fr 2fr':'1fr 1fr 1fr'}" ref="self">
-            <div :class="[$style.surroundConnection, top.Type == ElectricConnectorType.Input ? $style.input : $style.output]" style="grid-row-start:1;grid-column: 1 / 3; justify-self: end" v-if="top != null">
+        <div :class="$style.electricElementGraphic" :style="{gridTemplateColumns:isWide?'2fr 1fr 2fr':'1fr 1fr 1fr', gridTemplateRows:imgHeight>0?`auto ${imgHeight}px auto auto`:'auto'}" ref="self">
+            <div :class="[$style.surroundConnection, top.Type == ElectricConnectorType.Input ? $style.input : $style.output]" style="grid-row-start:1;grid-column: 1 / 3; justify-self: end; align-self: end;" v-if="top != null">
                 <ElectricConnectionTable :connection="top" :isWide="true" v-if="isWide"/>
                 <a :class="$style.narrowA" :href="'#' + topTitle" v-else>{{ topTitle }}</a>
             </div>
@@ -88,7 +96,7 @@ onBeforeUnmount(() => {
                 <a :class="$style.narrowA" style="writing-mode: vertical-lr;" :href="'#' + leftTitle" v-else>{{ leftTitle }}</a>
             </div>
             <div style="grid-row-start: 2; grid-column-start: 2; place-self: stretch" v-if="imgSrc">
-                <img :src="withBase(imgSrc)" style="width: 100%; height: 100%; image-rendering: pixelated; object-fit: contain; object-position: center;" :alt="imgAlt" :title="imgAlt" :class="{[$style.gate_mask]:gateMask}" class="no_hover"/>
+                <img :src="withBase(imgSrc)" style="width: 100%; image-rendering: pixelated; object-fit: contain;" :alt="imgAlt" :title="imgAlt" :class="{[$style.gate_mask]:gateMask}" class="no_hover" ref="img" @load="imgLoaded"/>
             </div>
             <div :class="[$style.surroundConnection, bottom.Type == ElectricConnectorType.Input ? $style.input : $style.output]" style="grid-row-start: 3; grid-column: 2 / 4;" v-if="bottom != null">
                 <ElectricConnectionTable :connection="bottom" :isWide="true" v-if="isWide"/>
@@ -100,11 +108,11 @@ onBeforeUnmount(() => {
             </div>
         </div>
         <div v-if="!isWide">
-            <ElectricConnectionTable :connection="top" :isWide="false"/>
-            <ElectricConnectionTable :connection="right" :isWide="false"/>
-            <ElectricConnectionTable :connection="bottom" :isWide="false"/>
-            <ElectricConnectionTable :connection="left" :isWide="false"/>
-            <ElectricConnectionTable :connection="in_" :isWide="false"/>
+            <ElectricConnectionTable :connection="top" :isWide="false" v-if="top != null"/>
+            <ElectricConnectionTable :connection="right" :isWide="false" v-if="right != null"/>
+            <ElectricConnectionTable :connection="bottom" :isWide="false" v-if="bottom != null"/>
+            <ElectricConnectionTable :connection="left" :isWide="false" v-if="left != null"/>
+            <ElectricConnectionTable :connection="in_" :isWide="false" v-if="in_ != null"/>
         </div>
     </template>
 </template>

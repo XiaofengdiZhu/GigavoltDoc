@@ -2,7 +2,7 @@
 
 ## 概述
 
-<img src="/images/expand/wires/GVMultiplexerBlock.webp" class="center_image small">
+<img alt="路选器 图示" src="/images/expand/wires/GVMultiplexerBlock.webp" class="center_image small">
 
 可以通过背面控制正面四个端点的导通和断开
 

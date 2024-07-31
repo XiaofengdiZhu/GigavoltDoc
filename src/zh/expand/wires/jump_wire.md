@@ -8,7 +8,7 @@ import ElectricElement from "../../../components/ElectricElement/ElectricElement
 import {onMounted} from "vue"; 
 
 let connections = [
-    new ElectricConnection(ElectricConnectorDirection.Top, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
+    new ElectricConnection(ElectricConnectorDirection.Top, ElectricConnectorType.Output, ElectricConnectionDisplayMode.Hide, [
         new IOPort(1, 32, "输出", "根据左端和右端的电压，将下端输入和其他跳线的输入按或计算后，输出相应结果"),
     ]),
     new ElectricConnection(ElectricConnectorDirection.Right, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
