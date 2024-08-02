@@ -9,12 +9,14 @@ export default class ElectricConnection {
     DisplayMode: ElectricConnectionDisplayMode;
     Ports: IOPort[];
     HideFunction: boolean;
+    HideDescription: boolean;
 
-    constructor(direction: ElectricConnectorDirection, type: ElectricConnectorType, displayMode: ElectricConnectionDisplayMode, ports: IOPort[], hideFunction: boolean = false) {
+    constructor(direction: ElectricConnectorDirection, type: ElectricConnectorType, displayMode: ElectricConnectionDisplayMode, ports: IOPort[], hideFunction: boolean = false, hideDescription: boolean = false) {
         this.Direction = direction;
         this.Type = type;
         this.DisplayMode = displayMode;
         this.Ports = ports;
         this.HideFunction = hideFunction;
+        this.HideDescription = hideDescription;
     }
 }

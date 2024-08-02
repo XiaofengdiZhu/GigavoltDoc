@@ -141,6 +141,28 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                 ]
             },
             {
+                text: '存储器',
+                collapsed: true,
+                items: [
+                    {
+                        text: '一维存储器',
+                        link: '/zh/expand/memory_banks/list_memory_bank'
+                    },
+                    {
+                        text: '四维存储器',
+                        link: '/zh/expand/memory_banks/four_dimensional_memory_bank'
+                    },
+                    {
+                        text: '多种易失性存储器',
+                        link: '/zh/expand/memory_banks/volatile_memory_banks'
+                    },
+                    {
+                        text: '多存储器操作器',
+                        link: '/zh/expand/memory_banks/memory_banks_operator'
+                    }
+                ]
+            },
+            {
                 text: '传感器',
                 collapsed: true,
                 items: [

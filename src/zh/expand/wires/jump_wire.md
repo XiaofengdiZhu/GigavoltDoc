@@ -4,8 +4,8 @@ import ElectricConnectorType from "../../../components/ElectricElement/ElectricC
 import ElectricConnectorDirection from "../../../components/ElectricElement/ElectricConnectorDirection";
 import ElectricConnectionDisplayMode from "../../../components/ElectricElement/ElectricConnectionDisplayMode";
 import IOPort from "../../../components/ElectricElement/IOPort";
-import ElectricElement from "../../../components/ElectricElement/ElectricElement.vue"; 
-import {onMounted} from "vue"; 
+import ElectricElement from "../../../components/ElectricElement/ElectricElement.vue";
+import {onMounted} from "vue";
 
 let connections = [
     new ElectricConnection(ElectricConnectorDirection.Top, ElectricConnectorType.Output, ElectricConnectionDisplayMode.Hide, [

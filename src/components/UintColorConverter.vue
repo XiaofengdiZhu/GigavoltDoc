@@ -389,9 +389,9 @@ onMounted(() => {
                 </div>
             </div>
             <div @click="OpenEyeDropper()" :class="$style.chessboard" style="position: relative; width: 30px; height: 30px; border-radius: 15px; cursor: pointer; box-shadow: 0 0 2px 0 rgba(0, 0, 0, .24)">
-                <div style="width: 100%; height: 100%; border-radius: 50%; padding: 7px;" :style="{color: color.highContrastResult ,backgroundColor: color.RGBAResult}">
-                    <svg style="width: 16px; height: 16px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" v-if="showEyeDropper">
-                        <path fill="currentColor" fill-rule="evenodd" d="M15 4a3 3 0 0 1-2.25 2.905V8.5a.75.75 0 0 1-.22.53l-.5.5a.75.75 0 0 1-1.06 0l-.72-.72l-4.677 4.678A1.75 1.75 0 0 1 4.336 14h-.672a.25.25 0 0 0-.177.073l-.707.707a.75.75 0 0 1-1.06 0l-.5-.5a.75.75 0 0 1 0-1.06l.707-.707A.25.25 0 0 0 2 12.336v-.672c0-.464.184-.909.513-1.237L7.189 5.75l-.72-.72a.75.75 0 0 1 0-1.06l.5-.5a.75.75 0 0 1 .531-.22h1.595A3.001 3.001 0 0 1 15 4M9.19 7.75l-.94-.94l-4.677 4.678a.25.25 0 0 0-.073.176v.672q0 .087-.009.173a2 2 0 0 1 .173-.009h.672a.25.25 0 0 0 .177-.073z" clip-rule="evenodd"/>
+                <div style="width: 100%; height: 100%; border-radius: 50%; padding: 5px;" :style="{color: color.highContrastResult ,backgroundColor: color.RGBAResult}">
+                    <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" v-if="showEyeDropper">
+                        <path fill="currentColor" d="M144-180v-112q0-14.22 5-27.11Q154-332 165-343l321-321-54-53 51-51 72 72 110.22-110.22q4.45-4.45 11.11-7.11Q683-816 691-816t15 2.5q7 2.5 12 7.5l87 88q4.55 5.83 7.27 12.64 2.73 6.8 2.73 14.58t-2.66 14.44q-2.67 6.66-7.11 11.1L696-556l72 73-51 51-54-54-320 321q-11 11-23.89 16T292-144H180q-15.3 0-25.65-10.35Q144-164.7 144-180Zm72-32h76l320-320-75-76-321 320v76Z"/>
                     </svg>
                 </div>
             </div>
