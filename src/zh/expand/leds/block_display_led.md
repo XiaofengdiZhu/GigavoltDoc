@@ -23,30 +23,47 @@ let connections = [
         new IOPort(25, 25, "偏航角的符号", "为 1 时，`偏航角`反向旋转"),
         new IOPort(26, 26, "俯仰角的符号", "为 1 时，`俯仰角`反向旋转"),
         new IOPort(27, 27, "翻滚角的符号", "为 1 时，`翻滚角`反向旋转"),
-        new IOPort(28, 28, "弹出提示", "从 0 变为 1 时，在屏幕上弹出提示"),
-        new IOPort(29, 32, "亮度", "设置显示的亮度，值越大越亮")
+        new IOPort(28, 28, "空", "无作用"),
+        new IOPort(29, 29, "是否残像", "为 0 时，其他参数变化会立即按照新参数显示方块  \n为 1 时，其他参数变化会保留之前显示的方块，使其持续显示，直到此位变为 0，或退出存档"),
+        new IOPort(30, 32, "空", "无作用")
         
     ]),
     new ElectricConnection(ElectricConnectorDirection.Left, ElectricConnectorType.Input, ElectricConnectionDisplayMode.BitWidth, [
-        new IOPort(1, 32, "颜色", "设置显示的颜色，ABGR 颜色模式")
+        new IOPort(1, 32, "上色", "设置要给方块上的颜色，ABGR 颜色模式")
     ]),
         new ElectricConnection(ElectricConnectorDirection.In, ElectricConnectorType.Input, ElectricConnectionDisplayMode.BitWidth, [
-        new IOPort(1, 32, "存储器 ID", "变化后，将以 UTF8 编码读取指定 ID 的存储器中的数据，并立即写入到告示牌中，同时影响告示牌上直接显示和悬浮显示的文字"),
+        new IOPort(1, 32, "方块完整 ID", "设置要展示的方块的完整 ID（含特殊值）"),
     ])
 ];
 </script>
 
-# 告示牌 <Badge text="v1.0" type="info"/>
+# 方块展示板 <Badge text="v1.0" type="info"/>
 
 ## 概述
 
-不仅具有原版的显示文字、弹出提示功能，还可以额外悬浮显示文字，但只能记录一行文字
+用于展示方块，分为以下两个版本
 
-## 端口定义
+## 简单方块展示板
 
-> 除后端外，其他端口操作的都是悬浮显示的文字
+<img alt="简单方块展示板 图示" src="/images/expand/leds/block_display_led_0.webp" class="center_image small">
 
-<ElectricElement imgAltPrefix="十亿伏特告示牌" :connections="connections" imgSrc="/images/base/shift/GVSignBlock.webp"/>
+直接输入要展示的方块的完整 ID（含特殊值），就会在其面前悬浮显示相应的方块，如果有多个输入，则会将这些输入进行或计算，其他参数的决定方式如下：
+
+* **旋转**：根据展示板面对的方向和方块自身的`手持旋转角度`属性决定
+* **大小**：根据方块自身的`手持缩放`属性决定
+* **亮度**：根据环境亮度决定
+* **上色**：纯白色，即不改变方块颜色
+
+> [!TIP] 💡 提示
+> 可以通过 [方块值板](../sensors/block_value_plate)、[地形射线探测器]() 等方式获取方块的完整 ID
+
+## 复杂方块展示板
+
+可以控制展示的各项参数，详见下面接口定义
+
+### 端口定义
+
+<ElectricElement imgAltPrefix="复杂方块展示板" :connections="connections" imgSrc="/images/expand/leds/block_display_led_1.webp" :titleLevel="4"/>
 
 > [!INFO] 💡 提示
 > 各方向的偏移范围为 ±4095.875 格

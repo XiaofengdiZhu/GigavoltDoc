@@ -33,7 +33,7 @@ let title = locale("ElectricConnectorDirection", connection.Direction) + locale(
     </table>
 </template>
 <style module>
-.electricConnectionTable th, td {
+.electricConnectionTable th, .electricConnectionTable td {
     text-align: center;
     padding: 6px 8px;
 }

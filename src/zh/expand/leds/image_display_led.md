@@ -23,30 +23,42 @@ let connections = [
         new IOPort(25, 25, "偏航角的符号", "为 1 时，`偏航角`反向旋转"),
         new IOPort(26, 26, "俯仰角的符号", "为 1 时，`俯仰角`反向旋转"),
         new IOPort(27, 27, "翻滚角的符号", "为 1 时，`翻滚角`反向旋转"),
-        new IOPort(28, 28, "弹出提示", "从 0 变为 1 时，在屏幕上弹出提示"),
-        new IOPort(29, 32, "亮度", "设置显示的亮度，值越大越亮")
+        new IOPort(28, 28, "缩放算法", "为 0 时，以各向异性过滤算法缩放  \n为1时，以保留硬边缘算法缩放"),
+        new IOPort(29, 29, "是否残像", "为 0 时，其他参数变化会立即按照新参数显示图像  \n为 1 时，其他参数变化会保留之前显示的图像，使其持续显示，直到此位变为 0，或退出存档"),
+        new IOPort(30, 32, "空", "无作用")
         
     ]),
     new ElectricConnection(ElectricConnectorDirection.Left, ElectricConnectorType.Input, ElectricConnectionDisplayMode.BitWidth, [
-        new IOPort(1, 32, "颜色", "设置显示的颜色，ABGR 颜色模式")
+        new IOPort(1, 32, "上色", "设置要给图片上的颜色，ABGR 颜色模式")
     ]),
         new ElectricConnection(ElectricConnectorDirection.In, ElectricConnectorType.Input, ElectricConnectionDisplayMode.BitWidth, [
-        new IOPort(1, 32, "存储器 ID", "变化后，将以 UTF8 编码读取指定 ID 的存储器中的数据，并立即写入到告示牌中，同时影响告示牌上直接显示和悬浮显示的文字"),
+        new IOPort(1, 32, "存储器 ID", "设置要显示的图片所在的存储器的 ID"),
     ])
 ];
 </script>
 
-# 告示牌 <Badge text="v1.0" type="info"/>
+# 图片显示器 <Badge text="v1.0" type="info"/>
 
 ## 概述
 
-不仅具有原版的显示文字、弹出提示功能，还可以额外悬浮显示文字，但只能记录一行文字
+用于显示图片，分为以下两个版本
 
-## 端口定义
+## 简单图片显示器
 
-> 除后端外，其他端口操作的都是悬浮显示的文字
+<img alt="简单图片显示器 图示" src="/images/expand/leds/image_display_led_0.webp" class="center_image small">
 
-<ElectricElement imgAltPrefix="十亿伏特告示牌" :connections="connections" imgSrc="/images/base/shift/GVSignBlock.webp"/>
+直接输入要显示的图片所在的存储器的 ID，就会在其表面显示相应的图片，如果有多个输入，则会将这些输入进行或计算，显示的亮度根据环境亮度决定
+
+> [!TIP] 💡 提示
+> 可以通过 存储器的导入功能、[照相机]()、[玩家监视器]() 等方式将图像数据存入存储器
+
+## 复杂图片显示器
+
+可以控制显示的各项参数，详见下面接口定义
+
+### 端口定义
+
+<ElectricElement imgAltPrefix="复杂图片显示器" :connections="connections" imgSrc="/images/expand/leds/image_display_led_1.webp" :titleLevel="4"/>
 
 > [!INFO] 💡 提示
 > 各方向的偏移范围为 ±4095.875 格

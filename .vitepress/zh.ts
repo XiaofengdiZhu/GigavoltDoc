@@ -163,28 +163,54 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                 ]
             },
             {
-                text: '传感器',
-                collapsed: true,
-                items: [
-                    {
-                        text: '地形扫描仪',
-                        link: '/zh/expand/sensors/terrain_scanner'
-                    }
-                ]
-            },
-            {
                 text: '显示器',
                 collapsed: true,
                 items: [
                     {
-                        text: '图片显示器'
+                        text: '示波器',
+                        link: '/zh/expand/leds/oscilloscope'
+                    },
+                    {
+                        text: '方块展示板',
+                        link: '/zh/expand/leds/block_display_led'
+                    },
+                    {
+                        text: '图片显示器',
+                        link: '/zh/expand/leds/image_display_led'
+                    },
+                    {
+                        text: '地层显示器',
+                        link: '/zh/expand/leds/terrain_display_led'
                     },
                     {
                         text: '红白机模拟器',
                         link: '/zh/expand/leds/nes_emulator'
+                    }
+                ]
+            },
+            {
+                text: '传感器',
+                collapsed: true,
+                items: [
+                    {
+                        text: '方块值板',
+                        link: '/zh/expand/sensors/block_value_plate'
                     },
                     {
-                        text: '示波器'
+                        text: '地形射线探测器',
+                        link: '/zh/expand/sensors/terrain_raycast_detector'
+                    },
+                    {
+                        text: '地形扫描仪',
+                        link: '/zh/expand/sensors/terrain_scanner'
+                    },
+                    {
+                        text: '玩家监视器',
+                        link: '/zh/expand/sensors/player_monitor'
+                    },
+                    {
+                        text: '照相机',
+                        link: '/zh/expand/sensors/camera'
                     }
                 ]
             },

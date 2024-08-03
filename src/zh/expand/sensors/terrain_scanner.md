@@ -8,7 +8,7 @@ import ElectricElement from "../../../components/ElectricElement/ElectricElement
 
 let connections = [
     new ElectricConnection(ElectricConnectorDirection.Top, ElectricConnectorType.Input, ElectricConnectionDisplayMode.BitWidth, [
-        new IOPort(1, 16, "起始距离", "每加 1，扫描起始位置距离扫描仪面向的方向加 1 格，最高位为 1 时向背面；如果为 0xFFFF，则不调整起始距离，扫描方式改为像射线探测器那样，向面对方向不断扫描直到遇到非空气方块（可用于生成地图）"),
+        new IOPort(1, 16, "起始距离", "每加 1，扫描起始位置距离扫描仪面向的方向加 1 格，最高位为 1 时向背面；如果为 0xFFFF，则不调整起始距离，扫描方式改为像 [地形射线探测器](terrain_raycast_detector) 那样，向面对方向不断扫描直到遇到非空气方块（可用于生成地图）"),
         new IOPort(17, 17, "是否存储方块特殊值", "为 0 时只保存方块 ID，为 1 时方块 ID 和数据一并保存"),
         new IOPort(18, 32, "空", "无作用")
     ]),
@@ -39,12 +39,12 @@ let connections = [
 
 ## 端口定义
 
-<ElectricElement imgAltPrefix="地形扫描仪" :connections="connections" imgSrc="/images/expand/GVTerrainScannerBlock.png"/>
+<ElectricElement imgAltPrefix="地形扫描仪" :connections="connections" imgSrc="/images/expand/sensors/GVTerrainScannerBlock.webp"/>
 
 ## 方向说明
 
-| 扫描仪面对方向 | 起始横向偏移正方向 | 起始纵向偏移正方向 | 横向扫描方向  | 纵向扫描方向  |
-|---------|-----------|-----------|---------|---------|
-| Y 轴-上或下  | X 轴正方向-北   | Z 轴正方向-西   | X 轴正方向-北 | Z 轴正方向-西 |
-| X 轴-北或南  | Z 轴正方向-西   | Y 轴正方向-上   | Z 轴正方向-西 | Y 轴负方向-下 |
-| Z 轴-东或西  | X 轴正方向-北   | Y 轴正方向-上   | X 轴正方向-北 | Y 轴负方向-下 |
+| 扫描仪面对方向 | 起始横向偏移正方向 | 起始纵向偏移正方向 |  横向扫描方向  |  纵向扫描方向  |
+|:-------:|:---------:|:---------:|:--------:|:--------:|
+| Y 轴-上或下 | X 轴正方向-北  | Z 轴正方向-西  | X 轴正方向-北 | Z 轴正方向-西 |
+| X 轴-北或南 | Z 轴正方向-西  | Y 轴正方向-上  | Z 轴正方向-西 | Y 轴负方向-下 |
+| Z 轴-东或西 | X 轴正方向-北  | Y 轴正方向-上  | X 轴正方向-北 | Y 轴负方向-下 |

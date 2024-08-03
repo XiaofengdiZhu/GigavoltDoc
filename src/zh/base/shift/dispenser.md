@@ -9,8 +9,8 @@ import ElectricElement from "../../../components/ElectricElement/ElectricElement
 let connections = [
     new ElectricConnection(ElectricConnectorDirection.All, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [
         new IOPort(1, 8, "速度", "单位格/秒，最大设置 255 格/秒"),
-        new IOPort(9, 16, "角度1", "<div style='margin: 0 auto; width: min(280px, 100%); text-align: start;'>\n\n* 朝向上方或下方时，为向北方偏转的角度\n* 朝向其他方向时，为向右方偏转的角度\n* 最高位为 1 时角度取负值\n* 超过 90 时自动下调为 90 度\n</div>"),
-        new IOPort(17, 24, "角度2", "<div style='margin: 0 auto; width: min(280px, 100%); text-align: start;'>\n\n* 朝向上方或下方时，为向西方偏转的角度\n* 朝向其他方向时，为向上方偏转的角度\n* 其他同角度 1 定义\n</div>"),
+        new IOPort(9, 16, "角度1", "* 朝向上方或下方时，为向北方偏转的角度\n* 朝向其他方向时，为向右方偏转的角度\n* 最高位为 1 时角度取负值\n* 超过 90 时自动下调为 90 度"),
+        new IOPort(17, 24, "角度2", "* 朝向上方或下方时，为向西方偏转的角度\n* 朝向其他方向时，为向上方偏转的角度\n* 其他同角度 1 定义\n"),
         new IOPort(25, 25, "无视重力", "为 1 时不受重力影响"),
         new IOPort(26, 26, "无视空阻", "为 1 时不受空气等阻力影响"),
         new IOPort(27, 27, "安全模式", "为 1 时启用安全模式  \n安全模式下，投射物不会触发被发射、撞到方块的方块行为，但仍然会触发被撞击方块的相关方块行为"),

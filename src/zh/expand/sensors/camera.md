@@ -9,44 +9,55 @@ import UintColorConverter from "/components/UintColorConverter.vue";
 
 let connections = [
     new ElectricConnection(ElectricConnectorDirection.Top, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [
-        new IOPort(1, 16, "缩放大小", "每加 1，显示大小增加 1/8 倍，最大 8191.875 倍"),
-        new IOPort(17, 32, "Y 轴位置偏移", "每加 1，显示向上移动 1/8 格，最高位为 1 时改为向下"),
+        new IOPort(1, 8, "视角角度", "单位为角度"),
+        new IOPort(9, 16, "空", "无作用"),
+        new IOPort(17, 32, "Y 轴位置偏移", "每加 1，拍照位置向上移动 1/8 格  \n最高位为 1 时改为向下"),
     ]),
     new ElectricConnection(ElectricConnectorDirection.Right, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [
-        new IOPort(1, 16, "X 轴位置偏移", "每加 1，显示向北移动 1/8 格，最高位为 1 时改为向南"),
-        new IOPort(17, 32, "Z 轴位置偏移", "每加 1，显示向东移动 1/8 格，最高位为 1 时改为向西")
+        new IOPort(1, 16, "X 轴位置偏移", "每加 1，拍照位置向北移动 1/8 格  \n最高位为 1 时改为向南"),
+        new IOPort(17, 32, "Z 轴位置偏移", "每加 1，拍照位置向东移动 1/8 格  \n最高位为 1 时改为向西")
     ]),
         new ElectricConnection(ElectricConnectorDirection.Bottom, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [
-        new IOPort(1, 8, "偏航角", "设置显示的偏航角，即左右旋转，单位为度"),
-        new IOPort(9, 16, "俯仰角", "设置显示的偏航角，即上下旋转，单位为度"),
-        new IOPort(17, 24, "翻滚角", "设置显示的翻滚角，即以面向的方向为轴旋转，单位为度"),
+        new IOPort(1, 8, "偏航角", "设置拍照的偏航角，即左右旋转，单位为角度"),
+        new IOPort(9, 16, "俯仰角", "设置拍照的偏航角，即上下旋转，单位为角度"),
+        new IOPort(17, 24, "翻滚角", "设置拍照的翻滚角，即以面向的方向为轴旋转，单位为角度"),
         new IOPort(25, 25, "偏航角的符号", "为 1 时，`偏航角`反向旋转"),
         new IOPort(26, 26, "俯仰角的符号", "为 1 时，`俯仰角`反向旋转"),
         new IOPort(27, 27, "翻滚角的符号", "为 1 时，`翻滚角`反向旋转"),
-        new IOPort(28, 28, "弹出提示", "从 0 变为 1 时，在屏幕上弹出提示"),
-        new IOPort(29, 32, "亮度", "设置显示的亮度，值越大越亮")
+        new IOPort(28, 32, "空", "无作用")
         
     ]),
     new ElectricConnection(ElectricConnectorDirection.Left, ElectricConnectorType.Input, ElectricConnectionDisplayMode.BitWidth, [
-        new IOPort(1, 32, "颜色", "设置显示的颜色，ABGR 颜色模式")
+        new IOPort(1, 16, "照片的高度", "建议不超过 8192 (0x2000)"),
+        new IOPort(17, 32, "照片的宽度", "建议不超过 8192 (0x2000)")
     ]),
         new ElectricConnection(ElectricConnectorDirection.In, ElectricConnectorType.Input, ElectricConnectionDisplayMode.BitWidth, [
-        new IOPort(1, 32, "存储器 ID", "变化后，将以 UTF8 编码读取指定 ID 的存储器中的数据，并立即写入到告示牌中，同时影响告示牌上直接显示和悬浮显示的文字"),
+        new IOPort(1, 32, "存储器 ID", "将图像输出到指定 ID 的存储器"),
     ])
 ];
 </script>
 
-# 告示牌 <Badge text="v1.0" type="info"/>
+# 照相机 <Badge text="v2.0"/>
 
 ## 概述
 
-不仅具有原版的显示文字、弹出提示功能，还可以额外悬浮显示文字，但只能记录一行文字
+用于拍照，分为以下两个版本
 
-## 端口定义
+## 简单照相机
 
-> 除后端外，其他端口操作的都是悬浮显示的文字
+<img alt="简单照相机 图示" src="/images/expand/sensors/GVCameraBlock0.webp" class="center_image small">
 
-<ElectricElement imgAltPrefix="十亿伏特告示牌" :connections="connections" imgSrc="/images/base/shift/GVSignBlock.webp"/>
+输入指定的存储器 ID，每次输入发生变化就会对着面对的方向拍照，视角为 90 度，分辨率为 512×512，并把图像的所有像素按 ABGR 颜色模式保存到指定的存储器中
+
+如果有多个输入，则会将这些输入进行或计算
+
+## 复杂照相机
+
+可以控制拍照的各项参数，详见下面接口定义
+
+### 端口定义
+
+<ElectricElement imgAltPrefix="复杂照相机" :connections="connections" imgSrc="/images/expand/sensors/GVCameraBlock1.webp" :titleLevel="4"/>
 
 > [!INFO] 💡 提示
 > 各方向的偏移范围为 ±4095.875 格

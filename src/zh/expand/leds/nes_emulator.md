@@ -48,4 +48,4 @@ let connections = [
 
 > 方块的各面输入会按或计算后执行
 
-<ElectricElement imgAltPrefix="红白机模拟器" :connections="connections" imgSrc="/images/expand/GVNesEmulatorBlock.png"/>
+<ElectricElement imgAltPrefix="红白机模拟器" :connections="connections" imgSrc="/images/expand/leds/GVNesEmulatorBlock.webp"/>
