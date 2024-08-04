@@ -18,7 +18,7 @@ const {
 } = defineProps<{
     connections: ElectricConnection[], imgSrc?: string, imgAltPrefix: string, gateMask?: string, titleLevel?: number, serial?: number
 }>();
-let imgAlt = `${imgAltPrefix} ${locale('ElectricElement', 'imgAltSuffix')}`;
+let imgAlt = `${imgAltPrefix} ${locale('imgAltSuffix')}`;
 if (connections.length > 0) {
     connections.forEach(connection => {
         switch (connection.Direction) {
@@ -78,7 +78,7 @@ const imgLoaded = () => {
 
 <template v-if="connections.length > 0">
     <template v-if="all">
-        <img :src="withBase(imgSrc)" :class="{[$style.gate_mask]:gateMask}" class="center_image small" :alt="imgAlt" :title="imgAlt" v-if="imgSrc"/>
+        <img :src="withBase(imgSrc)" :class="{'gate_mask': gateMask}" class="center_image small" :alt="imgAlt" :title="imgAlt" v-if="imgSrc"/>
         <ElectricConnectionTable :connection="all" :isWide="false" :titleLevel="titleLevel" :serial="serial"/>
     </template>
     <template v-else>
@@ -96,7 +96,7 @@ const imgLoaded = () => {
                 <a :class="$style.narrowA" style="writing-mode: vertical-lr;" :href="`#${leftTitle}${serial??''}`" v-else>{{ leftTitle }}</a>
             </div>
             <div style="grid-row-start: 2; grid-column-start: 2; place-self: stretch" v-if="imgSrc">
-                <img :src="withBase(imgSrc)" style="width: 100%; image-rendering: pixelated; object-fit: contain;" :alt="imgAlt" :title="imgAlt" :class="{[$style.gate_mask]:gateMask}" class="no_hover" ref="img" @load="imgLoaded"/>
+                <img :src="withBase(imgSrc)" style="width: 100%; image-rendering: pixelated; object-fit: contain;" :alt="imgAlt" :title="imgAlt" :class="{'gate_mask': gateMask}" class="no_hover" ref="img" @load="imgLoaded"/>
             </div>
             <div :class="[$style.surroundConnection, bottom.Type == ElectricConnectorType.Input ? $style.input : $style.output]" style="grid-row-start: 3; grid-column: 2 / 4;" v-if="bottom != null">
                 <ElectricConnectionTable :connection="bottom" :isWide="true" v-if="isWide" :titleLevel="titleLevel" :serial="serial"/>
@@ -141,10 +141,5 @@ const imgLoaded = () => {
     &.output {
         background-color: rgba(201, 144, 155, 0.25);
     }
-}
-
-.gate_mask {
-    mask-image: linear-gradient(2.3086rad, transparent 0% 17.5%, black 17.5% 100%), linear-gradient(-2.3086rad, transparent 0% 17.5%, black 17.5% 100%);
-    mask-composite: intersect;
 }
 </style>

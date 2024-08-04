@@ -399,6 +399,11 @@ main > .vp-doc table {
     background-image: linear-gradient(to bottom, LightCoral 0%, orange 50%, LightCoral 100%);
 }
 
+.gate_mask {
+    mask-image: linear-gradient(2.3086rad, transparent 0% 17.5%, black 17.5% 100%), linear-gradient(-2.3086rad, transparent 0% 17.5%, black 17.5% 100%);
+    mask-composite: intersect;
+}
+
 /*404*/
 .NotFound {
     & h1.title {

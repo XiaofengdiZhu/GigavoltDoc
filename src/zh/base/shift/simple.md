@@ -14,7 +14,7 @@ import Detonator from "/components/Detonator/Detonator.vue";
 ## 导线 <Badge text="v2.0"/>
 
 * ⭕ **原版**：创造模式物品栏提供 7 种颜色的导线
-* ⚡ **十亿伏特版**：创造模式物品栏提供 14 种颜色的导线，新增 [总线](../new/features)，新增的总线和有色导线如图
+* ⚡ **十亿伏特版**：创造模式物品栏提供 14 种颜色的导线，新增 [总线](../new/features)，新增的总线和有色导线如图，它们在`十亿伏特 变体`分类中
 
 <img src="/images/base/shift/wire.webp" alt="新增的有色导线和总线 图示" class="center_image"/>
 
@@ -49,7 +49,7 @@ import Detonator from "/components/Detonator/Detonator.vue";
 > 其他原本默认输出 1.5 V 的元件也将默认输出 0xFFFFFFFF V，包括经典版元件
 
 * 按钮可通过手动编辑，设置输出的持续周期数
-* 按钮和开关增加带颜色的版本，它们不会与异色导线相连接
+* 按钮和开关增加带颜色的版本，它们不会与异色导线相连接，这些有颜色的按钮和开关均在`十亿伏特 复数`分类中
 
 <img src="/images/base/shift/switch_and_button.webp" alt="新增的有色导线和总线 图示" class="center_image"/>
 

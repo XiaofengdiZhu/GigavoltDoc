@@ -141,6 +141,24 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                 ]
             },
             {
+                text: '计算',
+                collapsed: true,
+                items: [
+                    {
+                        text: '更多两入两出',
+                        link: '/zh/expand/gates/more_two_in_two_out'
+                    },
+                    {
+                        text: '更多单入单出',
+                        link: '/zh/expand/gates/more_one_in_one_out'
+                    },
+                    {
+                        text: 'JS 单片机',
+                        link: '/zh/expand/gates/javascript_microcontroller'
+                    }
+                ]
+            },
+            {
                 text: '存储器',
                 collapsed: true,
                 items: [
@@ -241,6 +259,16 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                     {
                         text: `箱子控制器`,
                         link: '/zh/expand/transportation/inventory_controller'
+                    }
+                ]
+            },
+            {
+                text: '其他',
+                collapsed: true,
+                items: [
+                    {
+                        text: '遥控器',
+                        link: '/zh/expand/others/remote_controller'
                     }
                 ]
             }

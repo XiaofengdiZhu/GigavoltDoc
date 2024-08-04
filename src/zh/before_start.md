@@ -22,7 +22,7 @@ next: false
 
 暂时还没有稳定版支持最新版本的本 mod，你需要自行从 [SurvivalCraft-UniAPI源码](https://gitee.com/THPRC/survivalcraft-api) 构建，或者下载其他人构建的
 
-本 mod 1.0版本支持的 API 版本为 1.53，在新版本API可能出现无法保存存储器数据等问题，可从 [此处下载](https://gitee.com/THPRC/survivalcraft-api/releases/tag/api1.53P)
+本 mod 1.0 版本支持的 API 版本为 1.53，在新版本API可能出现无法保存存储器数据等问题，可从 [此处下载](https://gitee.com/THPRC/survivalcraft-api/releases/tag/api1.53P)
 
 ## 32 位位宽的意义
 
