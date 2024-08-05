@@ -312,6 +312,10 @@ th, td {
     margin-right: 0.5em;
 }
 
+.vp-doc strong a {
+    font-weight: 600;
+}
+
 main > .vp-doc img {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     transition: filter 0.3s ease-in-out;

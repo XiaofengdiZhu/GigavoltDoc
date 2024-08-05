@@ -31,7 +31,7 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
         text: '十亿伏特',
         items: [
             {
-                text: '简介',
+                text: '简介（首页）',
                 link: '/zh/index'
             },
             {
@@ -237,28 +237,32 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                 collapsed: true,
                 items: [
                     {
-                        text: `固态空气`,
+                        text: '固态空气',
                         link: '/zh/expand/transportation/solidified_air'
                     },
                     {
-                        text: `制导发射器`,
+                        text: '制导发射器',
                         link: '/zh/expand/transportation/guided_dispenser'
                     },
                     {
-                        text: `更多投射物`,
+                        text: '更多投射物',
                         link: '/zh/expand/transportation/more_projectiles'
                     },
                     {
-                        text: `吸引器`,
+                        text: '吸引器',
                         link: '/zh/expand/transportation/attractor'
                     },
                     {
-                        text: `箱子提取器`,
+                        text: '箱子提取器',
                         link: '/zh/expand/transportation/inventory_fetcher'
                     },
                     {
-                        text: `箱子控制器`,
+                        text: '箱子控制器',
                         link: '/zh/expand/transportation/inventory_controller'
+                    },
+                    {
+                        text: '牵引光束',
+                        link: '/zh/expand/transportation/tractor_beam'
                     }
                 ]
             },
@@ -269,6 +273,10 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                     {
                         text: '遥控器',
                         link: '/zh/expand/others/remote_controller'
+                    },
+                    {
+                        text: '玩家控制器',
+                        link: '/zh/expand/others/player_controller'
                     }
                 ]
             }
