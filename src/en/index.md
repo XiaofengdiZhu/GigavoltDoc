@@ -10,17 +10,20 @@ hero:
     actions:
         -   theme: brand
             text: 📖 Start Learning
+            link: /en/before_start
         -   theme: alt
             text: Examples
+            link: /en/examples
         -   theme: alt
             text: Download
+            link: /en/download
         -   theme: alt
             text: 中文
             link: /zh/
 
 features:
-    -   title: 📏 Super Wide Bandwidth
-        details: With a 32-bit bandwidth, it brings a 7-fold efficiency improvement in signal transmission and a 2,251,799,813,685,247-fold increase in data storage capacity
+    -   title: 📏 Super Wide Bitwidth
+        details: With a 32-bit Bitwidth, it brings a 7-fold efficiency improvement in signal transmission and a 2,251,799,813,685,247-fold increase in data storage capacity
     -   title: 🚀 Infinite Possibilities
         details: From corner-turning wire through blocks to Multiplexer, from arithmetic gates to NES emulator... Over one hundred kinds of electric elements have been added cumulatively
     -   title: 📚 Clear Documentation

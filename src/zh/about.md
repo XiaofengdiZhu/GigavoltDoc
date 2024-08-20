@@ -49,6 +49,36 @@ mod 源码：[GitHub](https://github.com/XiaofengdiZhu/Gigavolt/)
 
 GitHub Project：[点我打开](https://github.com/users/XiaofengdiZhu/projects/1/views/1)
 
+## 如何构建
+
+1. 首先使用 [Git](https://git-scm.com/downloads) 克隆此仓库
+
+```bat
+git clone https://github.com/XiaofengdiZhu/Gigavolt/
+```
+
+2. 进入此仓库
+
+```bat
+cd Gigavolt
+```
+
+3. 更新子模块
+
+```bat
+git submodule update --init
+```
+
+4. 使用 [Python](https://www.python.org/downloads/) 安装 [antlr4-tools](https://github.com/antlr/antlr4-tools)
+
+```
+pip install antlr4-tools
+```
+
+> 可能需要重启电脑
+
+5. 使用 [Visual Studio](https://visualstudio.microsoft.com/) 打开`Gigavolt`目录中的`Gigavolt.sln`，点击`生成`-`生成解决方案`，如果报错未安装相应功能，请按提示完成安装
+
 ## 依赖项
 
 > 不含依赖项的依赖项
@@ -80,4 +110,4 @@ GitHub Project：[点我打开](https://github.com/users/XiaofengdiZhu/projects/
 ## 依赖者
 
 * 命令方块 mod 适配十亿伏特 mod：[AdaptCommandBlockForGigavolt](https://github.com/XiaofengdiZhu/AdaptCommandBlockForGigavolt)
-* 上端输出的真值表：ExTruthTable by [把红色赋予黑海_](https://gitee.com/THPRC)
+* 另一种真值表：ExTruthTable by [把红色赋予黑海_](https://gitee.com/THPRC)

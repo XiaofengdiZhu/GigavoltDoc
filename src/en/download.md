@@ -1,22 +1,22 @@
 ---
-title: MOD下载
+title: MOD Download
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 hero:
-    name: MOD 下载
+    name: MOD Download
     text: " "
     tagline: " "
     actions:
         -   theme: brand
-            text: 十亿伏特
+            text: Gigavolt
         -   theme: brand
-            text: 十亿伏特 · 扩展
+            text: Gigavolt.Expand
         -   theme: alt
-            text: 历史版本
+            text: History Versions
             link: https://github.com/XiaofengdiZhu/Gigavolt/releases
         -   theme: alt
-            text: 查看文档
-            link: /zh/before_start
+            text: Read Doc
+            link: /en/before_start
 ---
 
 <script setup lang="ts">

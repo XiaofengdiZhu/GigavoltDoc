@@ -10,7 +10,7 @@
 
 内部设计如下图：
 
-<img alt="路选器内部设计 图示" src="/images/expand/wires/MultiplexerDiagram.svg" style="margin: 0 auto 32px; border-radius: 8px;">
+<img alt="路选器内部设计 图示" src="/images/expand/wires/MultiplexerDiagram.svg" style="margin: 0 auto 32px; border-radius: 8px; padding: 8px; background-color: white;">
 
 * 圆圈代表电压节点，`A`&#8203;`B`&#8203;`C`&#8203;`D`四个节点是电路板正面`上端`&#8203;`右端`&#8203;`下端`&#8203;`左端`，剩下的`a`&#8203;`b`&#8203;`c`&#8203;`d`&#8203;`O`是辅助节点
 * 虚线代表常断通路，共 10 条；实线代表常通通路，共 4 条

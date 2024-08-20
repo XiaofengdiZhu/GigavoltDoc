@@ -9,12 +9,12 @@ import Detonator from "/components/Detonator/Detonator.vue";
 
 # 简单元件的变体
 
-> 原版可与电路交互的`木刺陷阱`、`圣诞树`、`火药桶`、`温度计`、`湿度计`，本 mod 未提供经典版或变体版
+> 原版可与电路交互的`木刺陷阱`&#8203;`圣诞树`&#8203;`火药桶`&#8203;`温度计`&#8203;`湿度计`，本 mod 未提供经典版或变体版
 
 ## 导线 <Badge text="v2.0"/>
 
 * ⭕ **原版**：创造模式物品栏提供 7 种颜色的导线
-* ⚡ **十亿伏特版**：创造模式物品栏提供 14 种颜色的导线，新增 [总线](../new/features)，新增的总线和有色导线如图，它们在`十亿伏特 变体`分类中
+* ⚡ **十亿伏特版**：创造模式物品栏提供 14 种颜色的导线，新增 [总线](../new/elements#总线)，新增的总线和有色导线如图，它们在`十亿伏特 变体`分类中
 
 <img src="/images/base/shift/wire.webp" alt="新增的有色导线和总线 图示" class="center_image"/>
 
@@ -28,7 +28,7 @@ import Detonator from "/components/Detonator/Detonator.vue";
 ### ⚡ 十亿伏特版
 
 * 顶部输出
-* 不可手动弹窗调节延迟时长，需通过背面输入的电压可调节，初始延迟 0.01 秒，背面输入电压每加 1 V，延迟增加 0.01 秒，背面输入大于等于 0xFF V 时，延迟达到最大值 2.56 秒；不可手动调整延迟时长
+* 不可手动调节延迟时长，需通过背面输入的电压可调节，初始延迟 0.01 秒，背面输入电压每加 1 V，延迟增加 0.01 秒，背面输入大于等于 0xFF V 时，延迟达到最大值 2.56 秒
 
 ## SR 锁存器 <Badge text="v1.0" type="info"/>
 
@@ -49,7 +49,7 @@ import Detonator from "/components/Detonator/Detonator.vue";
 > 其他原本默认输出 1.5 V 的元件也将默认输出 0xFFFFFFFF V，包括经典版元件
 
 * 按钮可通过手动编辑，设置输出的持续周期数
-* 按钮和开关增加带颜色的版本，它们不会与异色导线相连接，这些有颜色的按钮和开关均在`十亿伏特 复数`分类中
+* 按钮和开关增加带颜色的版本，它们不会与异色导线相连接（除了总线），这些有颜色的按钮和开关均在`十亿伏特 复数`分类中
 
 <img src="/images/base/shift/switch_and_button.webp" alt="新增的有色导线和总线 图示" class="center_image"/>
 
@@ -70,7 +70,7 @@ import Detonator from "/components/Detonator/Detonator.vue";
 * 默认溢出电压为 0x100000000 V，上限 0xFFFFFFFF V
 * 可通过手动编辑，设置溢出、初始电压，还能直接调整当前电压
 
-## 压力板  <Badge text="v1.0" type="info"/>
+## 压力板 <Badge text="v1.0" type="info"/>
 
 * ⭕ **原版**：有压力时输出 0.8 \~ 1.5 V，随意设置的压力与电压关系
 * ⚡ **十亿伏特版**：输出准确的压力值，参考结果：男性玩家 0x46 V，虎鲸 0x5DC V
@@ -85,22 +85,21 @@ import Detonator from "/components/Detonator/Detonator.vue";
 ### ⚡ 十亿伏特版
 
 * 输入大于 0 V 电压时开始伸长
-* 最大伸长、推拉 2^32^-1 格，也提高了更快速度的选项（推拉过多方块时卡住是游戏其他子系统问题）
+* 最大伸长、推拉 2^32^-1 格（推拉过多方块时卡住是游戏其他子系统问题）
+* 更多速度选项
 * 新增隐藏延长杆的选项（伸缩时生效）
 * 另有 [复杂版](complex_piston)
 
-## 彩色 LED、1 面LED <Badge text="v1.0" type="info"/>
+## 彩色 LED、1 面 LED <Badge text="v1.0" type="info"/>
 
 ### ⭕ 原版
 
-* 输入 0.8 \~ 1.5 V 对应不同颜色
-* 输入 0 V 时显示
+输入 0.8 \~ 1.5 V 对应8种不同颜色
 
 ### ⚡ 十亿伏特版
 
-* 输入所有电压均对应不同颜色（`ABGR`颜色模式）
-* 1 面 LED 使用独立的发光子系统，支持半透明，可无缝拼接
-* 输入0时不显示
+* 所有输入电压均对应不同颜色（`ABGR`颜色模式，当透明度通道大于 0 时）
+* 1 面 LED 整面全部发光，可无缝拼接
 
 > [!TIP] 📝 ABGR 颜色模式
 > 从高位到低位，每 8 位分别为颜色的 <span style="opacity:0.6;">Alpha 透明度通道</span>、<span style="color:blue;">Blue 蓝色通道</span>、<span style="color:green;">Green 绿色通道</span>、<span style="color:red;">Red 红色通道</span>，可使用下面的电压颜色转换器来转换
@@ -118,6 +117,7 @@ import Detonator from "/components/Detonator/Detonator.vue";
 ## 电子雷管 <Badge text="v1.0" type="info"/>
 
 <Detonator/>
+
 * ⭕ **原版**：输入 0.8 V 及以上电压产生威力为 10 的爆炸
 * ⚡ **十亿伏特版**：输入 0 V 以上电压产生威力等于电压值的爆炸，输入 0xFFFFFFFF V 有彩蛋
 

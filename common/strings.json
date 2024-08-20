@@ -38,7 +38,7 @@
     },
     {
       "zh": "后端",
-      "en": "In"
+      "en": "Back"
     },
     {
       "zh": "全部",
@@ -76,6 +76,22 @@
     "en": "Yuru-chara"
   },
   "UintColorConverter": {
+    "Red": {
+      "zh": "红\u2003色：",
+      "en": "Red: "
+    },
+    "Green": {
+      "zh": "绿\u2003色：",
+      "en": "Green: "
+    },
+    "Blue": {
+      "zh": "蓝\u2003色：",
+      "en": "Blue: "
+    },
+    "Alpha": {
+      "zh": "透明度：",
+      "en": "Alpha: "
+    },
     "Voltage": {
       "zh": "电压：",
       "en": "Voltage: "
@@ -96,7 +112,7 @@
     },
     "Output": {
       "zh": "上端和后端输出",
-      "en": "Top & In Output"
+      "en": "Top & Back Output"
     },
     "Decimal": {
       "zh": "小数：",
@@ -190,7 +206,7 @@
     },
     "BasicOutput": {
       "zh": "上端和后端输出",
-      "en": "Top & In Output"
+      "en": "Top & Back Output"
     },
     "OverflowOutput": {
       "zh": "下端输出",

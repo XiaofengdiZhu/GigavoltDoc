@@ -7,20 +7,48 @@ export const nav: DefaultTheme.NavItem[] = [
     },
     {
         text: 'Docs',
-        link: ''
+        link: '/en/before_start'
     },
     {
         text: 'Examples',
-        link: ''
+        link: '/en/examples'
     },
     {
         text: 'Download',
-        link: ''
+        link: '/en/download'
     },
     {
         text: 'About',
-        link: ''
+        link: '/en/about'
     }
 ];
+export const sidebar: DefaultTheme.SidebarItem[] = [
+    {
+        text: 'Before Start',
+        link: '/en/before_start'
+    },
+    {
+        text: 'Gigavolt',
+        items: [
+            {
+                text: 'Introduction（Home）',
+                link: '/en/index'
+            },
 
-export const sidebar: DefaultTheme.Sidebar[] = [];
+            {
+                text: 'Shifts of Vanilla',
+                collapsed: true,
+                items: [
+                    {
+                        text: 'Simple Elements',
+                        link: '/en/base/shift/simple'
+                    },
+                    {
+                        text: 'D/A & A/D Converter',
+                        link: '/en/base/shift/converter'
+                    }
+                ]
+            }
+        ]
+    }
+];

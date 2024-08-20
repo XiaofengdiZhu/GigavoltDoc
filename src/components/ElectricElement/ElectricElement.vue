@@ -78,7 +78,7 @@ const imgLoaded = () => {
 
 <template v-if="connections.length > 0">
     <template v-if="all">
-        <img :src="withBase(imgSrc)" :class="{'gate_mask': gateMask}" class="center_image small" :alt="imgAlt" :title="imgAlt" v-if="imgSrc"/>
+        <img :src="withBase(imgSrc)" :class="{'gate_mask': gateMask}" class="center_image small" :alt="imgAlt" :title="imgAlt" v-if="imgSrc" style="margin-top: 16px;"/>
         <ElectricConnectionTable :connection="all" :isWide="false" :titleLevel="titleLevel" :serial="serial"/>
     </template>
     <template v-else>
@@ -121,6 +121,7 @@ const imgLoaded = () => {
     display: grid;
     grid-gap: 8px;
     place-items: start;
+    margin-top: 16px;
 
     & .narrowA {
         color: var(--vp-c-text-1);

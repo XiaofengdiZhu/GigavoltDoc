@@ -4,7 +4,7 @@ import sup from 'markdown-it-sup';
 import multimd_table from 'markdown-it-multimd-table';
 import {nav as nav_zh, sidebar as sidebar_zh} from "./zh";
 import {nav as nav_en, sidebar as sidebar_en} from "./en";
-import {pagefindPlugin, chineseSearchOptimize} from 'vitepress-plugin-pagefind'
+import {pagefindPlugin, chineseSearchOptimize} from 'vitepress-plugin-pagefind';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -46,7 +46,7 @@ export default defineConfig({
         ],
         nav: [
             {
-                text: 'English (Not available)',
+                text: 'English',
                 link: '/en/'
             },
             {
@@ -112,7 +112,7 @@ export default defineConfig({
         en: {
             title: 'Gigavolt',
             titleTemplate: 'Gigavolt Doc',
-            label: 'English (Not available)',
+            label: 'English',
             lang: 'en',
             link: '/en/',
             themeConfig: {

@@ -5,20 +5,29 @@ import locale from "../../common/locale";
 
 const color = ref({
     Red: 0,
-    RedHex: "",
+    RedString: "",
     Green: 0,
-    GreenHex: "",
+    GreenString: "",
     Blue: 0,
-    BlueHex: "",
+    BlueString: "",
     Alpha: 0,
-    AlphaHex: "",
-    VoltageHex: "",
+    AlphaString: "",
+    VoltageString: "",
     Hue: 0,
     Saturation: 0,
     Value: 0,
     RGBResult: "",
     RGBAResult: "",
-    highContrastResult: ""
+    RGBResultWithFullValue: "",
+    RGBResultWithoutBlue: "",
+    RGBResultWithFullBlue: "",
+    RGBResultWithoutGreen: "",
+    RGBResultWithFullGreen: "",
+    RGBResultWithoutRed: "",
+    RGBResultWithFullRed: "",
+    highContrastResult: "",
+    Radix: 16,
+    Pattern: "[0-9a-fA-F]{1,2}"
 });
 
 const showEyeDropper = ref(false);
@@ -44,21 +53,29 @@ const SetHSV = (hue: number | null = null, saturation: number | null = null, val
     }
     let rgb = HSV2RGB(hue, saturation, value);
     color.value.Red = rgb[0];
-    color.value.RedHex = rgb[0].toString(16).toUpperCase();
+    color.value.RedString = rgb[0].toString(color.value.Radix).toUpperCase();
     color.value.Green = rgb[1];
-    color.value.GreenHex = rgb[1].toString(16).toUpperCase();
+    color.value.GreenString = rgb[1].toString(color.value.Radix).toUpperCase();
     color.value.Blue = rgb[2];
-    color.value.BlueHex = rgb[2].toString(16).toUpperCase();
-    color.value.VoltageHex = RGBA2Voltage(color.value.Red, color.value.Green, color.value.Blue, color.value.Alpha);
+    color.value.BlueString = rgb[2].toString(color.value.Radix).toUpperCase();
+    color.value.VoltageString = RGBA2Voltage(color.value.Red, color.value.Green, color.value.Blue, color.value.Alpha, color.value.Radix);
     color.value.RGBResult = `rgb(${rgb[0]}, ${rgb[1]},${rgb[2]})`;
     color.value.RGBAResult = `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, ${color.value.Alpha})`;
+    let rgbWithFullValue = HSV2RGB(hue, saturation, 100);
+    color.value.RGBResultWithFullValue = `rgb(${rgbWithFullValue[0]}, ${rgbWithFullValue[1]}, ${rgbWithFullValue[2]})`;
+    color.value.RGBResultWithoutBlue = `rgb(${rgb[0]}, ${rgb[1]}, 0)`;
+    color.value.RGBResultWithFullBlue = `rgb(${rgb[0]}, ${rgb[1]}, 255)`;
+    color.value.RGBResultWithoutGreen = `rgb(${rgb[0]}, 0, ${rgb[2]})`;
+    color.value.RGBResultWithFullGreen = `rgb(${rgb[0]}, 255, ${rgb[2]})`;
+    color.value.RGBResultWithoutRed = `rgb(0, ${rgb[1]}, ${rgb[2]})`;
+    color.value.RGBResultWithFullRed = `rgb(255, ${rgb[1]}, ${rgb[2]})`;
     color.value.highContrastResult = getHighContrast(rgb[0], rgb[1], rgb[2], color.value.Alpha);
 }
 
 const SetAlpha = (alpha: number) => {
     color.value.Alpha = alpha;
-    color.value.AlphaHex = Math.round(alpha * 255).toString(16).toUpperCase();
-    color.value.VoltageHex = RGBA2Voltage(color.value.Red, color.value.Green, color.value.Blue, alpha);
+    color.value.AlphaString = Math.round(alpha * 255).toString(color.value.Radix).toUpperCase();
+    color.value.VoltageString = RGBA2Voltage(color.value.Red, color.value.Green, color.value.Blue, alpha, color.value.Radix);
     color.value.RGBAResult = `rgba(${color.value.Red}, ${color.value.Green}, ${color.value.Blue}, ${alpha})`;
     color.value.highContrastResult = getHighContrast(color.value.Red, color.value.Green, color.value.Blue, alpha);
 }
@@ -66,40 +83,48 @@ const SetAlpha = (alpha: number) => {
 const SetRGBA = (red: number | null = null, green: number | null = null, blue: number | null = null, alpha: number | null = null) => {
     if (red !== null) {
         color.value.Red = red;
-        color.value.RedHex = red.toString(16).toUpperCase();
+        color.value.RedString = red.toString(color.value.Radix).toUpperCase();
     }
     else {
         red = color.value.Red;
     }
     if (green !== null) {
         color.value.Green = green;
-        color.value.GreenHex = green.toString(16).toUpperCase();
+        color.value.GreenString = green.toString(color.value.Radix).toUpperCase();
     }
     else {
         green = color.value.Green;
     }
     if (blue !== null) {
         color.value.Blue = blue;
-        color.value.BlueHex = blue.toString(16).toUpperCase();
+        color.value.BlueString = blue.toString(color.value.Radix).toUpperCase();
     }
     else {
         blue = color.value.Blue;
     }
     if (alpha !== null) {
         color.value.Alpha = alpha;
-        color.value.AlphaHex = Math.round(alpha * 255).toString(16).toUpperCase();
+        color.value.AlphaString = Math.round(alpha * 255).toString(color.value.Radix).toUpperCase();
     }
     else {
         alpha = color.value.Alpha;
     }
-    color.value.VoltageHex = RGBA2Voltage(red, green, blue, alpha);
+    color.value.VoltageString = RGBA2Voltage(red, green, blue, alpha, color.value.Radix);
     color.value.RGBResult = `rgb(${red}, ${green}, ${blue})`;
     color.value.RGBAResult = `rgba(${red}, ${green}, ${blue}, ${alpha})`;
-    color.value.highContrastResult = getHighContrast(red, green, blue, alpha);
     let hsv = RGB2HSV(red, green, blue);
     color.value.Hue = hsv[0];
     color.value.Saturation = hsv[1];
     color.value.Value = hsv[2];
+    let rgbWithFullValue = HSV2RGB(hsv[0], hsv[1], 100);
+    color.value.RGBResultWithFullValue = `rgb(${rgbWithFullValue[0]}, ${rgbWithFullValue[1]}, ${rgbWithFullValue[2]})`;
+    color.value.RGBResultWithoutBlue = `rgb(${red}, ${green}, 0)`;
+    color.value.RGBResultWithFullBlue = `rgb(${red}, ${green}, 255)`;
+    color.value.RGBResultWithoutGreen = `rgb(${red}, 0, ${blue})`;
+    color.value.RGBResultWithFullGreen = `rgb(${red}, 255, ${blue})`;
+    color.value.RGBResultWithoutRed = `rgb(0, ${green}, ${blue})`;
+    color.value.RGBResultWithFullRed = `rgb(255, ${green}, ${blue})`;
+    color.value.highContrastResult = getHighContrast(red, green, blue, alpha);
 }
 
 const OpenEyeDropper = () => {
@@ -116,24 +141,31 @@ const OnInputChange = (target: EventTarget, channel: string) => {
     if (element.validity?.valid) {
         switch (channel.toLowerCase()) {
             case "red":
-                SetRGBA(parseInt(element.value, 16), null, null, null);
+                SetRGBA(parseInt(element.value, color.value.Radix), null, null, null);
                 break;
             case "green":
-                SetRGBA(null, parseInt(element.value, 16), null, null);
+                SetRGBA(null, parseInt(element.value, color.value.Radix), null, null);
                 break;
             case "blue":
-                SetRGBA(null, null, parseInt(element.value, 16), null);
+                SetRGBA(null, null, parseInt(element.value, color.value.Radix), null);
                 break;
             case "alpha":
-                SetRGBA(null, null, null, parseInt(element.value, 16) / 255);
+                SetRGBA(null, null, null, parseInt(element.value, color.value.Radix) / 255);
                 break;
             case "voltage":
-                let rgba = Voltage2RGBA(element.value);
+                let rgba = Voltage2RGBA(element.value, color.value.Radix);
                 SetRGBA(rgba[0], rgba[1], rgba[2], rgba[3]);
                 break;
         }
     }
 }
+
+const switchRadix = () => {
+    color.value.Radix = color.value.Radix == 16 ? 10 : 16;
+    SetRGBA(color.value.Red, color.value.Green, color.value.Blue, color.value.Alpha);
+    color.value.Pattern = color.value.Radix == 16 ? "[0-9a-fA-F]{1,2}" : "\\d{1,3}";
+}
+
 let operationTarget: HTMLElement;
 let operationTargetName: string;
 
@@ -145,8 +177,20 @@ function actOperation(targetName: string, x: number, y: number) {
         case "hue":
             SetHSV(Math.round(x * 360), null, null);
             break;
+        case "value":
+            SetHSV(null, null, Math.round(x * 100));
+            break;
         case "alpha":
             SetAlpha(x);
+            break;
+        case "blue":
+            SetRGBA(null, null, Math.round(x * 255), null);
+            break;
+        case "green":
+            SetRGBA(null, Math.round(x * 255), null, null);
+            break;
+        case "red":
+            SetRGBA(Math.round(x * 255), null, null, null);
             break;
     }
 }
@@ -326,13 +370,20 @@ function HSV2RGB(hue: number, saturation: number, value: number) {
     }
 }
 
-function RGBA2Voltage(red: number, green: number, blue: number, alpha: number) {
+function RGBA2Voltage(red: number, green: number, blue: number, alpha: number, radix: number) {
     const integer = (((Math.round(alpha * 255) & 0xFF) << 24) >>> 0) + ((Math.round(blue) & 0xFF) << 16) + ((Math.round(green) & 0xFF) << 8) + (Math.round(red) & 0xFF);
-    const string = integer.toString(16).toUpperCase();
+    let string = integer.toString(radix);
+    if (radix == 10) {
+        return string;
+    }
+    string = string.toUpperCase();
     return '00000000'.substring(string.length) + string;
 }
 
-function Voltage2RGBA(voltage: string) {
+function Voltage2RGBA(voltage: string, radix: number) {
+    if (radix == 10) {
+        voltage = parseInt(voltage, 10).toString(16);
+    }
     return [
         parseInt(voltage.substring(6, 8), 16) / 255,
         parseInt(voltage.substring(4, 6), 16),
@@ -370,22 +421,21 @@ onMounted(() => {
 </script>
 
 <template>
-    <div style="width: 248px; padding: 16px; border: var(--vp-c-border) solid 1px; border-radius: 8px; margin: 0 auto; background-color: var(--vp-c-bg);">
-        <div style="position: relative; width: 216px; height: 180px; margin: 0 auto 16px; box-shadow: 0 0 2px 0 rgba(0, 0, 0, .24); cursor: crosshair;" @mousedown="event=>OnMouseDown(event,'panel')" @touchstart="event=>OnTouchStart(event,'panel')">
+    <div style="width: 254px; padding: 16px; border: var(--vp-c-border) solid 1px; border-radius: 8px; margin: 0 auto; background-color: var(--vp-c-bg);">
+        <div style="position: relative; width: 100%; height: 200px; margin: 0 auto 16px; box-shadow: 0 0 2px 0 rgba(0, 0, 0, .24); cursor: crosshair;" @mousedown="event=>OnMouseDown(event,'panel')" @touchstart="event=>OnTouchStart(event,'panel')">
             <div :class="$style.full" :style="{backgroundImage: `linear-gradient(90deg, white, hsl(${color.Hue}, 100%, 50%))`}"></div>
             <div :class="$style.full" style="position: absolute; top: 0; background-image: linear-gradient(transparent, black);"></div>
             <div :class="$style.handler" :style="{backgroundColor:color.RGBResult, left: `${color.Saturation}%`, 'top': `${100-color.Value}%`}"></div>
         </div>
-        <div style="display: flex; justify-content: space-between; align-items: center;">
-            <div style="width: calc(100% - 42px);">
+        <div style="display: flex; justify-content: space-between; align-items: center; gap: 12px;">
+            <div style="width: 100%;">
                 <div :class="$style.slider_container" @mousedown="event=>OnMouseDown(event,'hue')" @touchstart="event=>OnTouchStart(event,'hue')">
                     <div :class="$style.slider_background" style="background-image: linear-gradient(90deg, red, rgb(255, 255, 0) 16.66%, rgb(0, 255, 0) 33.33%, rgb(0, 255, 255) 50%, rgb(0, 0, 255) 66.66%, rgb(255, 0, 255) 83.33%, red); "></div>
                     <div :class="$style.handler" :style="{left: `${color.Hue / 3.6}%`, backgroundColor:`hsl(${color.Hue}, 100%, 50%)`}"></div>
                 </div>
-                <div :class="$style.slider_container" style="margin-top: 8px;" @mousedown="event=>OnMouseDown(event,'alpha')" @touchstart="event=>OnTouchStart(event,'alpha')">
-                    <div :class="[$style.slider_background, $style.chessboard]"></div>
-                    <div :class="$style.slider_background" :style="{backgroundImage: `linear-gradient(to right, transparent, ${color.RGBResult})`}" style="position: absolute; top: 0;"></div>
-                    <div :class="$style.handler" :style="{left: `${color.Alpha * 100}%`, backgroundColor: color.RGBAResult}"></div>
+                <div :class="$style.slider_container" style="margin-top: 8px;" @mousedown="event=>OnMouseDown(event,'value')" @touchstart="event=>OnTouchStart(event,'value')">
+                    <div :class="$style.slider_background" :style="{backgroundImage: `linear-gradient(to right, black, ${color.RGBResultWithFullValue})`}" style="position: absolute; top: 0;"></div>
+                    <div :class="$style.handler" :style="{left: `${color.Value}%`, backgroundColor: color.RGBResult}"></div>
                 </div>
             </div>
             <div @click="OpenEyeDropper()" :class="$style.chessboard" style="position: relative; width: 30px; height: 30px; border-radius: 15px; cursor: pointer; box-shadow: 0 0 2px 0 rgba(0, 0, 0, .24)">
@@ -396,27 +446,56 @@ onMounted(() => {
                 </div>
             </div>
         </div>
-        <div style="display:flex; justify-content: space-between; margin-top: 16px;">
-            <div style="position: relative; width: 44px;">
-                <span :class="$style.input_span"><span style="opacity: 0.6;">A</span></span>
-                <input type="text" :class="$style.input_text" pattern="[0-9a-fA-F]{1,2}" :value="color.AlphaHex" @input="event=>{OnInputChange(event.target, 'alpha')}">
+        <div :class="$style.color_component_container" style="padding-right: 0">
+            <div style="position: relative;">
+                <span>{{ locale("UintColorConverter", "Voltage") }}</span>
+                <input type="text" :class="$style.input_text" :pattern="color.Radix == 16 ? '[0-9a-fA-F]{8}':'\\d{1,10}'" :value="color.VoltageString" @input="event=>{OnInputChange(event.target, 'voltage')}" style="width: 100px;">
             </div>
-            <div style="position: relative; width: 44px;">
-                <span :class="$style.input_span" style="color: blue;">B</span>
-                <input type="text" :class="$style.input_text" pattern="[0-9a-fA-F]{1,2}" :value="color.BlueHex" @input="event=>{OnInputChange(event.target, 'blue')}">
-            </div>
-            <div style="position: relative; width: 44px;">
-                <span :class="$style.input_span" style="color: green;">G</span>
-                <input type="text" :class="$style.input_text" pattern="[0-9a-fA-F]{1,2}" :value="color.GreenHex" @input="event=>{OnInputChange(event.target, 'green')}">
-            </div>
-            <div style="position: relative; width: 44px;">
-                <span :class="$style.input_span" style="color: red;">R</span>
-                <input type="text" :class="$style.input_text" pattern="[0-9a-fA-F]{1,2}" :value="color.RedHex" @input="event=>{OnInputChange(event.target, 'red')}">
+            <div style=" border: 1px solid var(--vp-c-border); border-radius: 4px; padding: 0 6px; line-height: 30px; font-size: 13px; cursor: pointer;" @click="switchRadix">
+                <span>{{ color.Radix == 16 ? "HEX" : "DEC" }}</span>
+                <div style="display: inline-block; rotate: 90deg; margin-left: 6px;">›</div>
             </div>
         </div>
-        <div style="position: relative; width: 100%; margin-top: 16px;">
-            {{ locale("UintColorConverter", "Voltage") }}
-            <input type="text" :class="$style.input_text" pattern="[0-9a-fA-F]{8}" :value="color.VoltageHex" @input="event=>{OnInputChange(event.target, 'voltage')}" style="width: 120px;">
+        <div :class="$style.color_component_container">
+            <div style="position: relative; width: 44px;">
+                <span :class="$style.input_span"><span style="opacity: 0.6;">A</span></span>
+                <input type="text" :class="$style.input_text" :pattern="color.Pattern" :value="color.AlphaString" @input="event=>{OnInputChange(event.target, 'alpha')}" style="width: 44px;">
+            </div>
+            <div :class="$style.slider_container" @mousedown="event=>OnMouseDown(event,'alpha')" @touchstart="event=>OnTouchStart(event,'alpha')">
+                <div :class="[$style.slider_background, $style.chessboard]"></div>
+                <div :class="$style.slider_background" :style="{backgroundImage: `linear-gradient(to right, transparent, ${color.RGBResult})`}" style="position: absolute; top: 0;"></div>
+                <div :class="$style.handler" :style="{left: `${color.Alpha * 100}%`, backgroundColor: color.RGBAResult}"></div>
+            </div>
+        </div>
+        <div :class="$style.color_component_container">
+            <div style="position: relative; width: 44px;">
+                <span :class="$style.input_span"><span style="color: blue;">B</span></span>
+                <input type="text" :class="$style.input_text" :pattern="color.Pattern" :value="color.BlueString" @input="event=>{OnInputChange(event.target, 'blue')}" style="width: 44px;">
+            </div>
+            <div :class="$style.slider_container" @mousedown="event=>OnMouseDown(event,'blue')" @touchstart="event=>OnTouchStart(event,'blue')">
+                <div :class="$style.slider_background" :style="{backgroundImage: `linear-gradient(to right, ${color.RGBResultWithoutBlue}, ${color.RGBResultWithFullBlue})`}" style="position: absolute; top: 0;"></div>
+                <div :class="$style.handler" :style="{left: `${color.Blue / 2.55}%`, backgroundColor: color.RGBResult}"></div>
+            </div>
+        </div>
+        <div :class="$style.color_component_container">
+            <div style="position: relative; width: 44px;">
+                <span :class="$style.input_span"><span style="color: green;">G</span></span>
+                <input type="text" :class="$style.input_text" :pattern="color.Pattern" :value="color.GreenString" @input="event=>{OnInputChange(event.target, 'green')}" style="width: 44px;">
+            </div>
+            <div :class="$style.slider_container" @mousedown="event=>OnMouseDown(event,'green')" @touchstart="event=>OnTouchStart(event,'green')">
+                <div :class="$style.slider_background" :style="{backgroundImage: `linear-gradient(to right, ${color.RGBResultWithoutGreen}, ${color.RGBResultWithFullGreen})`}" style="position: absolute; top: 0;"></div>
+                <div :class="$style.handler" :style="{left: `${color.Green / 2.55}%`, backgroundColor: color.RGBResult}"></div>
+            </div>
+        </div>
+        <div :class="$style.color_component_container">
+            <div style="position: relative; width: 44px;">
+                <span :class="$style.input_span"><span style="color: red;">R</span></span>
+                <input type="text" :class="$style.input_text" :pattern="color.Pattern" :value="color.RedString" @input="event=>{OnInputChange(event.target, 'red')}" style="width: 44px;">
+            </div>
+            <div :class="$style.slider_container" @mousedown="event=>OnMouseDown(event,'red')" @touchstart="event=>OnTouchStart(event,'red')">
+                <div :class="$style.slider_background" :style="{backgroundImage: `linear-gradient(to right, ${color.RGBResultWithoutRed}, ${color.RGBResultWithFullRed})`}" style="position: absolute; top: 0;"></div>
+                <div :class="$style.handler" :style="{left: `${color.Red / 2.55}%`, backgroundColor: color.RGBResult}"></div>
+            </div>
         </div>
     </div>
 </template>
@@ -464,6 +543,15 @@ onMounted(() => {
     background-size: 12px 12px;
     background-position: 0 0, 0 6px, 6px -6px, -6px 0;
     background-repeat: repeat;
+}
+
+.color_component_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+    padding-right: 6px;
 }
 
 .input_span {
