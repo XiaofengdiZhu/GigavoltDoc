@@ -20,7 +20,7 @@
     "markdown-it-task-lists": "^2.1.1",
     "qrcode.vue": "^3.4.1",
     "typescript": "^5.5.4",
-    "vitepress": "^1.3.3",
+    "vitepress": "^1.3.4",
     "vitepress-plugin-comment-with-giscus": "^1.1.15",
     "vitepress-plugin-pagefind": "^0.4.10"
   },

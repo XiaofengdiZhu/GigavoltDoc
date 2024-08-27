@@ -13,7 +13,7 @@ If you have mastered the vanilla electric elements, please read this contents fi
 
 * `Gigavolt mod`only provides a wider bit width of vanilla elements, and their shifts, and few useful new base elements with restraint. For those who only wants a wider bit width, you can use this mod independently.
   If other mod want to use the wider bit width of Gigavolt, you can add this mod as a dependency, without`Gigavolt.Expand mod`.
-* `Gigavolt.Expand mod`, on the other hand, adheres to the spirit of the vanilla game's electrics while introducing a plethora of new elements to further expand gameplay possibilities. Most of these elements require a deep understanding of binary notation from players. This document includes information about this mod.  
+* `Gigavolt.Expand mod`, on the other hand, adheres to the spirit of the vanilla game's electrics while introducing a plethora of new elements to further expand gameplay possibilities. Most of these elements require a deep understanding of binary representation. This document includes information about this mod.  
   `Gigavolt mod` is required as a dependency, and `Gigavolt.Expand mod` cannot be used independently.
 
 Besides `Gigavolt.Expand mod`, there are several mods that depend on `Gigavolt mod`, you can check them out at [Dependents](about#Dependents)

@@ -13,7 +13,7 @@ import UintColorConverter from "/components/UintColorConverter.vue";
 * 必须先设置存储器的宽、高完成初始化后方可存储数据，设置后无法修改宽、高（但可能被其他操作覆盖）
 * 宽、高上限提高到了 2^32^-1，两者乘积不得超过 2^32^-1
 * 各输入端均未连接元件或导线时，上端将输出该存储器的ID
-* 编辑时，每个数据用英文逗号`,`分开，每行数据用英文分号`;`分开，数据量时建议导出后编辑
+* 字符串编辑时，每个数据用英文逗号`,`分开，每行数据用英文分号`;`分开，数据量大时建议编辑导出的图片，再导入
 * 可在编辑界面导出/导入数据，导出的文件为 [PNG](https://www.w3.org/TR/png/) 格式的图片
 * 除了能导入 [PNG](https://www.w3.org/TR/png/) 格式图片，还能导入`PCM`编码的`WAV`格式的音频文件、其他文件，详见下文
 
@@ -26,7 +26,7 @@ import UintColorConverter from "/components/UintColorConverter.vue";
 
 十亿伏特存储器保存和导出的格式均为无损 [PNG](https://www.w3.org/TR/png/) 图片，这是为存储远超原版的数据量，这也导致必须先设定好长、宽，而且之后不能修改，另外建议不要设置过大的长宽，因为每次修改数据后，存档时编码需耗费较长时间，导致卡顿
 
-数据保存时，会按`ABGR`颜色模式保存到每个像素的颜色中，从高位到低位，分别为颜色的<span style="opacity:0.6;">Alpha 透明度通道</span>、<span style="color:blue;">Blue 蓝色通道</span>、<span style="color:green;">Green 绿色通道</span>、<span style="color:red;">Red 红色通道</span>，例如 `0xFFDD6655` 会被储存为透明度为 0xFF，蓝色为 <span style="color:#0000DD;">0xDD</span>，绿色为 <span style="color:#006600;">0x66</span>，红色为 <span style="color:#550000;">0x55</span> 的像素 <span style="display:inline-block;width:1em;height:1em;vertical-align:middle;background-color:#5566DD;"/>
+数据保存时，会按`ABGR`颜色模式保存到每个像素的颜色中，从高位到低位，每 8 位分别为颜色的<span style="opacity:0.6;">Alpha 透明度通道</span>、<span style="color:blue;">Blue 蓝色通道</span>、<span style="color:green;">Green 绿色通道</span>、<span style="color:red;">Red 红色通道</span>，例如 `0xFFDD6655` 会被储存为透明度为 0xFF，蓝色为 <span style="color:#0000DD;">0xDD</span>，绿色为 <span style="color:#006600;">0x66</span>，红色为 <span style="color:#550000;">0x55</span> 的像素 <span style="display:inline-block;width:1em;height:1em;vertical-align:middle;background-color:#5566DD;"/>
 
 ::: details 🛠️ 电压颜色转换器
 

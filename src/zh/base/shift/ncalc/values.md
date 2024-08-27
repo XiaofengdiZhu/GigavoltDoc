@@ -13,7 +13,7 @@
 - [Identifier](https://ncalc.github.io/ncalc/api/NCalc.Domain.Identifier.html)（参数）
 - [LogicalExpressionList](https://ncalc.github.io/ncalc/api/NCalc.Domain.LogicalExpressionList.html)（其他表达式组成的列表）
 
-> 十亿伏特使用的 NCalc 版本看起来不支持 [char](https://learn.microsoft.com/dotnet/api/system.char)
+> 译者：十亿伏特使用的 NCalc 版本看起来不支持 [char](https://learn.microsoft.com/dotnet/api/system.char)
 
 ## 整数
 
@@ -38,7 +38,7 @@
 
 ## 科学记数法
 
-你可以使用`e`来定义以 10 为底的幂（10^\^^）。
+你可以使用`e`来定义以 10 为底的幂（10\^）。
 
 ```
 1.22e1
@@ -81,7 +81,7 @@ true
 
 ## 字符串
 
-任何在单引号或双引号之间的字符将被解释为[string](https://learn.microsoft.com/dotnet/api/system.string)。
+任何在单引号或双引号之间的字符将被解释为 [string](https://learn.microsoft.com/dotnet/api/system.string)。
 
 ```
 'hello'
@@ -109,7 +109,6 @@ doSomething(1, 'dummy')
 
 ## 参数
 
-A parameter as a name, and can be optionally contained inside brackets or double quotes.
 参数是一个名称，并且可以包含在括号中。
 
 ```

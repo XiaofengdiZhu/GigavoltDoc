@@ -1,5 +1,7 @@
 # 调试功能
 
+<img src="/images/base/new/GVDebugBlock.webp" alt="十亿伏特调试台 图示" class="center_image small"/>
+
 将`GV 调试台`方块拿在手上编辑，或将其放置后编辑、交互，即可打开下图所示`十亿伏特调试面板`
 
 <img src="/images/base/new/EditGVDebugDialog_zh.webp" alt="十亿伏特调试面板 图示" class="center_image"/>
@@ -20,7 +22,7 @@ GV 调试台输出的电压为当前设置的倍速，小数点位于第16、17�
 
 开启后，会在面向的十亿伏特元件、导线上显示其各方向的输入、输出电压，绿色代表的是输入，红色代表的是输出，右下角显示的是背端电压
 
-<img src="/images/base/new/hover_display_voltage.webp" alt="十亿伏特调试面板 图示" class="center_image"/>
+<img src="/images/base/new/hover_display_voltage.webp" alt="悬浮显示电压 图示" class="center_image"/>
 
 ## 超视距保持运行 <Badge text="v2.0"/>
 
@@ -30,7 +32,7 @@ GV 调试台输出的电压为当前设置的倍速，小数点位于第16、17�
 
 开启后，会在游戏顶端中间显示三个按钮，和`最近 1000 次运行历时 x`，即最近 1000 次 电路循环历时 x 秒
 
-<img src="/images/base/new/GVStepFloatingButtons.webp" alt="十亿伏特调试面板 图示" class="center_image"/>
+<img src="/images/base/new/GVStepFloatingButtons_zh.webp" alt="单步调试悬浮窗 图示" class="center_image"/>
 
 三个按钮分别是：
 
@@ -40,7 +42,7 @@ GV 调试台输出的电压为当前设置的倍速，小数点位于第16、17�
 
 下图是在开关关闭状态下，点击暂停后打开开关，点击两次步过按钮后的截图
 
-<img src="/images/base/new/debug_example.webp" alt="十亿伏特调试面板 图示" class="center_image"/>
+<img src="/images/base/new/debug_example.webp" alt="十亿伏特调试例子 图示" class="center_image"/>
 
 可以看出，左边的 LED 灯下面因为比右边多了一个逻辑或门，会比右边慢一个电路循环亮起
 
@@ -50,6 +52,8 @@ GV 调试台输出的电压为当前设置的倍速，小数点位于第16、17�
 
 开启后，可使用键盘来进行单步调试等，效果和单步调试悬浮窗一致
 
-* `F5` 暂停/继续
-* `F6` 单步
-* `F7` 步过
+* `F5`暂停/继续
+* `F6`单步
+* `F7`步过
+
+> “启用快捷轮盘”是什么？详见 [特色功能](features#快捷轮盘)

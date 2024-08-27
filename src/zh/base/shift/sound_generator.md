@@ -14,7 +14,7 @@ let connections = [
         new IOPort(1, 32, "播放数量", "设置播放 n 个 16 位数据，仅在读取音频数据时发生作用")
     ]),
         new ElectricConnection(ElectricConnectorDirection.Bottom, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
-        new IOPort(1, 32, "启动/响度", "输入电压从 0V 上升后立即开始播放，输入 0V 停止，再上升后从头播放；电压越高，声音响度越大  \n0V 时如果其他四端输入发生变化，将尝试重新从指定存储器读取音频数据；而非 0 V 时其他四端输入发生变化，将不发生任何作用")
+        new IOPort(1, 32, "启动/响度", "输入电压从 0 V 上升后立即开始播放，输入 0 V 停止，再上升后从头播放；电压越高，声音响度越大  \n0 V 时如果其他四端输入发生变化，将尝试重新从指定存储器读取音频数据；而非 0 V 时其他四端输入发生变化，将不发生任何作用")
     ]),
     new ElectricConnection(ElectricConnectorDirection.Left, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
         new IOPort(1, 32, "采样率", "设置音频采样率，单位为 Hz，仅在读取音频数据时发生作用  \n范围限制：8000 \~ 48000，对应十六进制：1F40 \~ BB80")

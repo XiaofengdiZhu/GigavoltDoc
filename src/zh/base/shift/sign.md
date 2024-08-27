@@ -44,7 +44,7 @@ let connections = [
 
 ## 端口定义
 
-> 除后端外，其他端口操作的都是悬浮显示的文字
+> 除后端和下端第28位外，其他操作的都是悬浮显示的文字
 
 <ElectricElement imgAltPrefix="十亿伏特告示牌" :connections="connections" imgSrc="/images/base/shift/GVSignBlock.webp"/>
 

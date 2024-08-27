@@ -55,7 +55,7 @@ import Detonator from "/components/Detonator/Detonator.vue";
 
 * 适配 32 位电压的编辑界面，如图：
 
-<img src="/images/base/shift/EditGVUintDialog.webp" alt="电压编辑界面 图示" class="center_image"/>
+<img src="/images/base/shift/EditGVUintDialog_zh.webp" alt="电压编辑界面 图示" class="center_image"/>
 
 > **十进制定点数**：此处是指，按小数点在第 16、17 位之间，最高位为符号位，转换而来的结果
 

@@ -21,8 +21,8 @@
 
 逻辑运算符对表达式进行逻辑对比。
 
-* `or`, `||`
-* `and`, `&&`
+* `or`,`||`
+* `and`,`&&`
 
 例子：
 
@@ -36,11 +36,11 @@ true or false and true
 ## 关系运算符
 
 关系运算符对比两个值并返回一个布尔值。  
-`in`和`not in`操作符右边的值必须是 [string](https://learn.microsoft.com/dotnet/api/system.string) 或 [IEnumerable](https://learn.microsoft.com/dotnet/api/system.collections.ienumerable).
+`in`和`not in`操作符右边的值必须是 [string](https://learn.microsoft.com/dotnet/api/system.string) 或 [IEnumerable](https://learn.microsoft.com/dotnet/api/system.collections.ienumerable)。
 
-* `=`, `==`, `!=`, `<>`
-* `<`, `<=`, `>`, `>=`
-* `in`, `not in`
+* `=`,`==`,`!=`,`<>`
+* `<`,`<=`,`>`,`>=`
+* `in`,`not in`
 
 例子：
 
@@ -55,9 +55,9 @@ true or false and true
 
 ## 加减运算符
 
-加法运算符进行加、减计算
+加法运算符进行加、减计算。
 
-* `+`, `-`
+* `+`,`-`
 
 例子：
 
@@ -67,9 +67,9 @@ true or false and true
 
 ## 乘除运算符
 
-乘法运算符进行乘、除、取模计算
+乘法运算符进行乘、除、取模计算。
 
-* `*`, `/`, `%`
+* `*`,`/`,`%`
 
 例子：
 
@@ -81,7 +81,7 @@ true or false and true
 
 位运算符对整数进行位计算操作。
 
-* `&` (二进制与), `|` (二进制或), `^` (二进制异或), `<<` (左移), `>>` (右移)
+* `&`(二进制与), `|`(二进制或), `^`(二进制异或), `<<`(左移), `>>`(右移)
 
 例子：
 
@@ -93,7 +93,7 @@ true or false and true
 
 一元运算符用来对单个数进行操作。
 
-* `!`, `not`, `-`, `~` (按位取反)
+* `!`,`not`,`-`,`~`(按位取反)
 
 例子：
 
@@ -117,7 +117,7 @@ not true
 
 基本运算符包含组合、列表、直接数值，查看 [NCalc 数值](values) 来获取更多信息。
 
-* `(`, `)`
+* `(`,`)`
 * 数值
 
 例子：

@@ -27,6 +27,6 @@ let connections = [
 
 ## 端口定义
 
-<ElectricElement imgAltPrefix="复杂活塞" :connections="connections" imgSrc="/images/base/shift/GVPistonBlock_complex.webp"/>
+<ElectricElement imgAltPrefix="十亿伏特复杂活塞" :connections="connections" imgSrc="/images/base/shift/GVPistonBlock_complex.webp"/>
 
-> 速度为0时活塞将无法运作
+> 速度为 0 时活塞将无法运作

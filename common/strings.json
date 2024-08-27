@@ -12,7 +12,7 @@
   "ElectricConnectionDisplayMode": [
     {
       "zh": "第 n 位",
-      "en": "Start&End"
+      "en": "Start & End"
     },
     {
       "zh": "使用位宽",
@@ -22,27 +22,27 @@
   "ElectricConnectorDirection": [
     {
       "zh": "上端",
-      "en": "Top"
+      "en": "Top "
     },
     {
       "zh": "右端",
-      "en": "Right"
+      "en": "Right "
     },
     {
       "zh": "下端",
-      "en": "Bottom"
+      "en": "Bottom "
     },
     {
       "zh": "左端",
-      "en": "Left"
+      "en": "Left "
     },
     {
       "zh": "后端",
-      "en": "Back"
+      "en": "Back "
     },
     {
       "zh": "全部",
-      "en": "All"
+      "en": "All "
     }
   ],
   "ElectricConnectorType": [
@@ -55,8 +55,8 @@
       "en": "Output"
     },
     {
-      "zh": "输入&输出",
-      "en": "Input&Output"
+      "zh": "输入 & 输出",
+      "en": "Input & Output"
     }
   ],
   "imgAltSuffix": {

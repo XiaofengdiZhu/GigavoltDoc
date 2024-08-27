@@ -8,7 +8,7 @@
 
 ## 单向二极管 <Badge text="v2.0"/>
 
-电压只能单向导通的二极管，延迟 1 个电路周期（0.01 秒，本质上是延迟门），只提供有颜色版本，它们在`十亿伏特 复数`分类中
+信号只能单向通过的二极管，延迟 1 个电路周期（0.01 秒，本质上是延迟门），只提供有颜色版本，它们在`十亿伏特 复数`分类中
 
 <img src="/images/base/new/diode.webp" alt="新增的二极管 图示" class="center_image"/>
 
@@ -28,10 +28,10 @@
             <td>8 数字 LED 灯</td>
         </tr>
         <tr>
-            <td><img src="/images/base/new/GV8x4LedBlockFull.webp" alt="1 位合并 4 位器 图示"/></td>
-            <td><img src="/images/base/new/GV4x4LedBlockFull.webp" alt="2 位合并 8 位器 图示"/></td>
-            <td><img src="/images/base/new/GV4x2LedBlockFull.webp" alt="4 位合并 16 位器 图示"/></td>
-            <td><img src="/images/base/new/GV8NumberLedBlockFull.webp" alt="8 位合并 32 位器 图示"/></td>
+            <td><img src="/images/base/new/GV8x4LedBlockFull.webp" alt="8 x 4 面 LED 灯 图示"/></td>
+            <td><img src="/images/base/new/GV4x4LedBlockFull.webp" alt="4 x 4 面 LED 灯 图示"/></td>
+            <td><img src="/images/base/new/GV4x2LedBlockFull.webp" alt="4 x 2 面 LED 灯 图示"/></td>
+            <td><img src="/images/base/new/GV8NumberLedBlockFull.webp" alt="8 数字 LED 灯 图示"/></td>
         </tr>
     </tbody>
 </table>
@@ -42,17 +42,17 @@
 
 下端连接十亿伏特元件或导线，输入十亿伏特 32 位电压，取最低 4 位转换为原版电压，向上端输出
 
-<img src="/images/base/new/GV2OTransformerBlock.webp" alt="十亿伏特转原版变压器 图示" style="max-width: min(100%, 80px); margin: 0 auto;"/>
+<img src="/images/base/new/GV2OTransformerBlock.webp" alt="The Image of Gigavolt to Original Transformer" class="center_image small"/>
 
 ### 原版转十亿伏特变压器
 
 下端连接原版元件或导线，输入原版 4 位电压，向上端输出等值的十亿伏特电压
 
-<img src="/images/base/new/O2GVTransformerBlock.webp" alt="十亿伏特转原版变压器 图示" style="max-width: min(100%, 80px); margin: 0 auto;"/>
+<img src="/images/base/new/O2GVTransformerBlock.webp" alt="The Image of Original to Gigavolt Transformer" class="center_image small"/>
 
 ## 调试台 <Badge text="v1.0" type="info"/>
 
-另见 [调试](debug.md)
+另见 [调试](debug)
 
 
 <style module>
