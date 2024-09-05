@@ -9,19 +9,19 @@ import {onMounted} from "vue";
 
 let connections = [
     new ElectricConnection(ElectricConnectorDirection.Top, ElectricConnectorType.Output, ElectricConnectionDisplayMode.Hide, [
-        new IOPort(1, 32, "输出", "根据左端和右端的电压，将下端输入和其他飞线的输入按或计算后，输出相应结果"),
+        new IOPort(1, 32, "Output", "According to left and right input, the Jump Wire performs a bitwise OR operation between the bottom input of itself and the input of other Jump Wires, then output the result."),
     ]),
     new ElectricConnection(ElectricConnectorDirection.Right, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
-        new IOPort(1, 32, "是否读取其他飞线", "大于 7 V 时，将会从标签相同的飞线读取其下端输入，但如果那个标签的左端小于 7 V，将无法读取")
+        new IOPort(1, 32, "Whether Read Other Jump Wires", "If this input is greater than 7 V, the Jump Wire will read the bottom input of other Jump Wire, whose tag is same and left input is greater than 7 V.")
     ]),
         new ElectricConnection(ElectricConnectorDirection.Bottom, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
-        new IOPort(1, 32, "下端输入", "/")
+        new IOPort(1, 32, "Bottom Input", "/")
     ]),
     new ElectricConnection(ElectricConnectorDirection.Left, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
-        new IOPort(1, 32, "是否允许下端输入", "大于 7 V时，将允许下端输入，而且下端输入将能被标签相同的其他飞线读取")
+        new IOPort(1, 32, "Whether Allow Bottom Input", "If this input is greater than 7 V, the Jump Wire will allow bottom input, and the bottom input can be read by other Jump Wires with the same tag.")
     ]),
         new ElectricConnection(ElectricConnectorDirection.In, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
-        new IOPort(1, 32, "标签", "设置该飞线的标签，标签相同的飞线之间会有绿色指示线，代表它们互相连接"),
+        new IOPort(1, 32, "Tag", "Set the tag of the Jump Wire. There are green lines between the jump wires with the same tag, indicating that they are connected to each other."),
     ])
 ];
 
@@ -45,19 +45,19 @@ onMounted(() => {
 });
 </script>
 
-# 飞线 <Badge text="v1.0" type="info"/>
+# Jump Wire <Badge text="v1.0" type="info"/>
 
-## 概述
+## Overview
 
-标签相同的飞线可以互相读取其下端输入，实现无线传输信号的效果，传输延迟为 1 个电路周期（0.01 秒）
+The Jump Wires with the same tag can read the bottom inputs of each other, which can be used to transmit signals wirelessly. The transmission delay is 1 electric cycle (0.01 seconds).
 
-标签相同的飞线之间会有绿色的指示线，代表它们互相连接
+There are green lines between the jump wires with the same tag, indicating that they are connected to each other.
 
-## 端口定义
+## Port Definition
 
-<ElectricElement imgAltPrefix="飞线" :connections="connections" imgSrc="/images/expand/wires/GVJumpWireBlock.webp" gateMask="true"/>
+<ElectricElement imgAltPrefix="Jump Wire" :connections="connections" imgSrc="/images/expand/wires/GVJumpWireBlock.webp" gateMask="true"/>
 
-<img class="no_hover" alt="另一个飞线" src="/images/expand/wires/GVJumpWireBlock.webp" style="width: calc(20% - 16px); min-width: 100px; margin-top: 16px; image-rendering: pixelated; mask-image: linear-gradient(2.3086rad, transparent 0% 17.5%, black 17.5% 100%), linear-gradient(-2.3086rad, transparent 0% 17.5%, black 17.5% 100%); mask-composite: intersect;">
+<img class="no_hover" alt="Another Jump Wire" src="/images/expand/wires/GVJumpWireBlock.webp" style="width: calc(20% - 16px); min-width: 100px; margin-top: 16px; image-rendering: pixelated; mask-image: linear-gradient(2.3086rad, transparent 0% 17.5%, black 17.5% 100%), linear-gradient(-2.3086rad, transparent 0% 17.5%, black 17.5% 100%); mask-composite: intersect;">
 
 <svg id="lineContainer" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1">
     <line id="line" x1="0" y1="0" x2="100" y2="100" stroke="lime" stroke-width="1"/>

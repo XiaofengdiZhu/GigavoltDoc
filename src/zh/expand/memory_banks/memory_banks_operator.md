@@ -12,7 +12,7 @@ import ElectricElement from "../../../components/ElectricElement/ElectricElement
 
 let connections1 = [
     new ElectricConnection(ElectricConnectorDirection.Top, ElectricConnectorType.Output, ElectricConnectionDisplayMode.Hide, [
-        new IOPort(1, 32, "将结果输出到指定 ID 的存储器", ""),
+        new IOPort(1, 32, "将结果输出到指定 ID 的存储器（任意类型）", ""),
     ], false, true),
     new ElectricConnection(ElectricConnectorDirection.Right, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
         new IOPort(1, 32, "指定右边存储器 ID", "")
@@ -29,7 +29,7 @@ let connections1 = [
 ];
 let connections2 = [
     new ElectricConnection(ElectricConnectorDirection.Top, ElectricConnectorType.Output, ElectricConnectionDisplayMode.Hide, [
-        new IOPort(1, 32, "将结果输出到指定 ID 的存储器（必须指定）", ""),
+        new IOPort(1, 32, "将结果输出到指定 ID 的存储器（任意类型，**必须指定**）", ""),
     ], false, true),
     new ElectricConnection(ElectricConnectorDirection.Right, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [
         new IOPort(1, 8, "X 轴范围大小", "单位格，方向为西"),
@@ -38,7 +38,7 @@ let connections2 = [
         new IOPort(25, 25, "X 轴范围的符号", "为 1 时，X 轴范围的方向改为向东"),
         new IOPort(26, 26, "Y 轴范围的符号", "为 1 时，Y 轴范围的方向改为向下"),
         new IOPort(27, 27, "Z 轴范围的符号", "为 1 时，Z 轴范围的方向改为向南"),
-        new IOPort(28, 32, "空白", "无作用")
+        new IOPort(28, 32, "空", "无作用")
     ]),
         new ElectricConnection(ElectricConnectorDirection.Bottom, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
         new IOPort(1, 32, "变为 256 V (0x100) 时，尝试初始化", "")
@@ -55,7 +55,7 @@ let connections2 = [
         new IOPort(27, 27, "Z 轴偏移的符号", "为 1 时，Z 轴偏移的方向改为向南"),
         new IOPort(28, 28, "是否不输出结果", "为 1 时不将结果输出到上端输入指定 ID 的存储器，为 0 时则输出<br/>无论是否输出结果，均要在上端指定一个有效存储器"),
         new IOPort(29, 29, "是否覆盖", "为 1 时将会覆盖已有数据的存储器，为 0 时不覆盖"),
-        new IOPort(30, 32, "空白", "无作用")
+        new IOPort(30, 32, "空", "无作用")
     ])
 ];
 </script>
@@ -72,7 +72,7 @@ let connections2 = [
 
 上左右都应该指定正确的存储器 ID，只有在下端为 1 时允许右端指定 ID 的存储器不存在，否则将不进行任何操作
 
-而复制以外的操作，输出存储器的高度将被设置为 1，宽度被设置为数据总数量，因此推荐输出到可手动设置宽高的一维存储器
+而复制以外的操作，输出存储器的高度将被设置为 1，宽度被设置为数据总数量，因此推荐输出到可手动设置宽高的[一维存储器](list_memory_bank)
 
 ### 端口定义
 

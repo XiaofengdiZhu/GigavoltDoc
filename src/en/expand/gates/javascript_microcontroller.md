@@ -1,0 +1,41 @@
+# JS Microcontroller
+
+## Overview
+
+<img alt="The Image of JS Microcontroller" src="/images/expand/gates/GVJavascriptMicrocontrollerBlock.webp" class="center_image small">
+
+A JS Microcontroller can run [JavaScript](https://javascript.info/) (JS). It is theoretically capable of doing anything.
+
+Before using it, you need to edit it to specify which ports are inputs and which are outputs. Every time the voltages on the input ports change, it will execute the JavaScript saved inside once. If there is an error during execution, it will be reported in the game log.
+
+Every runtime environment of JS Microcontroller is independent. The variables, methods created inside will always be retained (but not saved to the save file). Strongly recommend checking whether initialization is necessary before initialization, otherwise it will cause duplicate declaration errors.
+
+## Built-in Variables
+
+| Built-in Variables | Description                                                                                                                                                                                                                                                  |
+|:------------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         P0         | The voltage of the Back Port. When the Back Port is an input, this variable can be used to read the input voltage, and assignment is invalid. When the Back Port is an output, assigning a value to this variable will make the Back Port outputs the value. |
+|         P1         | The voltage of the Top Port. Others are same as above.                                                                                                                                                                                                       |
+|         P2         | The voltage of the Right Port. Others are same as above.                                                                                                                                                                                                     |
+|         P3         | The voltage of the Bottom Port. Others are same as above.                                                                                                                                                                                                    |
+|         P4         | The voltage of the Left Port. Others are same as above.                                                                                                                                                                                                      |
+|       System       | The System namespace in .Net.                                                                                                                                                                                                                                |
+|        Game        | The Game namespace in the game.                                                                                                                                                                                                                              |
+|       Engine       | The Engine namespace in the game.                                                                                                                                                                                                                            |
+|  GameEntitySystem  | The GameEntitySystem namespace in the game.                                                                                                                                                                                                                  |
+|      Project       | The Project object of the current game save.                                                                                                                                                                                                                 |
+
+## Built-in Methods
+
+| Built-in Methods        | Description                                                                                                                                                                                                                                                                                                                                     |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| getPosition()           | Returns the position of the JS microcontroller. The return type is`Engine.Point3`, which contains fields`X`&#8203;`Y`&#8203;`Z`to represent the coordinates.                                                                                                                                                                                    |
+| getPortState(number)    | Returns the input/output state of the specified port. The parameter should be an integer from 0 to 4. If the port is an input, it returns the string`input`; if the port is an output, it returns the string`output`; if the port is disabled, it returns the string`disabled`; if the parameter is incorrect, it returns`error`.               |
+| setPortDisabled(number) | Sets the specified port to disabled. The parameter should be an integer from 0 to 4.                                                                                                                                                                                                                                                            |
+| setPortInput(number)    | Sets the specified port to input. The parameter should be an integer from 0 to 4.                                                                                                                                                                                                                                                               |
+| setPortOutput(number)   | Sets the specified port to output. The parameter should be an integer from 0 to 4.                                                                                                                                                                                                                                                              |
+| importNamespace(string) | Imports and returns a namespace.                                                                                                                                                                                                                                                                                                                |
+| findSubsystem(string)   | Returns a Subsystem of the current game save based on the name. The parameter should not start with "Subsystem".                                                                                                                                                                                                                                |
+| executeAgain(number)    | Allows the JS Microcontroller to execute the script again after n electric cycles, regardless of input changes. If this method is used multiple times in a single execution, the last set value of n takes precedence. If n is less than or equal to 0, it cancels the action. If inputs change before executing, the method will be cancelled. |
+
+> Please make sure to specify which ports are inputs and which are outputs, otherwise the script will not run.

@@ -81,20 +81,28 @@ function voltage2Decimal(voltage: string) {
         </td>
         <td>{{ data.Name }}</td>
         <td>
-            <div>
-                <label>{{ locale('MoreOneInOneOut', 'Decimal') }}<input type="number" inputmode="decimal" :value="data.inputDecimal" :class="$style.input" @input="onDecimalInputChange"></label>
-            </div>
-            <div style="margin-top: 6px;">
-                <label>{{ locale('MoreOneInOneOut', 'Voltage') }}<input type="text" pattern="[0-9a-fA-F]{1,8}" :value="data.inputVoltage" :class="$style.input" @input="onVoltageInputChange"></label>
-            </div>
+            <table :class="$style.table">
+                <tr>
+                    <td>{{ locale('MoreOneInOneOut', 'Decimal') }}</td>
+                    <td><input type="number" inputmode="decimal" :value="data.inputDecimal" :class="$style.input" @input="onDecimalInputChange"></td>
+                </tr>
+                <tr>
+                    <td>{{ locale('MoreOneInOneOut', 'Voltage') }}</td>
+                    <td><input type="text" pattern="[0-9a-fA-F]{1,8}" :value="data.inputVoltage" :class="$style.input" @input="onVoltageInputChange"></td>
+                </tr>
+            </table>
         </td>
         <td>
-            <div>
-                <label>{{ locale('MoreOneInOneOut', 'Decimal') }}</label><label :class="$style.output">{{ data.outputDecimal.toFixed(8) }}</label>
-            </div>
-            <div style="margin-top: 6px;">
-                <label>{{ locale('MoreOneInOneOut', 'Voltage') }}</label><label :class="$style.output">{{ data.outputVoltage }}</label>
-            </div>
+            <table :class="$style.table">
+                <tr>
+                    <td>{{ locale('MoreOneInOneOut', 'Decimal') }}</td>
+                    <td><label :class="$style.output">{{ data.outputDecimal.toFixed(8) }}</label></td>
+                </tr>
+                <tr>
+                    <td>{{ locale('MoreOneInOneOut', 'Voltage') }}</td>
+                    <td><label :class="$style.output">{{ data.outputVoltage }}</label></td>
+                </tr>
+            </table>
         </td>
     </tr>
 </template>
@@ -103,6 +111,20 @@ function voltage2Decimal(voltage: string) {
 .icon {
     width: 56px;
     image-rendering: pixelated;
+}
+
+.table {
+    margin: 0 !important;
+    border-spacing: 0 6px !important;
+
+    & tr {
+        background-color: transparent !important;
+    }
+
+    & td {
+        border: none;
+        padding: 0 !important;
+    }
 }
 
 .input {

@@ -29,7 +29,7 @@ The framework includes a set of already implemented functions.
 | Truncate	      | Calculates the integral part of a number.	                                                                                                                                                                         | Truncate(1.7)	       | 1      |
 
 > Doc editor:  
-> The unit of measurement related to trigonometric functions is radians.  
+> The unit of measurement related to trigonometric functions is radian.  
 > The`d`after numbers in the result is to indicate that the number is a double-precision floating point number.  
 > The`Rount`function with two parameters will give strange results, and it's not solved.
 

@@ -10,7 +10,7 @@ Hold`GV Debug Panel` block on hand and edit it，or place it in the terrain chun
 
 The electric frequency of the vanilla version is 100 circles/second. If you set this option to 2 (in times), the electric frequency of Gigavolt will be 200 circles/second. This option can be a fraction, for example, if you set to 0.5, the frequency will be 50 circles/second.For the current version, the lowest running speed is 0.1 times.
 
-The GV Debug Panel Block outputs the value of running speed option, and the radix point is located between the 16th and 17th bit.
+The GV Debug Panel block outputs the value of running speed option, and the radix point is located between the 16th and 17th bit.
 
 > [!TIP] 🧪 Speed Reference
 > Only one Logic Not Gate whose top and bottom ports by wires, using CPU `AMD R7 5800X` at 4.55GHz.
@@ -40,7 +40,6 @@ The three buttons are:
 2. **Step In**: Run only one element.
 3. **Step Over**: Run one electric circle.
 
-下图是在开关关闭状态下，点击暂停后打开开关，点击两次步过按钮后的截图
 The scene below is started with the switch off and pause on, then the switch was turned on, and the step over button is clicked twice.
 
 <img src="/images/base/new/debug_example.webp" alt="The Image of Debugging Example" class="center_image"/>

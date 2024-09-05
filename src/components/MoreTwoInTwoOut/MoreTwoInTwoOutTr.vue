@@ -23,8 +23,8 @@ const data = ref({
     basicOutputVoltage: "",
     overflowOutputDecimal: 0,
     overflowOutputVoltage: "",
-    basicOutputDescription: null,
-    overflowOutputDescription: null
+    basicOutputDescription: "",
+    overflowOutputDescription: ""
 });
 let basicOutputDescription = locale('MoreTwoInTwoOut', type, 'BasicOutputDescription');
 if (basicOutputDescription.length > 0) {
@@ -99,40 +99,56 @@ function voltage2Decimal(voltage: string) {
             <div style="margin-top: 6px;">{{ data.Name }}</div>
         </td>
         <td>
-            <div>
-                <label>{{ locale('MoreTwoInTwoOut', 'Decimal') }}<input type="number" inputmode="numeric" min="0" max="4294967295" step="1" :value="data.leftInputDecimal" :class="$style.input" @input="event=>onDecimalInputChange(event.target,'left')"></label>
-            </div>
-            <div style="margin-top: 6px;">
-                <label>{{ locale('MoreTwoInTwoOut', 'Voltage') }}<input type="text" pattern="[0-9a-fA-F]{1,8}" :value="data.leftInputVoltage" :class="$style.input" @input="event=>onVoltageInputChange(event.target,'left')"></label>
-            </div>
+            <table :class="$style.table">
+                <tr>
+                    <td>{{ locale('MoreTwoInTwoOut', 'Decimal') }}</td>
+                    <td><input type="number" inputmode="numeric" min="0" max="4294967295" step="1" :value="data.leftInputDecimal" :class="$style.input" @input="event=>onDecimalInputChange(event.target,'left')"></td>
+                </tr>
+                <tr>
+                    <td>{{ locale('MoreTwoInTwoOut', 'Voltage') }}</td>
+                    <td><input type="text" pattern="[0-9a-fA-F]{1,8}" :value="data.leftInputVoltage" :class="$style.input" @input="event=>onVoltageInputChange(event.target,'left')"></td>
+                </tr>
+            </table>
         </td>
         <td>
-            <div>
-                <label>{{ locale('MoreTwoInTwoOut', 'Decimal') }}<input type="number" inputmode="numeric" min="0" max="4294967295" step="1" :value="data.rightInputDecimal" :class="$style.input" @input="event=>onDecimalInputChange(event.target,'right')"></label>
-            </div>
-            <div style="margin-top: 6px;">
-                <label>{{ locale('MoreTwoInTwoOut', 'Voltage') }}<input type="text" pattern="[0-9a-fA-F]{1,8}" :value="data.rightInputVoltage" :class="$style.input" @input="event=>onVoltageInputChange(event.target,'right')"></label>
-            </div>
+            <table :class="$style.table">
+                <tr>
+                    <td>{{ locale('MoreTwoInTwoOut', 'Decimal') }}</td>
+                    <td><input type="number" inputmode="numeric" min="0" max="4294967295" step="1" :value="data.rightInputDecimal" :class="$style.input" @input="event=>onDecimalInputChange(event.target,'right')"></td>
+                </tr>
+                <tr>
+                    <td>{{ locale('MoreTwoInTwoOut', 'Voltage') }}</td>
+                    <td><input type="text" pattern="[0-9a-fA-F]{1,8}" :value="data.rightInputVoltage" :class="$style.input" @input="event=>onVoltageInputChange(event.target,'right')"></td>
+                </tr>
+            </table>
         </td>
         <td>
-            <div>
-                <label>{{ locale('MoreTwoInTwoOut', 'Decimal') }}</label><label :class="$style.output">{{ data.basicOutputDecimal }}</label>
-            </div>
-            <div style="margin-top: 6px;">
-                <label>{{ locale('MoreTwoInTwoOut', 'Voltage') }}</label><label :class="$style.output">{{ data.basicOutputVoltage }}</label>
-            </div>
-            <div v-if="data.basicOutputDescription" style="margin-top: 6px;">
+            <table :class="$style.table">
+                <tr>
+                    <td>{{ locale('MoreTwoInTwoOut', 'Decimal') }}</td>
+                    <td><label :class="$style.output">{{ data.basicOutputDecimal }}</label></td>
+                </tr>
+                <tr>
+                    <td>{{ locale('MoreTwoInTwoOut', 'Voltage') }}</td>
+                    <td><label :class="$style.output">{{ data.basicOutputVoltage }}</label></td>
+                </tr>
+            </table>
+            <div v-if="data.basicOutputDescription.length > 0">
                 {{ data.basicOutputDescription }}
             </div>
         </td>
         <td>
-            <div>
-                <label>{{ locale('MoreTwoInTwoOut', 'Decimal') }}</label><label :class="$style.output">{{ data.overflowOutputDecimal }}</label>
-            </div>
-            <div style="margin-top: 6px;">
-                <label>{{ locale('MoreTwoInTwoOut', 'Voltage') }}</label><label :class="$style.output">{{ data.overflowOutputVoltage }}</label>
-            </div>
-            <div v-if="data.overflowOutputDescription" style="margin-top: 6px;">
+            <table :class="$style.table">
+                <tr>
+                    <td>{{ locale('MoreTwoInTwoOut', 'Decimal') }}</td>
+                    <td><label :class="$style.output">{{ data.overflowOutputDecimal }}</label></td>
+                </tr>
+                <tr>
+                    <td>{{ locale('MoreTwoInTwoOut', 'Voltage') }}</td>
+                    <td><label :class="$style.output">{{ data.overflowOutputVoltage }}</label></td>
+                </tr>
+            </table>
+            <div v-if="data.overflowOutputDescription.length > 0">
                 {{ data.overflowOutputDescription }}
             </div>
         </td>
@@ -144,6 +160,20 @@ function voltage2Decimal(voltage: string) {
     width: 56px;
     image-rendering: pixelated;
     margin: 0 auto;
+}
+
+.table {
+    margin: 0 !important;
+    border-spacing: 0 6px !important;
+
+    & tr {
+        background-color: transparent !important;
+    }
+
+    & td {
+        border: none;
+        padding: 0 !important;
+    }
 }
 
 .input {

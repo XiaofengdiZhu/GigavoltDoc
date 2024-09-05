@@ -18,7 +18,7 @@ An element that can store data. Its port definition is the same as the vanilla v
 * You can import not only [PNG](https://www.w3.org/TR/png/) format image, but also`WAV`format audio file encoded in`PCM`, and other files. Details are in the following section.
 
 > This is a failed online editor:[https://xiaofengdizhu.github.io/GVMBEditor](https://xiaofengdizhu.github.io/GVMBEditor)  
-> In addition,`Gigavolt.Expand mod` has [Volatile Memory Bank](), which does not need initialization.
+> In addition,`Gigavolt.Expand mod` has [Volatile Memory Bank](../../expand/memory_banks/volatile_memory_banks#volatile-memory-banks), which does not need initialization.
 
 ## Import & Export
 

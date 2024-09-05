@@ -14,8 +14,8 @@ import MoreTwoInTwoOutTr from "./MoreTwoInTwoOutTr.vue";
             </th>
             <th style="min-width: 168px;">{{ locale('MoreTwoInTwoOut', 'LeftInput') }}</th>
             <th style="min-width: 168px;">{{ locale('MoreTwoInTwoOut', 'RightInput') }}</th>
-            <th style="min-width: 180px; width: 180px;">{{ locale('MoreTwoInTwoOut', 'BasicOutput') }}</th>
-            <th style="min-width: 180px; width: 180px;">{{ locale('MoreTwoInTwoOut', 'OverflowOutput') }}</th>
+            <th style="min-width: 184px; width: 184px;">{{ locale('MoreTwoInTwoOut', 'BasicOutput') }}</th>
+            <th style="min-width: 184px; width: 184px;">{{ locale('MoreTwoInTwoOut', 'OverflowOutput') }}</th>
         </tr>
         </thead>
         <tbody>
@@ -40,14 +40,11 @@ import MoreTwoInTwoOutTr from "./MoreTwoInTwoOutTr.vue";
 </template>
 
 <style module>
-.table {
-    & td:first-child {
-        /*padding-top: calc(1em + 8px);*/
-        text-align: center;
-    }
+.table > tbody > tr > td {
+    vertical-align: top;
 
-    & td {
-        vertical-align: top;
+    &:first-child {
+        text-align: center;
     }
 }
 </style>

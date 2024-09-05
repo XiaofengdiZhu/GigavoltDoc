@@ -2,9 +2,9 @@
 
 ## 概述
 
-<img alt="简单照相机 图示" src="/images/expand/gates/GVJavascriptMicrocontrollerBlock.webp" class="center_image small">
+<img alt="JS单片机 图示" src="/images/expand/gates/GVJavascriptMicrocontrollerBlock.webp" class="center_image small">
 
-可以运行 Javascript（简称 JS）脚本的单片机，理论上可实现一切功能
+可以运行 [Javascript](https://javascript.info/)（简称 JS）脚本的单片机，理论上可实现一切功能
 
 使用前，需要先编辑它来指定哪些端口为输入，哪些端口为输出，之后每当输入电压发生变化时，都会运行一遍保存在其中的 JS 脚本，如运行错误会在游戏日志中报错
 

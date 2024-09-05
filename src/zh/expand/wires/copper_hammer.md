@@ -9,15 +9,16 @@
 对着导线使用铜锤，会将一格范围内的所有导线转换为多面穿线块，已摆放导线的面将互相连通，未摆放导线的面不互通
 
 <figure class="center_image">
-<img src="/images/expand/wires/copper_hammer_transform_1.webp" alt="铜锤转换导线为方向块之前 图示"/>
+<img src="/images/expand/wires/copper_hammer_transform_1.webp" alt="铜锤转换导线为多面穿线块之前 图示"/>
 <figcaption>使用前</figcaption>
 </figure>
 <figure class="center_image" style="margin-top: 32px;">
-<img src="/images/expand/wires/copper_hammer_transform_2.webp" alt="铜锤转换导线为方向块之后 图示"/>
+<img src="/images/expand/wires/copper_hammer_transform_2.webp" alt="铜锤转换导线为多面穿线块之后 图示"/>
 <figcaption>使用后（下面的钻石块、砖块被移除）</figcaption>
 </figure>
 
-再次对生成的多面穿线块使用将改变其外观，第 5 次时恢复为普通导线，外观材质按顺序如下：
+再次对生成的多面穿线块使用将改变其外观，第 5 次使用时恢复为普通导线，外观材质按顺序如下：
+
 <table :class="$style.img_width_100px">
     <tbody>
         <tr>
@@ -34,12 +35,13 @@
         </tr>
     </tbody>
 </table>
+
 生成的多面穿线块可染色，但仅影响外观，内部还是无色导线，图略
 
 另外，在创造模式物品栏中，已提供现成的六面穿线块，方便取用
 
 > [!TIP] ❔ 没看到锗块材质？
-> 因为锗块材质被专门用作 [六面跨线块](wire_through) 的材质
+> 因为锗块材质被专门用作 [六面跨线块](jumper) 的材质
 
 ## 快速铺设多面穿线块
 

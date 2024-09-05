@@ -6,7 +6,7 @@ An element that can determine the output for all possible combination of the inp
 
 ## Rules Examples
 
-The expression of rules are based on [NCalc2](https://github.com/sklose/NCalc2), and the syntax is similar to [Excel formulas](https://support.microsoft.com/en-us/office/overview-of-formulas-in-excel-ecfdc708-9162-49e8-b993-c311f47ca173). Please read the following examples first:
+The expression of rules is based on [NCalc2](https://github.com/sklose/NCalc2), and the syntax is similar to [Excel formulas](https://support.microsoft.com/en-us/office/overview-of-formulas-in-excel-ecfdc708-9162-49e8-b993-c311f47ca173). Please read the following examples first:
 
 * `1;2;3;4:5`
 
@@ -199,7 +199,7 @@ The expression of rules are based on [NCalc2](https://github.com/sklose/NCalc2),
 
 ## Detailed Usages
 
-According to the examples above, you may have a basic understanding of the Gigavolt Truth Table usages. Here is the detailed usages:
+According to the examples above, you may have a basic understanding of the Gigavolt Truth Table usages. Here are the detailed usages:
 
 * Four input rules are separated by semicolons (`;`). The order is `Top`&#8203;`Right`&#8203;`Bottom`&#8203;`Left`, and they will be called `Input 1`&#8203;`Input 2`&#8203;`Input 3`&#8203;`Input 4`for convenience, and their values are written as `i1`&#8203;`i2`&#8203;`i3`&#8203;`i4` in the rules.
 * If rules need to be set for Input 1 and 2, but Input 3 and 4 can be any value, the rules for Input 3 and 4 can be omitted. However, extra semicolons (`;`) cannot be added.
@@ -223,7 +223,7 @@ If you want to know more about NCalc, please read:
 
 * [NCalc Operators](ncalc/operators) `= > < + - * /`and etc.
 * [NCalc Functions](ncalc/functions) `if Max Sin`and etc.  
-  The unit of measurement related to trigonometric functions is radians. Besides the functions mentioned in the article, you can also use`Atan2 Cosh Sinh Tanh` in this mod. These functions will convert numbers to double precision floating point numbers before calculating, and the calculation process will keep the decimal, finally the output will automatically remove the decimal part.  
+  The unit of measurement related to trigonometric functions is radian. Besides the functions mentioned in the article, you can also use`Atan2 Cosh Sinh Tanh` in this mod. These functions will convert numbers to double precision floating point numbers before calculating, and the calculation process will keep the decimal, finally the output will automatically remove the decimal part.  
   In addition, the`Rount`function with two parameters will give strange results, and it's not solved.
 * [NCalc Values](ncalc/values) `9876 1.23e9 true false`and etc.  
   You can use`PI() E()` to get Archimedes' constant π and Euler's number _e_ in this mod.

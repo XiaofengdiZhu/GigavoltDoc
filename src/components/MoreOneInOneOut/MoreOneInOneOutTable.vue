@@ -47,13 +47,14 @@ const TCROutputAction = (input: number | string) => {
 </template>
 
 <style module>
-.table {
-    & td:first-child {
+.table > tbody > tr > td {
+    &:first-child {
         text-align: center;
     }
 
-    & td:nth-child(2) {
+    &:nth-child(2) {
         text-align: center;
+        max-width: 154px;
     }
 }
 </style>

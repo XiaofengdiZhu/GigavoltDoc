@@ -118,6 +118,68 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
             {
                 text: 'Introduction',
                 link: '/en/expand/introduction'
+            },
+            {
+                text: 'Wires',
+                collapsed: true,
+                items: [
+                    {
+                        text: 'Copper Hammer / More Wire Through Blocks',
+                        link: '/en/expand/wires/copper_hammer'
+                    },
+                    {
+                        text: 'Six-Face Jumper',
+                        link: '/en/expand/wires/jumper'
+                    },
+                    {
+                        text: 'Jump Wire',
+                        link: '/en/expand/wires/jump_wire'
+                    },
+                    {
+                        text: 'Multiplexer',
+                        link: '/en/expand/wires/multiplexer'
+                    }
+                ]
+            },
+            {
+                text: 'Calculation',
+                collapsed: true,
+                items: [
+                    {
+                        text: 'More Two In Two Out Gates',
+                        link: '/en/expand/gates/more_two_in_two_out'
+                    },
+                    {
+                        text: 'More One In One Out Gates',
+                        link: '/en/expand/gates/more_one_in_one_out'
+                    },
+                    {
+                        text: 'JS Microcontroller',
+                        link: '/en/expand/gates/javascript_microcontroller'
+                    }
+                ]
+            },
+            {
+                text: 'Memory Banks',
+                collapsed: true,
+                items: [
+                    {
+                        text: 'List Memory Bank',
+                        link: '/en/expand/memory_banks/list_memory_bank'
+                    },
+                    {
+                        text: 'Four Dimensional Memory Bank',
+                        link: '/en/expand/memory_banks/four_dimensional_memory_bank'
+                    },
+                    {
+                        text: 'Volatile Memory Banks',
+                        link: '/en/expand/memory_banks/volatile_memory_banks'
+                    },
+                    {
+                        text: 'Memory Banks Operator',
+                        link: '/en/expand/memory_banks/memory_banks_operator'
+                    }
+                ]
             }
         ]
     }

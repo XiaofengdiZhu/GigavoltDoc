@@ -128,10 +128,10 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                     },
                     {
                         text: '六面跨线块',
-                        link: '/zh/expand/wires/wire_through'
+                        link: '/zh/expand/wires/jumper'
                     },
                     {
-                        text: '跳线',
+                        text: '飞线',
                         link: '/zh/expand/wires/jump_wire'
                     },
                     {
