@@ -8,7 +8,7 @@ import ElectricElement from "../../../components/ElectricElement/ElectricElement
 
 let connections = [
     new ElectricConnection(ElectricConnectorDirection.Top, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
-        new IOPort(1, 32, "显示 <span style='color: lime; background-color: var(--grayA10);'>绿色</span> 线", ""),
+        new IOPort(1, 32, "显示 <span style='color: lime; background-color: var(--grayA10);'>绿色</span> 线", "")
     ], false, true),
     new ElectricConnection(ElectricConnectorDirection.Right, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
         new IOPort(1, 32, "显示 <span style='color: cyan; background-color: var(--grayA10);'>青色</span> 线", "")
@@ -20,7 +20,7 @@ let connections = [
         new IOPort(1, 32, "显示 <span style='color: yellow; background-color: var(--grayA8);'>黄色</span> 线", "")
     ], false, true),
         new ElectricConnection(ElectricConnectorDirection.In, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
-        new IOPort(1, 32, "时钟", "不接元件或导线时，正面四端的变化会立即显示在示波器上  \n接上时，只有在其电压从 0 变为非 0 时才会从正面接受新的输入"),
+        new IOPort(1, 32, "时钟", "不接元件或导线时，正面四端的变化会立即显示在示波器上  \n接上时，只有在其电压从 0 变为非 0 时才会从正面接受新的输入")
     ])
 ];
 </script>

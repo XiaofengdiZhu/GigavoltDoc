@@ -10,7 +10,7 @@ import UintColorConverter from "/components/UintColorConverter.vue";
 let connections = [
     new ElectricConnection(ElectricConnectorDirection.Top, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [
         new IOPort(1, 16, "缩放大小", "每加 1，显示大小增加 1/8 倍，最大 8191.875 倍"),
-        new IOPort(17, 32, "Y 轴位置偏移", "每加 1，显示向上移动 1/8 格，最高位为 1 时改为向下"),
+        new IOPort(17, 32, "Y 轴位置偏移", "每加 1，显示向上移动 1/8 格，最高位为 1 时改为向下")
     ]),
     new ElectricConnection(ElectricConnectorDirection.Right, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [
         new IOPort(1, 16, "X 轴位置偏移", "每加 1，显示向北移动 1/8 格，最高位为 1 时改为向南"),
@@ -32,7 +32,7 @@ let connections = [
         new IOPort(1, 32, "上色", "设置要给地层图像上的颜色，ABGR 颜色模式")
     ]),
         new ElectricConnection(ElectricConnectorDirection.In, ElectricConnectorType.Input, ElectricConnectionDisplayMode.BitWidth, [
-        new IOPort(1, 32, "存储器 ID", "设置要显示的地层数据所在的存储器的 ID"),
+        new IOPort(1, 32, "存储器 ID", "设置要显示的地层数据所在的存储器的 ID")
     ])
 ];
 </script>
@@ -47,10 +47,12 @@ let connections = [
 
 <img alt="简单地层显示器 图示" src="/images/expand/leds/terrain_display_led_0.webp" class="center_image small">
 
-直接输入要显示的地层数据所在的存储器的 ID，就会在其表面显示相应的地层图像，如果有多个输入，则会将这些输入进行或计算，显示的亮度根据环境亮度决定
+直接输入要显示的地层数据所在的存储器的 ID，就会在其表面显示相应的地层图像，显示的亮度根据环境亮度决定
+
+> 各端口的输入会按或计算后作为最终输入
 
 > [!TIP] 💡 提示
-> 可以通过 [地形扫描仪](../sensors/terrain_scanner.md) 等方式将图层数据存入存储器
+> 可以通过 [地形扫描仪](../sensors/terrain_scanner) 等方式将图层数据存入存储器
 
 ## 复杂地层显示器
 

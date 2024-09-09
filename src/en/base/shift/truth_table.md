@@ -2,7 +2,7 @@
 
 <img src="/images/base/shift/GVTruthTable.webp" alt="The image of GV Truth Table" class="center_image small"/>
 
-An element that can determine the output for all possible combination of the inputs. It can not only output the voltage according to the specified inputs, but can also calculate the expressions stored in it. Its port definition is the same as the vanilla version.
+An element that can determine the output for all possible combination of the inputs. It can not only output the voltage according to the specified inputs, but can also calculate the expressions stored in it. Its Ports Definition is the same as the vanilla version.
 
 ## Rules Examples
 

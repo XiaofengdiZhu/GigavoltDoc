@@ -8,13 +8,13 @@ A kind of new wire with orange color. They can only connect to colored wires or 
 
 ## Diode <Badge text="v2.0"/>
 
-Diode can only pass signals from bottom port to top port with 1 electric cycle delay (0.01 second. It's essentially a Delay Gate). Only colored version in `Gigavolt Multiple` category.
+Diode can only pass signals from bottom port to top port with 1 electric cycle delay (0.01 second. It's essentially a Delay Gate). Only colored type in `Gigavolt Multiple` category.
 
 <img src="/images/base/new/diode.webp" alt="The image of New Diode" class="center_image"/>
 
 ## Four Kinds of LED <Badge text="v1.0" type="info"/>
 
-* **8 x 4 LED**：原版中的 4LED显通过 4 个小灯来展示 4 位二进制信号的情况，该元件则通过 32个小灯来展示十亿伏特 32 位二进制信号的情况In vanilla version, the 4-LED displays the 4-bit voltage using 4 square light emitting diodes. This element can display 32-bit voltage using 32 small LEDs.
+* **8 x 4 LED**：In vanilla version, the 4-LED displays the 4-bit voltage using 4 square light emitting diodes. This element can display 32-bit voltage using 32 small LEDs.
 * **4 x 4 LED**：Takes the lowest 16 bits of input voltage and display it using 16 small LEDs.
 * **4 x 2 LED**：Takes the lowest 8 bits of input voltage and display it using 8 small LEDs.
 * **8 Numerical LED**：Equivalent to eight 7-Segment displays. It displays the 32-bit voltage intuitively.

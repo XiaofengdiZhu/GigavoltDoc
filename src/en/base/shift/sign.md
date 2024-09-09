@@ -24,14 +24,13 @@ let connections = [
         new IOPort(26, 26, "Pitch Sign", "If this is 1, the angle of pitch will be negative."),
         new IOPort(27, 27, "Roll Sign", "If this is 1, the angle of roll will be negative."),
         new IOPort(28, 28, "Popup Message", "When it changes from 0 to 1, there will be a popup message on screen."),
-        new IOPort(29, 32, "Light", "Set the light of the floating text. The higher the voltage, the brighter the floating text.")
-        
+        new IOPort(29, 32, "Brightness", "Set the brightness of the floating text. The higher the voltage, the brighter the floating text.")
     ]),
     new ElectricConnection(ElectricConnectorDirection.Left, ElectricConnectorType.Input, ElectricConnectionDisplayMode.BitWidth, [
         new IOPort(1, 32, "Color", "Set the color of the floating text, in ABGR color mode.")
     ]),
         new ElectricConnection(ElectricConnectorDirection.In, ElectricConnectorType.Input, ElectricConnectionDisplayMode.BitWidth, [
-        new IOPort(1, 32, "Memory Bank ID", "When this changes, the sign will read text in UTF8 codec from the memory bank whose ID equals this. If the read is succeeded, the text in the sign will be replaced by the read result, then the text on the sign and the text floating in the air both are replaced."),
+        new IOPort(1, 32, "Memory Bank ID", "When this changes, the sign will read text in UTF8 codec from the memory bank whose ID equals this. If the read is succeeded, the text in the sign will be replaced by the read result, then the text on the sign and the text floating in the air both are replaced.")
     ])
 ];
 </script>

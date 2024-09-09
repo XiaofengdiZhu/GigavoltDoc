@@ -4,6 +4,6 @@
 
 Only the faces against each other are conductive, and the neighboring faces are not conductive.
 
-Can be painted, but it only affects the appearance, and the essence is still a colorless wire.
+It Can be painted, but it only affects the appearance, and the essence is still a colorless wire.
 
-Two version: normal wire and <span class="harnessSpan">wire harness</span>
+Two types: normal wire and <span class="harnessSpan">wire harness</span>

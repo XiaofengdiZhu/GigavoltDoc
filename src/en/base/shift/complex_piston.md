@@ -23,7 +23,7 @@ let connections = [
 ## Overview
 
 Completely controlled by input voltage. When the input voltage changes, it will try to adjust.
-> See also [Simple version](simple#Piston)
+> See also [Simple type](simple#Piston)
 
 ## Ports Definition
 

@@ -10,7 +10,7 @@ let connections = [
     new ElectricConnection(ElectricConnectorDirection.All, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [
         new IOPort(1, 1, "电源", "0 为关闭，1 为开启"),
         new IOPort(2, 2, "重置", "0 为不重置，1 为执行重置；如一直为 1，会不停重置"),
-        new IOPort(3, 4, "旋转", "0 为正位，1 为顺时针旋转 90 度，2、3 同理"),
+        new IOPort(3, 4, "旋转", "0 为正位，每加 1 画面顺时针旋转 90 度"),
         new IOPort(5, 8, "空", "无作用"),
         new IOPort(9, 16, "手柄 1", "从高位到低位分别对应：`→`&#8203;`←`&#8203;`↓`&#8203;`↑`&#8203;`Start`&#8203;`Select`&#8203;`B`&#8203;`A`"),
         new IOPort(17, 24, "手柄 2", "无作用，因为 [XamariNES](https://github.com/enusbaum/XamariNES) 尚未支持多手柄"),
@@ -24,7 +24,7 @@ let connections = [
 
 ## 概述
 
-可以模拟红白机的模拟器，使用的库是 [XamariNES](https://github.com/enusbaum/XamariNES)，纯软件模拟（CPU运算），不支持声音输出，仅支持以下四种ROM格式的游戏
+可以模拟红白机的模拟器，使用的库是 [XamariNES](https://github.com/enusbaum/XamariNES)，纯软件模拟（CPU 运算），不支持声音输出，仅支持以下四种 ROM 格式的游戏
 
 * CNROM
 * MMC1
@@ -46,6 +46,6 @@ let connections = [
 
 ## 端口定义
 
-> 方块的各面输入会按或计算后执行
+> 各端口的输入会按或计算后作为最终输入
 
 <ElectricElement imgAltPrefix="红白机模拟器" :connections="connections" imgSrc="/images/expand/leds/GVNesEmulatorBlock.webp"/>

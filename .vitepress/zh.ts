@@ -186,23 +186,23 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                 items: [
                     {
                         text: '示波器',
-                        link: '/zh/expand/leds/oscilloscope'
+                        link: '/zh/expand/displays/oscilloscope'
                     },
                     {
                         text: '方块展示板',
-                        link: '/zh/expand/leds/block_display_led'
+                        link: '/zh/expand/displays/block_display_led'
                     },
                     {
                         text: '图片显示器',
-                        link: '/zh/expand/leds/image_display_led'
+                        link: '/zh/expand/displays/image_display_led'
                     },
                     {
                         text: '地层显示器',
-                        link: '/zh/expand/leds/terrain_display_led'
+                        link: '/zh/expand/displays/terrain_display_led'
                     },
                     {
                         text: '红白机模拟器',
-                        link: '/zh/expand/leds/nes_emulator'
+                        link: '/zh/expand/displays/nes_emulator'
                     }
                 ]
             },

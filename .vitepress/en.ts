@@ -180,6 +180,32 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                         link: '/en/expand/memory_banks/memory_banks_operator'
                     }
                 ]
+            },
+            {
+                text: 'Display',
+                collapsed: true,
+                items: [
+                    {
+                        text: 'Oscilloscope',
+                        link: '/en/expand/displays/oscilloscope'
+                    },
+                    {
+                        text: 'Block Show Board',
+                        link: '/en/expand/displays/block_display_led'
+                    },
+                    {
+                        text: 'Image Display',
+                        link: '/en/expand/displays/image_display_led'
+                    },
+                    {
+                        text: 'Terrain Stratum Display',
+                        link: '/en/expand/displays/terrain_display_led'
+                    },
+                    {
+                        text: 'NES Emulator',
+                        link: '/en/expand/displays/nes_emulator'
+                    }
+                ]
             }
         ]
     }

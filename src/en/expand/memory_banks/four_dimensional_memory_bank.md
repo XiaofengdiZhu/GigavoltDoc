@@ -39,7 +39,7 @@ The exported file format is `.GBFDMB`, which is essentially a [ZIP](https://supp
 > [!TIP] 💡 Tip
 > Please avoid using W and Z axis, or set the value as small as possible when initializing. Because the performance of multidimensional data in saving and other operations is poor, which may cause lag.
 
-## Port Definition
+## Ports Definition
 
 <ElectricElement imgAltPrefix="Four Dimensional Memory Bank" :connections="connections" imgSrc="/images/expand/memory_banks/GVFourDimensionalMemoryBankBlock.webp"/>
 

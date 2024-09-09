@@ -8,7 +8,7 @@ import UintColorConverter from "/components/UintColorConverter.vue";
 
 ## Differences
 
-An element that can store data. Its port definition is the same as the vanilla version. The differences are as follows:
+An element that can store data. Its Ports Definition is the same as the vanilla version. The differences are as follows:
 
 * You must manually set width and height to initialize the memory bank before store data. The width and height cannot be modified after initialization. (But may be overwritten by other operations.)
 * The row and column count limits are raised to 2^32^-1, and the product of width and height cannot exceed 2^32^-1.

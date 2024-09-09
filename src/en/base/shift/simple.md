@@ -9,7 +9,7 @@ import Detonator from "/components/Detonator/Detonator.vue";
 
 # Shifts of Simple Elements
 
-> `Spiked Plank`&#8203;`Christmas Tree`&#8203;`Gunpowder Keg`&#8203;`Thermometer`&#8203;`Hygrometer`in vanilla that can be interacted with electric, and they don't have a shift or classic version in this mod.
+> `Spiked Plank`&#8203;`Christmas Tree`&#8203;`Gunpowder Keg`&#8203;`Thermometer`&#8203;`Hygrometer`in vanilla that can be interacted with electric, and they don't have a shift or classic type in this mod.
 
 ## Wires <Badge text="v2.0"/>
 
@@ -88,7 +88,7 @@ The default overflow voltage is 1.6 V, and the upper limit is 1.5 V.
 * The maximum extension, push and pull length is 2^32^-1 blocks. (If a piston gets stuck when pushing or pulling too many blocks, it is caused by other game subsystems.)
 * More speed options: 2xFast, 3xFast, 4xFast.
 * New option: Hide Pole (hide the extension pole).
-* In addition, [Complex version](complex_piston) is available.
+* In addition, [Complex type](complex_piston) is available.
 
 ## Multicolored LED、1-LED <Badge text="v1.0" type="info"/>
 
@@ -124,7 +124,7 @@ The input voltage between 0.8 V and 1.5 V produces light of 8 different colors.
 ## Doors, Trapdoors, Fence Gates <Badge text="v1.0" type="info"/>
 
 * ⭕ **Vanilla**：Open or close when the input voltage changes from less than 0.8 V to greater than 0.7 V.
-* ⚡ **Gigavolt**：The opening degree is controlled by the input voltage, 0V closed, 0x2D V opens 45 degrees, 0x5A V and above fully open. No classic version.
+* ⚡ **Gigavolt**：The opening degree is controlled by the input voltage, 0V closed, 0x2D V opens 45 degrees, 0x5A V and above fully open. No classic type.
 
 ## Complex Elements
 
@@ -132,7 +132,7 @@ See：
 
 * [Digital to Analog And Analog to Digital Converter](converter) - Changes to 4 combiners and 4 splitters.
 * [Memory Bank](memory_bank) - The row and column limits are raised to 2^32^-1.
-* [Truth Table Circuit](truth_table) - Besides being able to output voltages based on specified inputs like the classic version, it can also perform expression calculations.
+* [Truth Table Circuit](truth_table) - Besides being able to output voltages based on specified inputs like the classic type, it can also perform expression calculations.
 * [Real Time Clock](real_time_clock) - Outputs the time in the real world.
 * [Sound Generator](sound_generator) - Plays PCM-encoded audio data.
 * [Complex Piston](complex_piston) - Completely controlled by input voltage. When the input voltage changes, it will try to adjust.

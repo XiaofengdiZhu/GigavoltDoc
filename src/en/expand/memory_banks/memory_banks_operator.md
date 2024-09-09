@@ -74,7 +74,7 @@ You must specify the correct memory bank ID at the top, left and right port; oth
 
 Besides copy operation, the height of result memory bank will be set to 1 and width to data count, so it's recommended to output to a [List Memory Bank](list_memory_bank), that you can adjust width after initialization.
 
-### Port Definition
+### Ports Definition
 
 <ElectricElement imgAltPrefix="Memory Banks Operator" :connections="connections1" imgSrc="/images/expand/memory_banks/GVMemoryBanksOperatorBlock.webp" :titleLevel="4" :serial="1"/>
 
@@ -101,6 +101,6 @@ Specify a memory bank as the template by set its ID at the left port, and a memo
 When the bottom input changes to 256 V (0x100), the Memory Banks Operator will try to initialize in batch.  
 The memory banks in the range must be the same type as the template.
 
-### Port Definition
+### Ports Definition
 
 <ElectricElement imgAltPrefix="Memory Banks Operator" :connections="connections2" imgSrc="/images/expand/memory_banks/GVMemoryBanksOperatorBlock.webp" :titleLevel="4" :serial="2"/>

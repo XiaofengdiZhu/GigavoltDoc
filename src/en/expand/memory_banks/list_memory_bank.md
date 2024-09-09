@@ -34,9 +34,9 @@ It's similar to [Memory Bank](../../base/shift/memory_bank), it can only store o
 The file saved to the save is an unprocessed binary file, which can be edited with a hex editor.  
 The exported file format is `.GBLMB`, which is essentially a [ZIP](https://support.pkware.com/pkzip/appnote) compressed file. It can be uncompressed and edited with a hex editor.
 
-> In addition, it has [Volatile Version](volatile_memory_banks#volatile-list-memory-bank)
+> In addition, it has [Volatile type](volatile_memory_banks#volatile-list-memory-bank)
 
-## Port Definition
+## Ports Definition
 
 <ElectricElement imgAltPrefix="List Memory Bank" :connections="connections" imgSrc="/images/expand/memory_banks/GVListMemoryBankBlock.webp"/>
 

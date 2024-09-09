@@ -29,7 +29,7 @@ let connections = [
 
 ## 端口定义
 
-> 方块的各面输入会按或计算后执行
+> 各面的输入会按或计算后作为最终输入
 
 <ElectricElement imgAltPrefix="十亿伏特发射器" :connections="connections" imgSrc="/images/base/shift/GVDispenser.webp"/>
 

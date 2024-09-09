@@ -53,7 +53,7 @@ The Jump Wires with the same tag can read the bottom inputs of each other, which
 
 There are green lines between the jump wires with the same tag, indicating that they are connected to each other.
 
-## Port Definition
+## Ports Definition
 
 <ElectricElement imgAltPrefix="Jump Wire" :connections="connections" imgSrc="/images/expand/wires/GVJumpWireBlock.webp" gateMask="true"/>
 
