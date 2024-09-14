@@ -98,7 +98,7 @@ The input voltage between 0.8 V and 1.5 V produces light of 8 different colors.
 
 ### ⚡ Gigavolt
 
-* The input voltage with an alpha channel greater than 0 produces light of 4 billion different colors. The color mode is `ABGR`.
+* The input voltage with an alpha channel greater than 0 produces light of 4 billion different colors. The color mode is ABGR.
 * 1-LED produces light from the whole surface. There are no joint lines between two 1-LED.
 
 > [!TIP] 📝 ABGR Color Mode

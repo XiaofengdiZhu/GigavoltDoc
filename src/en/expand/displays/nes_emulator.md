@@ -11,11 +11,11 @@ let connections = [
         new IOPort(1, 1, "Power", "If this is 0, the emulator will shut down, otherwise it will be turned on."),
         new IOPort(2, 2, "Reset", "When this is 1, the emulator will reset itself."),
         new IOPort(3, 4, "旋转", "For each 1 increase of this, the screen of the emulator will rotate 90 degree clockwise."),
-        new IOPort(5, 8, "Empty", "No Effect"),
+        new IOPort(5, 8, "Empty", "No effect."),
         new IOPort(9, 16, "Controller 1", "From the lowest bit to the highest bit：`→`&#8203;`←`&#8203;`↓`&#8203;`↑`&#8203;`Start`&#8203;`Select`&#8203;`B`&#8203;`A`"),
         new IOPort(17, 24, "Controller 2", "No Effect，Because [XamariNES](https://github.com/enusbaum/XamariNES) does not support the second controller."),
         new IOPort(25, 31, "Scale", "If this is 0 or 1, the screen of the emulator will be 1 block size. Then each 1 increase of this, the screen size of the emulator will increase 1 block."),
-        new IOPort(32, 32, "Empty", "No Effect")
+        new IOPort(32, 32, "Empty", "No effect.")
     ])
 ];
 </script>

@@ -11,7 +11,7 @@ let connections = [
     new ElectricConnection(ElectricConnectorDirection.Top, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [
         new IOPort(1, 8, "视角角度", "单位为角度"),
         new IOPort(9, 16, "空", "无作用"),
-        new IOPort(17, 32, "Y 轴位置偏移", "每加 1，拍照位置向上移动 1/8 格  \n最高位为 1 时改为向下"),
+        new IOPort(17, 32, "Y 轴位置偏移", "每加 1，拍照位置向上移动 1/8 格  \n最高位为 1 时改为向下")
     ]),
     new ElectricConnection(ElectricConnectorDirection.Right, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [
         new IOPort(1, 16, "X 轴位置偏移", "每加 1，拍照位置向北移动 1/8 格  \n最高位为 1 时改为向南"),
@@ -32,7 +32,7 @@ let connections = [
         new IOPort(17, 32, "照片的宽度", "建议不超过 8192 (0x2000)")
     ]),
         new ElectricConnection(ElectricConnectorDirection.In, ElectricConnectorType.Input, ElectricConnectionDisplayMode.BitWidth, [
-        new IOPort(1, 32, "存储器 ID", "将图像输出到指定 ID 的存储器"),
+        new IOPort(1, 32, "存储器 ID", "将图像输出到指定 ID 的存储器。像素按 ABGR 颜色模式转换为数据。")
     ])
 ];
 </script>
@@ -47,9 +47,9 @@ let connections = [
 
 <img alt="简单照相机 图示" src="/images/expand/sensors/GVCameraBlock0.webp" class="center_image small">
 
-输入指定的存储器 ID，每次输入发生变化就会对着面对的方向拍照，视角为 90 度，分辨率为 512×512，并把图像的所有像素按 ABGR 颜色模式保存到指定的存储器中
+输入指定的存储器 ID，每次输入发生变化就会对着面对的方向拍照，视角为 90 度，分辨率为 512×512，并把图像保存到指定的存储器中
 
-如果有多个输入，则会将这些输入进行或计算
+> 各端口的输入会按或计算后作为最终输入
 
 ## 复杂照相机
 

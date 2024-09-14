@@ -26,7 +26,7 @@ import UintColorConverter from "/components/UintColorConverter.vue";
 
 十亿伏特存储器保存和导出的格式均为无损 [PNG](https://www.w3.org/TR/png/) 图片，这是为存储远超原版的数据量，这也导致必须先设定好长、宽，而且之后不能修改，另外建议不要设置过大的长宽，因为每次修改数据后，存档时编码需耗费较长时间，导致卡顿
 
-数据保存时，会按`ABGR`颜色模式保存到每个像素的颜色中，从高位到低位，每 8 位分别为颜色的<span style="opacity:0.6;">Alpha 透明度通道</span>、<span style="color:blue;">Blue 蓝色通道</span>、<span style="color:green;">Green 绿色通道</span>、<span style="color:red;">Red 红色通道</span>，例如 `0xFFDD6655` 会被储存为透明度为 0xFF，蓝色为 <span style="color:#0000DD;">0xDD</span>，绿色为 <span style="color:#006600;">0x66</span>，红色为 <span style="color:#550000;">0x55</span> 的像素 <span style="display:inline-block;width:1em;height:1em;vertical-align:middle;background-color:#5566DD;"/>
+数据保存时，会按 ABGR 颜色模式保存到每个像素的颜色中，从高位到低位，每 8 位分别为颜色的<span style="opacity:0.6;">Alpha 透明度通道</span>、<span style="color:blue;">Blue 蓝色通道</span>、<span style="color:green;">Green 绿色通道</span>、<span style="color:red;">Red 红色通道</span>，例如 `0xFFDD6655` 会被储存为透明度为 0xFF，蓝色为 <span style="color:#0000DD;">0xDD</span>，绿色为 <span style="color:#006600;">0x66</span>，红色为 <span style="color:#550000;">0x55</span> 的像素 <span style="display:inline-block;width:1em;height:1em;vertical-align:middle;background-color:#5566DD;"/>
 
 ::: details 🛠️ 电压颜色转换器
 
@@ -35,7 +35,7 @@ import UintColorConverter from "/components/UintColorConverter.vue";
 
 ### 导入 PNG 格式图片文件
 
-导入的图片将按照`ABGR`颜色模式读取每一个像素存入存储器中，存储器的长宽将被图片的长宽覆盖
+导入的图片将按照 ABGR 颜色模式读取每一个像素存入存储器中，存储器的长宽将被图片的长宽覆盖
 
 ### 导入 WAV 格式音频文件
 

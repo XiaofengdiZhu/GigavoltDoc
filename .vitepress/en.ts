@@ -206,6 +206,32 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                         link: '/en/expand/displays/nes_emulator'
                     }
                 ]
+            },
+            {
+                text: 'Sensors',
+                collapsed: true,
+                items: [
+                    {
+                        text: 'Block Value Plate',
+                        link: '/en/expand/sensors/block_value_plate'
+                    },
+                    {
+                        text: 'Terrain Raycast Detector',
+                        link: '/en/expand/sensors/terrain_raycast_detector'
+                    },
+                    {
+                        text: 'Terrain Scanner',
+                        link: '/en/expand/sensors/terrain_scanner'
+                    },
+                    {
+                        text: 'Player Monitor',
+                        link: '/en/expand/sensors/player_monitor'
+                    },
+                    {
+                        text: 'Camera',
+                        link: '/en/expand/sensors/camera'
+                    }
+                ]
             }
         ]
     }

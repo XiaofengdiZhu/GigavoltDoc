@@ -8,7 +8,7 @@ import ElectricElement from "../../../components/ElectricElement/ElectricElement
 
 let connections = [
     new ElectricConnection(ElectricConnectorDirection.Top, ElectricConnectorType.Input, ElectricConnectionDisplayMode.BitWidth, [
-        new IOPort(1, 16, "起始距离", "每加 1，扫描起始位置距离扫描仪面向的方向加 1 格，最高位为 1 时向背面；如果为 0xFFFF，则不调整起始距离，扫描方式改为像 [地形射线探测器](terrain_raycast_detector) 那样，向面对方向不断扫描直到遇到非空气方块（可用于生成地图）"),
+        new IOPort(1, 16, "起始距离", "每加 1，扫描起始位置距离扫描仪面向的方向加 1 格，最高位为 1 时向背面  \n如果为 0xFFFF，则不调整起始距离，扫描方式改为像 [地形射线探测器](terrain_raycast_detector) 那样，向面对方向不断扫描直到遇到非空气方块（可用于生成地图）"),
         new IOPort(17, 17, "是否存储方块特殊值", "为 0 时只保存方块 ID，为 1 时方块 ID 和数据一并保存"),
         new IOPort(18, 32, "空", "无作用")
     ]),
@@ -17,7 +17,7 @@ let connections = [
         new IOPort(17, 32, "起始横向偏移", "每加 1，扫描起始位置横向偏移 1 格，最高位为 1 时取反方向，正方向的定义另见下表")
     ]),
         new ElectricConnection(ElectricConnectorDirection.Bottom, ElectricConnectorType.Input, ElectricConnectionDisplayMode.BitWidth, [
-        new IOPort(1, 32, "启动", "从0变为非0时启动扫描并将结果保存到指定 ID 的存储器")
+        new IOPort(1, 32, "启动", "从 0 变为非 0 时启动扫描并将结果保存到指定 ID 的存储器")
     ]),
     new ElectricConnection(ElectricConnectorDirection.Left, ElectricConnectorType.Input, ElectricConnectionDisplayMode.BitWidth, [
         new IOPort(1, 16, "纵向扫描高度", "每加 1，扫描的高度加 1 格，扫描方向的定义另见下表"),
@@ -34,6 +34,7 @@ let connections = [
 ## 概述
 
 向扫描仪面对的面平行扫描方块，将结果保存到指定存储器，可指定起始距离和范围
+
 > [!WARNING] ⚠ 注意
 > 扫描成功将直接覆盖存储器原始数据！
 

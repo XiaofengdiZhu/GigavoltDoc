@@ -20,7 +20,7 @@ let connections = [
         new IOPort(1, 32, "Sample Rate", "Set the sample rate of playback, in Hz. This setting only takes effect when reading the audio data.  \nRange: 8000 \~ 48000 (In hexadecimal: 1F40 \~ BB80)")
     ]),
         new ElectricConnection(ElectricConnectorDirection.In, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
-        new IOPort(1, 32, "Memory Bank ID", "Set the ID of memory bank that the audio data read from. This setting only takes effect when reading the audio data."),
+        new IOPort(1, 32, "Memory Bank ID", "Set the ID of a memory bank that the audio data read from. This setting only takes effect when reading the audio data."),
     ])
 ];
 </script>

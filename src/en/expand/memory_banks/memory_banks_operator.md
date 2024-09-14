@@ -38,7 +38,7 @@ let connections2 = [
         new IOPort(25, 25, "X Range Sign", "If this is 1, the end position moves east but not west."),
         new IOPort(26, 26, "Y Range Sign", "If this is 1, the end position moves down but not up."),
         new IOPort(27, 27, "Z Range Sign", "If this is 1, the end position moves south but not north."),
-        new IOPort(28, 32, "Empty", "No Effect")
+        new IOPort(28, 32, "Empty", "No effect.")
     ]),
         new ElectricConnection(ElectricConnectorDirection.Bottom, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
         new IOPort(1, 32, "When this changes to 256 V (0x100), the Memory Banks Operator will try to initialize.", "")
@@ -55,7 +55,7 @@ let connections2 = [
         new IOPort(27, 27, "Z Offset Sign", "If this is 1, the start position moves south but not north."),
         new IOPort(28, 28, "Don't Output Result", "If this is 1, the result will not be output to the result memory bank<br/>No matter whether it outputs result, you must set an available memory bank id."),
         new IOPort(29, 29, "Whether Overwrite", "If this is 1, it will overwrite the memory banks that already have data."),
-        new IOPort(30, 32, "Empty", "No Effect")
+        new IOPort(30, 32, "Empty", "No effect.")
     ])
 ];
 </script>

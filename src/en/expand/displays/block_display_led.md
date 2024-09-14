@@ -17,15 +17,15 @@ let connections = [
         new IOPort(17, 32, "Z Offset", "For each 1 increase of this, the position of the floating block moves east by 1/8 block. If the highest bit of this is 1, moving west instead.")
     ]),
         new ElectricConnection(ElectricConnectorDirection.Bottom, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [
-        new IOPort(1, 8, "Yaw", "Set the angle of yaw of the floating text, in degree."),
-        new IOPort(9, 16, "Pitch", "Set the angle of pitch of the floating text, in degree."),
-        new IOPort(17, 24, "Roll", "Set the angle of roll of the floating text, in degree."),
-        new IOPort(25, 25, "Yaw Sign", "If this is 1, the angle of yaw will be negative."),
-        new IOPort(26, 26, "Pitch Sign", "If this is 1, the angle of pitch will be negative."),
-        new IOPort(27, 27, "Roll Sign", "If this is 1, the angle of roll will be negative."),
-        new IOPort(28, 28, "Empty", "No Effect"),
+        new IOPort(1, 8, "Yaw", "Set the yaw angle of the floating text, in degree."),
+        new IOPort(9, 16, "Pitch", "Set the pitch angle of the floating text, in degree."),
+        new IOPort(17, 24, "Roll", "Set the roll angle of the floating text, in degree."),
+        new IOPort(25, 25, "Yaw Sign", "If this is 1, the yaw angle will be negative."),
+        new IOPort(26, 26, "Pitch Sign", "If this is 1, the pitch angle will be negative."),
+        new IOPort(27, 27, "Roll Sign", "If this is 1, the roll angle will be negative."),
+        new IOPort(28, 28, "Empty", "No effect."),
         new IOPort(29, 29, "Whether Retaining", "When this is 0, if other parameters change, the floating block will be changed immediately.  \n When this is 1, if other parameters change, a new floating block will be displayed with the new parameters, and the old ones will be retained until this changes to 0, or exit the world."),
-        new IOPort(30, 32, "Empty", "No Effect")
+        new IOPort(30, 32, "Empty", "No effect.")
     ]),
     new ElectricConnection(ElectricConnectorDirection.Left, ElectricConnectorType.Input, ElectricConnectionDisplayMode.BitWidth, [
         new IOPort(1, 32, "Color", "Paint color on the floating block, in ABGR color mode.")

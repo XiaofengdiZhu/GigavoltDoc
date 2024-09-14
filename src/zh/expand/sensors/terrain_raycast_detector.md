@@ -25,7 +25,7 @@ let connections = [
         new IOPort(15, 32, "指定方块特殊值", "如果`指定方块 ID`部分大于 0，且`是否判断特殊值`为 1，将同时判断方块的特殊值是否与该部分相等")
     ]),
         new ElectricConnection(ElectricConnectorDirection.In, ElectricConnectorType.Output, ElectricConnectionDisplayMode.BitWidth, [
-        new IOPort(1, 32, "存储器 ID", "指定要保存到的存储器的 ID"),
+        new IOPort(1, 32, "连续方块数量", "探测到符合条件的方块后，输出当前方向连续出现了多少个该方块")
     ])
 ];
 </script>
@@ -34,7 +34,7 @@ let connections = [
 
 ## 概述
 
-每次输入变化时，向探测器面对的方向逐格探测是否存在非空气方块，并返回距离等数据，还能探测指定方块
+每次输入变化时，向探测器面对的方向逐格探测是否存在非空气方块，并返回距离等数据，还能探测指定方块  
 需要先设置探测距离
 
 ## 端口定义

@@ -98,7 +98,7 @@ import Detonator from "/components/Detonator/Detonator.vue";
 
 ### ⚡ 十亿伏特版
 
-* 所有输入电压均对应不同颜色（`ABGR`颜色模式，当透明度通道大于 0 时）
+* 所有输入电压均对应不同颜色（ABGR 颜色模式，当透明度通道大于 0 时）
 * 1 面 LED 整面全部发光，可无缝拼接
 
 > [!TIP] 📝 ABGR 颜色模式

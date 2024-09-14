@@ -26,7 +26,7 @@ An element that can store data. Its Ports Definition is the same as the vanilla 
 
 Gigavolt Memory Bank stores and exports data in lossless [PNG](https://www.w3.org/TR/png/) image, for storing the data which is much more than the vanilla version. And this is why you need to set the length and width before editing, and you cannot modify it after setting. It is recommended not to set the width and height too big, because modification of data requires a long time to encode when saving, and it will cause lag.
 
-When being saved or exported, every data will be stored in the image pixel in`ABGR`color mode. From the highest bit to the lowest bit, every 8 bits will be stored in the <span style="opacity:0.6;">Alpha Channel</span>, <span style="color:blue;">Blue Channel</span>, <span style="color:green;">Green Channel</span>, <span style="color:red;">Red Channel</span>. For example`0xFFDD6655`will be stored as a pixel <span style="display:inline-block;width:1em;height:1em;vertical-align:middle;background-color:#5566DD;"/> with 0xFF alpha, <span style="color:#0000DD;">0xDD</span> Blue, <span style="color:#006600;">0x66</span> Green, <span style="color:#550000;">0x55</span> Red.
+When being saved or exported, every data will be stored in the image pixel in ABGR color mode. From the highest bit to the lowest bit, every 8 bits will be stored in the <span style="opacity:0.6;">Alpha Channel</span>, <span style="color:blue;">Blue Channel</span>, <span style="color:green;">Green Channel</span>, <span style="color:red;">Red Channel</span>. For example`0xFFDD6655`will be stored as a pixel <span style="display:inline-block;width:1em;height:1em;vertical-align:middle;background-color:#5566DD;"/> with 0xFF alpha, <span style="color:#0000DD;">0xDD</span> Blue, <span style="color:#006600;">0x66</span> Green, <span style="color:#550000;">0x55</span> Red.
 
 ::: details 🛠️ Voltage Color Converter
 
@@ -35,7 +35,7 @@ When being saved or exported, every data will be stored in the image pixel in`AB
 
 ### Import PNG Format Image File
 
-Every pixel of the importing image will be converted to data in`ABGR`color mode, then the data will be stored in the memory bank. The width and height of the memory bank will be overwritten by the width and height of the importing image.
+Every pixel of the importing image will be converted to data in ABGR color mode, then the data will be stored in the memory bank. The width and height of the memory bank will be overwritten by the width and height of the importing image.
 
 ### Import WAV Format Audio File
 
