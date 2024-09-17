@@ -8,7 +8,7 @@ import ElectricElement from "../../../components/ElectricElement/ElectricElement
 
 let connections = [
     new ElectricConnection(ElectricConnectorDirection.Top, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
-        new IOPort(1, 32, "Playback Start Index", "Set the playback starting from the nth 16-bit data. This setting only takes effect when reading the audio data.  \nFor example, if the Left Input is 44100 V, and you set this port to 88200 V, the playback will starts from 88200/2/44100 = 1 second."),
+        new IOPort(1, 32, "Playback Start Index", "Set the playback starting from the nth 16-bit data. This setting only takes effect when reading the audio data.  \nFor example, if the Left Input is 44100 V, and you set this port to 88200 V, the playback will starts from 88200/2/44100 = 1 second.")
     ]),
     new ElectricConnection(ElectricConnectorDirection.Right, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
         new IOPort(1, 32, "Playback Length", "Set how much 16-bit data to play, only takes effect when reading the audio data.")
@@ -20,7 +20,7 @@ let connections = [
         new IOPort(1, 32, "Sample Rate", "Set the sample rate of playback, in Hz. This setting only takes effect when reading the audio data.  \nRange: 8000 \~ 48000 (In hexadecimal: 1F40 \~ BB80)")
     ]),
         new ElectricConnection(ElectricConnectorDirection.In, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
-        new IOPort(1, 32, "Memory Bank ID", "Set the ID of a memory bank that the audio data read from. This setting only takes effect when reading the audio data."),
+        new IOPort(1, 32, "Memory Bank ID", "Set the ID of a memory bank that the audio data read from. This setting only takes effect when reading the audio data.")
     ])
 ];
 </script>

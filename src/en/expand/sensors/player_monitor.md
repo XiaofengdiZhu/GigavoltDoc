@@ -14,7 +14,7 @@ let connections = [
         new IOPort(1, 32, "Output Result", "")
     ], false, true),
         new ElectricConnection(ElectricConnectorDirection.Bottom, ElectricConnectorType.Input, ElectricConnectionDisplayMode.BitWidth, [
-        new IOPort(1, 16, "Synchronous Operations, details is in the table below.", ""),
+        new IOPort(1, 16, "Synchronous Operations, details are in the table below.", ""),
         new IOPort(1, 16, "Player Index", "")
     ], false, true),
     new ElectricConnection(ElectricConnectorDirection.Left, ElectricConnectorType.Output, ElectricConnectionDisplayMode.Hide, [

@@ -25,7 +25,7 @@ let connections = [
         new IOPort(15, 32, "Specify Block Data", "If`Specify Block Content`is greater than 0 and`Whether Check Block Data`is 1, the detector will also check whether the data of block equals to this.")
     ]),
         new ElectricConnection(ElectricConnectorDirection.In, ElectricConnectorType.Output, ElectricConnectionDisplayMode.BitWidth, [
-        new IOPort(1, 32, "Continuous Count", "If the block, which meets the conditions, is detected, the detector will continue detecting until a block not the first one."),
+        new IOPort(1, 32, "Continuous Count", "If the block, which meets the conditions, is detected, the detector will continue detecting until a block not the first one.")
     ])
 ];
 </script>

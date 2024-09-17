@@ -24,7 +24,7 @@ let connections = [
         new IOPort(17, 32, "横向扫描宽度", "每加 1，扫描的宽度加 1 格，扫描方向的定义另见下表")
     ]),
         new ElectricConnection(ElectricConnectorDirection.In, ElectricConnectorType.Input, ElectricConnectionDisplayMode.BitWidth, [
-        new IOPort(1, 32, "存储器 ID", "指定要保存到的存储器的 ID"),
+        new IOPort(1, 32, "存储器 ID", "指定要保存到的存储器的 ID")
     ])
 ];
 </script>

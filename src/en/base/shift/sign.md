@@ -10,7 +10,7 @@ import UintColorConverter from "/components/UintColorConverter.vue";
 let connections = [
     new ElectricConnection(ElectricConnectorDirection.Top, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [
         new IOPort(1, 16, "Scale Size", "For each 1 increase of this, the scale size of floating text increases by 1/8 times, with a maximum of 8191.875 times."),
-        new IOPort(17, 32, "Y Offset", "For each 1 increase of this, the position of floating text moves up by 1/8 block. If the highest bit of this is 1, moving down instead."),
+        new IOPort(17, 32, "Y Offset", "For each 1 increase of this, the position of floating text moves up by 1/8 block. If the highest bit of this is 1, moving down instead.")
     ]),
     new ElectricConnection(ElectricConnectorDirection.Right, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [
         new IOPort(1, 16, "X Offset", "For each 1 increase of this, the position of floating text moves north by 1/8 block. If the highest bit of this is 1, moving south instead."),

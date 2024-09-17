@@ -9,7 +9,7 @@ import {onMounted} from "vue";
 
 let connections = [
     new ElectricConnection(ElectricConnectorDirection.Top, ElectricConnectorType.Output, ElectricConnectionDisplayMode.Hide, [
-        new IOPort(1, 32, "输出", "根据左端和右端的电压，将下端输入和其他飞线的输入按或计算后，输出相应结果"),
+        new IOPort(1, 32, "输出", "根据左端和右端的电压，将下端输入和其他飞线的输入按或计算后，输出相应结果")
     ]),
     new ElectricConnection(ElectricConnectorDirection.Right, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
         new IOPort(1, 32, "是否读取其他飞线", "大于 7 V 时，将会从标签相同的飞线读取其下端输入，但如果那个标签的左端小于 7 V，将无法读取")
@@ -21,7 +21,7 @@ let connections = [
         new IOPort(1, 32, "是否允许下端输入", "大于 7 V时，将允许下端输入，而且下端输入将能被标签相同的其他飞线读取")
     ]),
         new ElectricConnection(ElectricConnectorDirection.In, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
-        new IOPort(1, 32, "标签", "设置该飞线的标签，标签相同的飞线之间会有绿色指示线，代表它们互相连接"),
+        new IOPort(1, 32, "标签", "设置该飞线的标签，标签相同的飞线之间会有绿色指示线，代表它们互相连接")
     ])
 ];
 

@@ -10,7 +10,7 @@ import UintColorConverter from "/components/UintColorConverter.vue";
 let connections = [
     new ElectricConnection(ElectricConnectorDirection.Top, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [
         new IOPort(1, 16, "缩放大小", "每加 1，显示大小增加 1/8 倍，最大 8191.875 倍"),
-        new IOPort(17, 32, "Y 轴位置偏移", "每加 1，显示向上移动 1/8 格，最高位为 1 时改为向下"),
+        new IOPort(17, 32, "Y 轴位置偏移", "每加 1，显示向上移动 1/8 格，最高位为 1 时改为向下")
     ]),
     new ElectricConnection(ElectricConnectorDirection.Right, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [
         new IOPort(1, 16, "X 轴位置偏移", "每加 1，显示向北移动 1/8 格，最高位为 1 时改为向南"),
@@ -23,12 +23,12 @@ let connections = [
         new IOPort(25, 25, "偏航角的符号", "为 1 时，`偏航角`反向旋转"),
         new IOPort(26, 26, "俯仰角的符号", "为 1 时，`俯仰角`反向旋转"),
         new IOPort(27, 27, "翻滚角的符号", "为 1 时，`翻滚角`反向旋转"),
-        new IOPort(28, 28, "使用自定义亮度", "为 1 时，子地形的亮度为`自定义亮度`，否则采用环境亮度"),
+        new IOPort(28, 28, "使用自定义亮度", "为 1 时，子地形的亮度为`自定义亮度`，否则采用主世界环境亮度"),
         new IOPort(29, 32, "自定义亮度", "值越大越亮，越小越暗")
         
     ]),
     new ElectricConnection(ElectricConnectorDirection.Left, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [
-        new IOPort(1, 1, "捕获/释放", "从 0 变为 1 时，将尝试捕获或释放方块  \n释放时，子地形必须与主世界平行，缩放为 1.0"),
+        new IOPort(1, 1, "捕获/释放", "从 0 变为 1 时，将尝试捕获或释放方块  \n释放时，子地形必须与主世界平行，且缩放为 1.0"),
         new IOPort(2, 2, "位置提示", "为 1 时，将持续显示一根线来提示当前各输入指向的位置  \n从 0 变为 1 时，能预览能被捕获到的方块")
     ])
 ];
@@ -38,7 +38,7 @@ let connections = [
 
 ## 概述
 
-可将一片悬浮的方块捕获为`子地形`，接下来可以自由地将它移动、旋转、缩放，如果捕获的方块中有正在工作的牵引光束，则可套娃运行，不限层数
+可将一片悬浮的方块捕获为`子地形`，接下来可以自由地将它移动、旋转、缩放，如果捕获的方块中有正在工作的牵引光束，则可套娃运行，不限层数  
 `子地形`实际运行在亚空间中，其内部只有十亿伏特电路板能基本正常运作，你所看到的实际只是它的投影，所以你无法与其直接交互（包括点击、碰撞、射击、爆炸），当前版本有三种与其交互的手段：
 
 * [飞线](../wires/jump_wire)
@@ -61,3 +61,6 @@ let connections = [
 ## 端口定义
 
 <ElectricElement imgAltPrefix="牵引光束" :connections="connections" imgSrc="/images/expand/transportation/GVTractorBeamBlock.webp" :titleLevel="4"/>
+
+> [!INFO] 💡 提示
+> 各方向的偏移范围为 ±4095.875 格

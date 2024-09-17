@@ -24,7 +24,7 @@ let connections = [
         new IOPort(17, 32, "Horizontal Scan Width", "For each 1 increase of this, the end position moves one more block in horizontal direction. The positive direction is defined below.")
     ]),
         new ElectricConnection(ElectricConnectorDirection.In, ElectricConnectorType.Input, ElectricConnectionDisplayMode.BitWidth, [
-        new IOPort(1, 32, "Memory Bank ID", "Specify a memory bank with the same ID to store result."),
+        new IOPort(1, 32, "Memory Bank ID", "Specify a memory bank with the same ID to store result.")
     ])
 ];
 </script>

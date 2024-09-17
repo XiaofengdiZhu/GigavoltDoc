@@ -15,7 +15,7 @@ let connections = [
         new IOPort(17, 32, "Z-Coordinate", "")
     ], false, true),
         new ElectricConnection(ElectricConnectorDirection.Bottom, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
-        new IOPort(1, 32, "Synchronous Operations, details is in the table below.", "")
+        new IOPort(1, 32, "Synchronous Operations, details are in the table below.", "")
     ], false, true),
     new ElectricConnection(ElectricConnectorDirection.Left, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [
         new IOPort(1, 16, "X-Coordinate", ""),

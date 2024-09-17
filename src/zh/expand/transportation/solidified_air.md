@@ -1,6 +1,6 @@
 # 固化空气 <Badge text="v1.0" type="info"/>
 
-<img src="/images/expand/transportation/GVSolidifiedAirBlock.webp" class="center_image" style="width: 200px;">
+<img alt="固化空气 图示" src="/images/expand/transportation/GVSolidifiedAirBlock.webp" class="center_image" style="width: 200px;">
 
 固化了的透明空气，可以被放置、挖掘、推动
 

@@ -18,7 +18,7 @@ let connections1 = [
         new IOPort(1, 32, "Right Memory Bank ID", "")
     ], false, true),
         new ElectricConnection(ElectricConnectorDirection.Bottom, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
-        new IOPort(1, 32, "Synchronous Operations, details is in the table below.", "")
+        new IOPort(1, 32, "Synchronous Operations, details are in the table below.", "")
     ], false, true),
     new ElectricConnection(ElectricConnectorDirection.Left, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
         new IOPort(1, 32, "Left Memory Bank ID", "")

@@ -8,7 +8,7 @@ import ElectricElement from "../../../components/ElectricElement/ElectricElement
 
 let connections = [
     new ElectricConnection(ElectricConnectorDirection.Top, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
-        new IOPort(1, 32, "播放开始位置", "设置从第 n 个 16 位数据开始播放，仅在读取音频数据时发生作用  \n例如左端设为 44100 V，此端设为 88200 V，那么将从 88200/2/44100 = 1 秒处开始播放"),
+        new IOPort(1, 32, "播放开始位置", "设置从第 n 个 16 位数据开始播放，仅在读取音频数据时发生作用  \n例如左端设为 44100 V，此端设为 88200 V，那么将从 88200/2/44100 = 1 秒处开始播放")
     ]),
     new ElectricConnection(ElectricConnectorDirection.Right, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
         new IOPort(1, 32, "播放数量", "设置播放 n 个 16 位数据，仅在读取音频数据时发生作用")
@@ -20,7 +20,7 @@ let connections = [
         new IOPort(1, 32, "采样率", "设置音频采样率，单位为 Hz，仅在读取音频数据时发生作用  \n范围限制：8000 \~ 48000，对应十六进制：1F40 \~ BB80")
     ]),
         new ElectricConnection(ElectricConnectorDirection.In, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
-        new IOPort(1, 32, "存储器 ID", "从指定 ID 的存储器读取音频数据，仅在读取音频数据时发生作用"),
+        new IOPort(1, 32, "存储器 ID", "从指定 ID 的存储器读取音频数据，仅在读取音频数据时发生作用")
     ])
 ];
 </script>

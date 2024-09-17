@@ -9,7 +9,7 @@ import {onMounted} from "vue";
 
 let connections = [
     new ElectricConnection(ElectricConnectorDirection.Top, ElectricConnectorType.Output, ElectricConnectionDisplayMode.Hide, [
-        new IOPort(1, 32, "Output", "According to left and right input, the Jump Wire performs a bitwise OR operation between the bottom input of itself and the input of other Jump Wires, then output the result."),
+        new IOPort(1, 32, "Output", "According to left and right input, the Jump Wire performs a bitwise OR operation between the bottom input of itself and the input of other Jump Wires, then output the result.")
     ]),
     new ElectricConnection(ElectricConnectorDirection.Right, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
         new IOPort(1, 32, "Whether Read Other Jump Wires", "If this input is greater than 7 V, the Jump Wire will read the bottom input of other Jump Wire, whose tag is same and left input is greater than 7 V.")
@@ -21,7 +21,7 @@ let connections = [
         new IOPort(1, 32, "Whether Allow Bottom Input", "If this input is greater than 7 V, the Jump Wire will allow bottom input, and the bottom input can be read by other Jump Wires with the same tag.")
     ]),
         new ElectricConnection(ElectricConnectorDirection.In, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
-        new IOPort(1, 32, "Tag", "Set the tag of the Jump Wire. There are green lines between the jump wires with the same tag, indicating that they are connected to each other."),
+        new IOPort(1, 32, "Tag", "Set the tag of the Jump Wire. There are green lines between the jump wires with the same tag, indicating that they are connected to each other.")
     ])
 ];
 

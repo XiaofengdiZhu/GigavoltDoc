@@ -232,6 +232,40 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                         link: '/en/expand/sensors/camera'
                     }
                 ]
+            },
+            {
+                text: 'Transportation',
+                collapsed: true,
+                items: [
+                    {
+                        text: 'Solidified Air',
+                        link: '/en/expand/transportation/solidified_air'
+                    },
+                    {
+                        text: 'Guided Dispenser',
+                        link: '/en/expand/transportation/guided_dispenser'
+                    },
+                    {
+                        text: 'More Projectiles',
+                        link: '/en/expand/transportation/more_projectiles'
+                    },
+                    {
+                        text: 'Attractor',
+                        link: '/en/expand/transportation/attractor'
+                    },
+                    {
+                        text: 'Inventory Fetcher',
+                        link: '/en/expand/transportation/inventory_fetcher'
+                    },
+                    {
+                        text: 'Inventory Controller',
+                        link: '/en/expand/transportation/inventory_controller'
+                    },
+                    {
+                        text: 'Tractor Beam',
+                        link: '/en/expand/transportation/tractor_beam'
+                    }
+                ]
             }
         ]
     }
