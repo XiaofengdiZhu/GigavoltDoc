@@ -227,11 +227,11 @@
       },
       "BasicOutputDescription": {
         "zh": "溢出时输出最低的 32 位",
-        "en": "Output the lowest 32 bits when overflow"
+        "en": "Output the lowest 32 bits when overflow."
       },
       "OverflowOutputDescription": {
         "zh": "溢出时输出 1",
-        "en": "Output 1 when overflow"
+        "en": "Output 1 when overflow."
       }
     },
     "Subtracter": {
@@ -241,11 +241,11 @@
       },
       "BasicOutputDescription": {
         "zh": "结果小于 0 时加上 0xFFFFFFFF",
-        "en": "Add 0xFFFFFFFF when the result is less than 0"
+        "en": "Add 0xFFFFFFFF when the result is less than 0."
       },
       "OverflowOutputDescription": {
         "zh": "需要借位时输出 1",
-        "en": "Output 1 when borrow"
+        "en": "Output 1 when borrow."
       }
     },
     "Multiplier": {
@@ -255,11 +255,11 @@
       },
       "BasicOutputDescription": {
         "zh": "溢出时输出最低的 32 位",
-        "en": "Output the lowest 32 bits when overflow"
+        "en": "Output the lowest 32 bits when overflow."
       },
       "OverflowOutputDescription": {
         "zh": "溢出时输出结果的第 33 到 64位",
-        "en": "Output the 33rd to 64th bits of the result when overflow"
+        "en": "Output the 33rd to 64th bits of the result when overflow."
       }
     },
     "Divider": {
@@ -269,11 +269,11 @@
       },
       "BasicOutputDescription": {
         "zh": "整数计算只保留结果的整数部分",
-        "en": "Only the integer part of the result is retained during integer calculation"
+        "en": "Only the integer part of the result is retained during integer calculation."
       },
       "OverflowOutputDescription": {
         "zh": "总为 0",
-        "en": "Always 0"
+        "en": "Always 0."
       }
     },
     "Remainder": {
@@ -282,12 +282,12 @@
         "en": "Remainder"
       },
       "BasicOutputDescription": {
-        "zh": "",
-        "en": ""
+        "zh": "整数计算只保留结果的整数部分",
+        "en": "Only the integer part of the result is retained during integer calculation."
       },
       "OverflowOutputDescription": {
         "zh": "总为 0",
-        "en": "Always 0"
+        "en": "Always 0."
       }
     },
     "Equaler": {
@@ -297,11 +297,11 @@
       },
       "BasicOutputDescription": {
         "zh": "输入相等时输出 0xFFFFFFFF",
-        "en": "Output 0xFFFFFFFF when two inputs are equal"
+        "en": "Output 0xFFFFFFFF when two inputs are equal."
       },
       "OverflowOutputDescription": {
         "zh": "总为 0",
-        "en": "Always 0"
+        "en": "Always 0."
       }
     },
     "Greater": {
@@ -311,11 +311,11 @@
       },
       "BasicOutputDescription": {
         "zh": "左端输入大于右端时输出 0xFFFFFFFF",
-        "en": "Output 0xFFFFFFFF when the left input is greater than the right input"
+        "en": "Output 0xFFFFFFFF when the left input is greater than the right input."
       },
       "OverflowOutputDescription": {
         "zh": "总为 0",
-        "en": "Always 0"
+        "en": "Always 0."
       }
     },
     "NoLesser": {
@@ -325,11 +325,11 @@
       },
       "BasicOutputDescription": {
         "zh": "左端输入大于或相等右端时输出 0xFFFFFFFF",
-        "en": "Output 0xFFFFFFFF when the left input is greater than or equal to the right input"
+        "en": "Output 0xFFFFFFFF when the left input is greater than or equal to the right input."
       },
       "OverflowOutputDescription": {
         "zh": "总为 0",
-        "en": "Always 0"
+        "en": "Always 0."
       }
     },
     "Lesser": {
@@ -339,11 +339,11 @@
       },
       "BasicOutputDescription": {
         "zh": "左端输入小于右端时输出 0xFFFFFFFF",
-        "en": "Output 0xFFFFFFFF when the left input is less than the right input"
+        "en": "Output 0xFFFFFFFF when the left input is less than the right input."
       },
       "OverflowOutputDescription": {
         "zh": "总为 0",
-        "en": "Always 0"
+        "en": "Always 0."
       }
     },
     "NoGreater": {
@@ -353,11 +353,11 @@
       },
       "BasicOutputDescription": {
         "zh": "左端输入小于或相等右端时输出 0xFFFFFFFF",
-        "en": "Output 0xFFFFFFFF when the left input is less than or equal to the right input"
+        "en": "Output 0xFFFFFFFF when the left input is less than or equal to the right input."
       },
       "OverflowOutputDescription": {
         "zh": "总为 0",
-        "en": "Always 0"
+        "en": "Always 0."
       }
     },
     "Maximumer": {
@@ -367,11 +367,11 @@
       },
       "BasicOutputDescription": {
         "zh": "取两端输入中较大的值作为输出",
-        "en": "Take the larger value of the two inputs as the output"
+        "en": "Take the larger value of the two inputs as the output."
       },
       "OverflowOutputDescription": {
         "zh": "总为 0",
-        "en": "Always 0"
+        "en": "Always 0."
       }
     },
     "Minimumer": {
@@ -381,11 +381,11 @@
       },
       "BasicOutputDescription": {
         "zh": "取两端输入中较小的值作为输出",
-        "en": "Take the smaller value of the two inputs as the output"
+        "en": "Take the smaller value of the two inputs as the output."
       },
       "OverflowOutputDescription": {
         "zh": "总为 0",
-        "en": "Always 0"
+        "en": "Always 0."
       }
     },
     "LeftShifter": {
@@ -395,11 +395,11 @@
       },
       "BasicOutputDescription": {
         "zh": "溢出时输出最低的 32 位",
-        "en": "Output the lowest 32 bits when overflow"
+        "en": "Output the lowest 32 bits when overflow."
       },
       "OverflowOutputDescription": {
         "zh": "溢出时输出结果的第 33 到 64位",
-        "en": "Output the 33rd to 64th bits of the result when overflow"
+        "en": "Output the 33rd to 64th bits of the result when overflow."
       }
     },
     "RightShifter": {
@@ -413,7 +413,7 @@
       },
       "OverflowOutputDescription": {
         "zh": "((左端输入<<32)>>右端输入) 的结果的最低 32 位",
-        "en": "The lowest 32 bits of the result of (((Left Input) << 32) >> (Right Input))"
+        "en": "The lowest 32 bits of the result of (((Left Input) << 32) >> (Right Input))."
       }
     },
     "Power": {
@@ -423,11 +423,11 @@
       },
       "BasicOutputDescription": {
         "zh": "溢出时输出最低的 32 位",
-        "en": "Output the lowest 32 bits when overflow"
+        "en": "Output the lowest 32 bits when overflow."
       },
       "OverflowOutputDescription": {
         "zh": "溢出时输出结果的第 33 到 64位",
-        "en": "Output the 33rd to 64th bits of the result when overflow"
+        "en": "Output the 33rd to 64th bits of the result when overflow."
       }
     },
     "Logarithmer": {
@@ -437,11 +437,11 @@
       },
       "BasicOutputDescription": {
         "zh": "整数计算只保留结果的整数部分",
-        "en": "Only the integer part of the result is retained during integer calculation"
+        "en": "Only the integer part of the result is retained during integer calculation."
       },
       "OverflowOutputDescription": {
         "zh": "总为 0",
-        "en": "Always 0"
+        "en": "Always 0."
       }
     }
   }

@@ -8,12 +8,21 @@ import {pagefindPlugin, chineseSearchOptimize} from 'vitepress-plugin-pagefind';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-    title: 'Gigavolt 十亿伏特',
+    title: 'Gigavolt Doc 十亿伏特文档',
     srcDir: './src',
     outDir: './docs',
     base: '/GigavoltDoc/',
     lang: 'en',
     ignoreDeadLinks: ['./index'],
+    head: [
+        [
+            'link',
+            {
+                rel: 'icon',
+                href: '/GigavoltDoc/logo_light_64.webp'
+            }
+        ]
+    ],
     vite: {
         plugins: [
             pagefindPlugin({
@@ -38,6 +47,10 @@ export default defineConfig({
         ]
     },
     themeConfig: {
+        logo: {
+            light: "/logo_light_64.webp",
+            dark: "/logo_dark_64.webp"
+        },
         socialLinks: [
             {
                 icon: 'github',
@@ -110,7 +123,7 @@ export default defineConfig({
     },
     locales: {
         en: {
-            title: 'Gigavolt',
+            title: 'Gigavolt Doc',
             titleTemplate: 'Gigavolt Doc',
             label: 'English',
             lang: 'en',
@@ -125,6 +138,7 @@ export default defineConfig({
             }
         },
         zh: {
+            title: '十亿伏特文档',
             titleTemplate: '十亿伏特文档',
             label: '中文',
             lang: 'zh',

@@ -23,6 +23,32 @@ mod 源码：[GitHub](https://github.com/XiaofengdiZhu/Gigavolt/)
 
 <!--@include: ./parts/feedback.md-->
 
+## 图标
+
+> 使用的 AI 模型：[The Araminta Experiment - Flux1-A1](https://civitai.com/models/463163?modelVersionId=742904)
+
+<table :class="$style.table_align_center">
+    <thead>
+        <tr>
+            <th>规格</th>
+            <th>十亿伏特</th>
+            <th>十亿伏特 · 扩展</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>64*64</td>
+            <td><img src="../public/logo_light_64.webp" alt="十亿伏特64*64图标" /></td>
+            <td><img src="../public/logo_dark_64.webp" alt="十亿伏特·扩展64*64图标" /></td>
+        </tr>
+        <tr>
+            <td>1024*1024</td>
+            <td><img src="../public/logo_light_1024.webp" alt="十亿伏特1024*1024图标" /></td>
+            <td><img src="../public/logo_dark_1024.webp" alt="十亿伏特·扩展1024*1024图标" /></td>
+        </tr>
+    </tbody>
+</table>
+
 ## 看板娘
 
 > 使用的 AI 模型：[AOM3A1B by WarriorMama777](https://huggingface.co/WarriorMama777/OrangeMixs#aom3a1b)
@@ -111,3 +137,17 @@ pip install antlr4-tools
 
 * 命令方块 mod 适配十亿伏特 mod：[AdaptCommandBlockForGigavolt](https://github.com/XiaofengdiZhu/AdaptCommandBlockForGigavolt)
 * 另一种真值表：ExTruthTable by [把红色赋予黑海_](https://gitee.com/THPRC)
+
+<style module>
+.table_align_center {
+    & th {
+        text-align: center;
+    }
+    & td {
+        text-align: center;
+        & img {
+            margin: auto;
+        }
+    }
+}
+</style>

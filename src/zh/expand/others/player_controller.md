@@ -14,7 +14,7 @@ let connections = [
         new IOPort(1, 32, "输入参数", "")
     ], false, true),
         new ElectricConnection(ElectricConnectorDirection.Bottom, ElectricConnectorType.Input, ElectricConnectionDisplayMode.BitWidth, [
-        new IOPort(1, 16, "同步操作", ""),
+        new IOPort(1, 16, "同步操作，详见下表", ""),
         new IOPort(1, 16, "指定玩家序号", "")
     ], false, true),
     new ElectricConnection(ElectricConnectorDirection.Left, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
@@ -36,7 +36,7 @@ let connections = [
 
 ## 端口定义
 
-> 如果参数输入端没有连接导线或元件，将不改变对应的信息
+> 如果参数输入端没有连接导线或元件，或者被阻断，将不改变对应的信息
 
 <ElectricElement imgAltPrefix="玩家控制器" :connections="connections" imgSrc="/images/expand/others/GVPlayerControllerBlock.webp"/>
 

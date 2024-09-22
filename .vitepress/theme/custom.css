@@ -7,7 +7,7 @@ html {
     --vp-layout-max-width: 1920px;
 }
 
-.VPDoc.has-aside > .container .content-container {
+.VPContent > .VPDoc > .container .content-container {
     max-width: 1080px;
 }
 

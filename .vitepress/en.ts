@@ -266,6 +266,20 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                         link: '/en/expand/transportation/tractor_beam'
                     }
                 ]
+            },
+            {
+                text: 'Others',
+                collapsed: true,
+                items: [
+                    {
+                        text: 'Remote Controller',
+                        link: '/en/expand/others/remote_controller'
+                    },
+                    {
+                        text: 'Player Controller',
+                        link: '/en/expand/others/player_controller'
+                    }
+                ]
             }
         ]
     }

@@ -40,10 +40,10 @@ You can use it to fetch items stored in the inventory of a block like a chest, f
 
 The shape of this element is T-shaped. The back of the horizontal line should connect to a block that stores items. The front of the vertical line has four situations:
 
-* If a block that can store items, the element will store the fetched items into it.
-* If one or several [extension poles](#about-extension-pole), the fetched items will be transported to the other side of the poles, then stored into a block that can store items, or dispense the items.
-* If an inventory fetcher with an opposite direction, and a block that can store items is behind the opposite inventory fetcher, the opposite inventory fetcher will be considered as an extension pole. (There can be more extension poles between them.)
-* Not the situations above, the fetcher will try to dispense the fetched items.
+1. If a block that can store items, the element will store the fetched items into it.
+2. If one or several [extension poles](#about-extension-pole), the fetched items will be transported to the other side of the poles, then stored into a block that can store items, or dispense the items.
+3. If an inventory fetcher with an opposite direction, and a block that can store items is behind the opposite inventory fetcher, the opposite inventory fetcher will be considered as an extension pole. (There can be more extension poles between them.)
+4. Not the situations above, the fetcher will try to dispense the fetched items.
 
 It has two types:
 

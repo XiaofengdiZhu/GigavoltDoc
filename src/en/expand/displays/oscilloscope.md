@@ -29,7 +29,7 @@ let connections = [
 
 ## Overview
 
-Displays the signals received from the front ports like an oscilloscope. You can manually adjust the upper and lower limits (automatically adjusted by default), the number of records, and whether bloom. Clicking anywhere blank will hide these buttons.
+Displays the signals received from the four front ports like an oscilloscope. You can manually adjust the upper and lower limits (automatically adjusted by default), the number of records, and whether bloom. Clicking anywhere blank will hide these buttons.
 
 <img alt="The First Screenshot of Oscilloscope" src="/images/expand/leds/oscilloscope_screenshot_1.webp" class="center_image">
 

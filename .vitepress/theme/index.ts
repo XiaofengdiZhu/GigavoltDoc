@@ -3,10 +3,10 @@ import {h, toRefs} from 'vue';
 import type {Theme} from 'vitepress';
 import {useData, useRoute} from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
+import MyLayout from './Layout.vue';
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import './style.css';
 import './custom.css';
-import HomeLogo from '../../src/components/HomeLogo.vue';
 
 export default {
     extends: DefaultTheme,
@@ -29,9 +29,6 @@ export default {
             frontmatter,
             route
         }, true);
-        return h(DefaultTheme.Layout, null, {
-            // https://vitepress.dev/guide/extending-default-theme#layout-slots
-            "home-hero-before": () => h(HomeLogo)
-        })
+        return h(MyLayout);
     }
 } satisfies Theme
