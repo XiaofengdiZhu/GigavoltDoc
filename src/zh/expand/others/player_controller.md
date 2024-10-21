@@ -20,7 +20,7 @@ let connections = [
     new ElectricConnection(ElectricConnectorDirection.Left, ElectricConnectorType.Input, ElectricConnectionDisplayMode.Hide, [
         new IOPort(1, 32, "输入参数", "")
     ], false, true),
-        new ElectricConnection(ElectricConnectorDirection.In, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [
+    new ElectricConnection(ElectricConnectorDirection.In, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [
         new IOPort(1, 1, "阻断右端输入", ""),
         new IOPort(2, 2, "阻断上端输入", ""),
         new IOPort(3, 3, "阻断左端输入", "")

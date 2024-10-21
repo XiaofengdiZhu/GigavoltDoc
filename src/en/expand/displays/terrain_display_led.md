@@ -45,7 +45,7 @@ For showing terrain strata, there are two types:
 
 ## Simple Type
 
-<img alt="The Image of The Simple Terrain Stratum Display" src="/images/expand/leds/terrain_display_led_0.webp" class="center_image small">
+<img alt="The Image of The Simple Terrain Stratum Display" src="/images/expand/displays/terrain_display_led_0.webp" class="center_image small">
 
 Input the ID of the memory bank that contains the terrain stratum data you want to display, and the terrain stratum will be displayed on the surface of the Simple Terrain Stratum Display. The brightness of the terrain stratum is decided by the environment brightness.
 
@@ -60,7 +60,7 @@ You can control all parameters of the floating terrain stratum. The Details are 
 
 ### Ports Definition
 
-<ElectricElement imgAltPrefix="The Complex Terrain Stratum Display" :connections="connections" imgSrc="/images/expand/leds/terrain_display_led_0.webp" :titleLevel="4"/>
+<ElectricElement imgAltPrefix="The Complex Terrain Stratum Display" :connections="connections" imgSrc="/images/expand/displays/terrain_display_led_0.webp" :titleLevel="4"/>
 
 > [!INFO] 💡 Tip
 > The offset ranges of each direction are all ±4095.875.

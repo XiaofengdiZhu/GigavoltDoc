@@ -44,7 +44,7 @@ For showing blocks, there are two types:
 
 ## Simple Type
 
-<img alt="The Image of The Simple Block Show Board" src="/images/expand/leds/block_display_led_0.webp" class="center_image small">
+<img alt="The Image of The Simple Block Show Board" src="/images/expand/displays/block_display_led_0.webp" class="center_image small">
 
 Input the value of the block you want to display, and a floating 3D block will be displayed in front of the Simple Block Show Board. The other parameters:
 
@@ -64,7 +64,7 @@ You can control all parameters of the floating block. The Details are below.
 
 ### Ports Definition
 
-<ElectricElement imgAltPrefix="The Complex Block Show Board" :connections="connections" imgSrc="/images/expand/leds/block_display_led_1.webp" :titleLevel="4"/>
+<ElectricElement imgAltPrefix="The Complex Block Show Board" :connections="connections" imgSrc="/images/expand/displays/block_display_led_1.webp" :titleLevel="4"/>
 
 > [!INFO] 💡 Tip
 > The offset ranges of each direction are all ±4095.875.

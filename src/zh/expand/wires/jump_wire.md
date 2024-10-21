@@ -55,7 +55,7 @@ onMounted(() => {
 
 ## 端口定义
 
-<ElectricElement imgAltPrefix="飞线" :connections="connections" imgSrc="/images/expand/wires/GVJumpWireBlock.webp" gateMask="true"/>
+<ElectricElement imgAltPrefix="飞线" :connections="connections" imgSrc="/images/expand/wires/GVJumpWireBlock.webp" :gateMask="true"/>
 
 <img class="no_hover" alt="另一个飞线" src="/images/expand/wires/GVJumpWireBlock.webp" style="width: calc(20% - 16px); min-width: 100px; margin-top: 16px; image-rendering: pixelated; mask-image: linear-gradient(2.3086rad, transparent 0% 17.5%, black 17.5% 100%), linear-gradient(-2.3086rad, transparent 0% 17.5%, black 17.5% 100%); mask-composite: intersect;">
 

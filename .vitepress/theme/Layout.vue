@@ -11,11 +11,11 @@ if (isDark.value) {
     changeFavicon(true);
 }
 
-window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+globalThis.matchMedia && globalThis.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     changeFavicon(event.matches);
 });
 
-const enableTransitions = () => 'startViewTransition' in document && window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
+const enableTransitions = () => 'startViewTransition' in document && globalThis.matchMedia('(prefers-reduced-motion: no-preference)').matches;
 
 provide('toggle-appearance', async ({
     clientX: x,

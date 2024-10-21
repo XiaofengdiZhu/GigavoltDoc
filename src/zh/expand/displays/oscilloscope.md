@@ -31,12 +31,12 @@ let connections = [
 
 将正面四端收到的信号像示波器那样显示在正面，可以通过点击图像上显示的按钮来手动调整上下限（默认自动调整）、显示的记录数、是否开启泛光，点击空白处则隐藏前述按钮
 
-<img alt="示波器 截图1" src="/images/expand/leds/oscilloscope_screenshot_1.webp" class="center_image">
+<img alt="示波器 截图1" src="/images/expand/displays/oscilloscope_screenshot_1.webp" class="center_image">
 
 还可以点编辑键来全屏显示图像，顶栏显示的电压是当前各端电压，最右边的按钮是调试操作，具体功能可参考 [此处](../../base/new/debug#单步调试悬浮窗)
 
-<img alt="示波器 截图2" src="/images/expand/leds/oscilloscope_screenshot_2_zh.webp" class="center_image">
+<img alt="示波器 截图2" src="/images/expand/displays/oscilloscope_screenshot_2_zh.webp" class="center_image">
 
 ## 端口定义
 
-<ElectricElement imgAltPrefix="示波器" :connections="connections" imgSrc="/images/expand/leds/GVOscilloscopeBlock.webp"/>
+<ElectricElement imgAltPrefix="示波器" :connections="connections" imgSrc="/images/expand/displays/GVOscilloscopeBlock.webp"/>

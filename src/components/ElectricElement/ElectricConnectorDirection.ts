@@ -4,7 +4,15 @@ enum ElectricConnectorDirection {
     Bottom,
     Left,
     In,
-    All
+    All,
+    UpTop,
+    UpRight,
+    UpLeft,
+    UpIn,
+    DownBottom,
+    DownRight,
+    DownLeft,
+    DownIn
 }
 
 export default ElectricConnectorDirection;

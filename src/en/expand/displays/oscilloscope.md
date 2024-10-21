@@ -31,12 +31,12 @@ let connections = [
 
 Displays the signals received from the four front ports like an oscilloscope. You can manually adjust the upper and lower limits (automatically adjusted by default), the number of records, and whether bloom. Clicking anywhere blank will hide these buttons.
 
-<img alt="The First Screenshot of Oscilloscope" src="/images/expand/leds/oscilloscope_screenshot_1.webp" class="center_image">
+<img alt="The First Screenshot of Oscilloscope" src="/images/expand/displays/oscilloscope_screenshot_1.webp" class="center_image">
 
 And you can click the edit button to enter fullscreen mode. In this screen, the top bar displays the voltage of the front ports, and the rightmost buttons are for debugging operations, which can refer to [here](../../base/new/debug#floating-step-debugging-widget)
 
-<img alt="The Second Screenshot of Oscilloscope" src="/images/expand/leds/oscilloscope_screenshot_2_zh.webp" class="center_image">
+<img alt="The Second Screenshot of Oscilloscope" src="/images/expand/displays/oscilloscope_screenshot_2_zh.webp" class="center_image">
 
 ## Ports Definition
 
-<ElectricElement imgAltPrefix="Oscilloscope" :connections="connections" imgSrc="/images/expand/leds/GVOscilloscopeBlock.webp"/>
+<ElectricElement imgAltPrefix="Oscilloscope" :connections="connections" imgSrc="/images/expand/displays/GVOscilloscopeBlock.webp"/>

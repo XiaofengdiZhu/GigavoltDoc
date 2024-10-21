@@ -23,18 +23,6 @@ Code contributors：
 
 <!--@include: ./parts/feedback.md-->
 
-## Yuru-chara
-
-> Used AI model：[AOM3A1B by WarriorMama777](https://huggingface.co/WarriorMama777/OrangeMixs#aom3a1b)
-
-::: details 🖼️ Gigavolt Yuru-chara
-![Gigavolt Yuru-chara](../public/images/poster-girl/GigavoltPosterGirl.webp)
-:::
-
-::: details 🖼️ Gigavolt.Expand Yuru-chara
-![Gigavolt.Expand Yuru-chara](../public/images/poster-girl/GigavoltExpandPosterGirl.webp)
-:::
-
 ## Thanks
 
 Thanks to the following long-term supporters and testers
@@ -44,6 +32,49 @@ Thanks to the following long-term supporters and testers
 * [钅离_LX](https://github.com/CS-LX)
 * [千反田Q](https://tieba.baidu.com/home/main/?id=tb.1.8655ef45.iDFQv1eGqmen_1Lqsi_BUg)
 * [一枚北陌本陌](https://space.bilibili.com/1766875450)
+
+## Icon
+
+> Used AI model: [The Araminta Experiment - Flux1-A1 by aramintastudio](https://civitai.com/models/463163?modelVersionId=742904)
+
+<table :class="$style.table_align_center">
+    <thead>
+        <tr>
+            <th>Size</th>
+            <th>Gigavolt</th>
+            <th>Gigavolt.Expand</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>64</td>
+            <td><img src="../public/logo_light_64.webp" alt="Gigavolt 64*64 Icon" /></td>
+            <td><img src="../public/logo_dark_64.webp" alt="Gigavolt.Expand 64*64 Icon" /></td>
+        </tr>
+        <tr>
+            <td>128</td>
+            <td><img src="../public/logo_light_128.webp" alt="Gigavolt 128*128 Icon" /></td>
+            <td><img src="../public/logo_dark_128.webp" alt="Gigavolt.Expand 128*128 Icon" /></td>
+        </tr>
+        <tr>
+            <td>1024</td>
+            <td><img src="../public/logo_light_1024.webp" alt="Gigavolt 1024*1024 Icon" /></td>
+            <td><img src="../public/logo_dark_1024.webp" alt="Gigavolt.Expand 1024*1024 Icon" /></td>
+        </tr>
+    </tbody>
+</table>
+
+## Yuru-chara
+
+> Used AI model: [AOM3A1B by WarriorMama777](https://huggingface.co/WarriorMama777/OrangeMixs#aom3a1b)
+
+::: details 🖼️ Gigavolt Yuru-chara
+![Gigavolt Yuru-chara](../public/images/poster-girl/GigavoltPosterGirl.webp)
+:::
+
+::: details 🖼️ Gigavolt.Expand Yuru-chara
+![Gigavolt.Expand Yuru-chara](../public/images/poster-girl/GigavoltExpandPosterGirl.webp)
+:::
 
 ## Develop plans
 
@@ -111,3 +142,17 @@ pip install antlr4-tools
 
 * [AdaptCommandBlockForGigavolt](https://github.com/XiaofengdiZhu/AdaptCommandBlockForGigavolt)
 * Another truth table：ExTruthTable by [把红色赋予黑海_](https://gitee.com/THPRC)
+
+<style module>
+.table_align_center {
+    & th {
+        text-align: center;
+    }
+    & td {
+        text-align: center;
+        & img {
+            margin: auto;
+        }
+    }
+}
+</style>

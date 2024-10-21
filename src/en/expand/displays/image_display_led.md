@@ -44,7 +44,7 @@ For showing images, there are two types:
 
 ## Simple Type
 
-<img alt="The Image of The Simple Image Display" src="/images/expand/leds/image_display_led_0.webp" class="center_image small">
+<img alt="The Image of The Simple Image Display" src="/images/expand/displays/image_display_led_0.webp" class="center_image small">
 
 Input the ID of the memory bank that contains the image you want to display, and the image will be displayed on the surface of the Simple Image Display. The brightness of the image is decided by the environment brightness.
 
@@ -59,7 +59,7 @@ You can control all parameters of the floating image. The Details are below.
 
 ### Ports Definition
 
-<ElectricElement imgAltPrefix="The Complex Image Display" :connections="connections" imgSrc="/images/expand/leds/image_display_led_1.webp" :titleLevel="4"/>
+<ElectricElement imgAltPrefix="The Complex Image Display" :connections="connections" imgSrc="/images/expand/displays/image_display_led_1.webp" :titleLevel="4"/>
 
 > [!INFO] 💡 Tip
 > The offset ranges of each direction are all ±4095.875.

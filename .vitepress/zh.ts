@@ -203,6 +203,10 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                     {
                         text: '红白机模拟器',
                         link: '/zh/expand/displays/nes_emulator'
+                    },
+                    {
+                        text: '六面 8 数字 LED 灯',
+                        link: '/zh/expand/displays/solid_8_number_led'
                     }
                 ]
             },
@@ -273,6 +277,10 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                     {
                         text: '遥控器',
                         link: '/zh/expand/others/remote_controller'
+                    },
+                    {
+                        text: '信号发生器',
+                        link: '/zh/expand/others/signal_generator'
                     },
                     {
                         text: '玩家控制器',

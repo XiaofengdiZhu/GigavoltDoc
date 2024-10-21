@@ -204,6 +204,10 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                     {
                         text: 'NES Emulator',
                         link: '/en/expand/displays/nes_emulator'
+                    },
+                    {
+                        text: 'Solid 8 Numerical LED',
+                        link: '/en/expand/displays/solid_8_number_led'
                     }
                 ]
             },
@@ -274,6 +278,10 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                     {
                         text: 'Remote Controller',
                         link: '/en/expand/others/remote_controller'
+                    },
+                    {
+                        text: 'Signal Generator',
+                        link: '/en/expand/others/signal_generator'
                     },
                     {
                         text: 'Player Controller',

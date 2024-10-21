@@ -23,9 +23,19 @@ mod 源码：[GitHub](https://github.com/XiaofengdiZhu/Gigavolt/)
 
 <!--@include: ./parts/feedback.md-->
 
+## 鸣谢
+
+感谢以下热心网友的长期支持和测试
+> 按名称排序
+
+* [把红色赋予黑海_](https://gitee.com/THPRC)
+* [钅离_LX](https://github.com/CS-LX)
+* [千反田Q](https://tieba.baidu.com/home/main/?id=tb.1.8655ef45.iDFQv1eGqmen_1Lqsi_BUg)
+* [一枚北陌本陌](https://space.bilibili.com/1766875450)
+
 ## 图标
 
-> 使用的 AI 模型：[The Araminta Experiment - Flux1-A1](https://civitai.com/models/463163?modelVersionId=742904)
+> 使用的 AI 模型：[The Araminta Experiment - Flux1-A1 by aramintastudio](https://civitai.com/models/463163?modelVersionId=742904)
 
 <table :class="$style.table_align_center">
     <thead>
@@ -37,12 +47,17 @@ mod 源码：[GitHub](https://github.com/XiaofengdiZhu/Gigavolt/)
     </thead>
     <tbody>
         <tr>
-            <td>64*64</td>
+            <td>64</td>
             <td><img src="../public/logo_light_64.webp" alt="十亿伏特64*64图标" /></td>
             <td><img src="../public/logo_dark_64.webp" alt="十亿伏特·扩展64*64图标" /></td>
         </tr>
         <tr>
-            <td>1024*1024</td>
+            <td>128</td>
+            <td><img src="../public/logo_light_128.webp" alt="十亿伏特128*128图标" /></td>
+            <td><img src="../public/logo_dark_128.webp" alt="十亿伏特·扩展128*128图标" /></td>
+        </tr>
+        <tr>
+            <td>1024</td>
             <td><img src="../public/logo_light_1024.webp" alt="十亿伏特1024*1024图标" /></td>
             <td><img src="../public/logo_dark_1024.webp" alt="十亿伏特·扩展1024*1024图标" /></td>
         </tr>
@@ -60,16 +75,6 @@ mod 源码：[GitHub](https://github.com/XiaofengdiZhu/Gigavolt/)
 ::: details 🖼️ 十亿伏特 · 扩展 看板娘
 ![十亿伏特 · 扩展看板娘](../public/images/poster-girl/GigavoltExpandPosterGirl.webp)
 :::
-
-## 鸣谢
-
-感谢以下热心网友的长期支持和测试
-> 按名称排序
-
-* [把红色赋予黑海_](https://gitee.com/THPRC)
-* [钅离_LX](https://github.com/CS-LX)
-* [千反田Q](https://tieba.baidu.com/home/main/?id=tb.1.8655ef45.iDFQv1eGqmen_1Lqsi_BUg)
-* [一枚北陌本陌](https://space.bilibili.com/1766875450)
 
 ## 开发计划
 

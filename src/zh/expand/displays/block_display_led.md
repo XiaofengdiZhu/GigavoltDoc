@@ -45,7 +45,7 @@ let connections = [
 
 ## 简单方块展示板
 
-<img alt="简单方块展示板 图示" src="/images/expand/leds/block_display_led_0.webp" class="center_image small">
+<img alt="简单方块展示板 图示" src="/images/expand/displays/block_display_led_0.webp" class="center_image small">
 
 直接输入要展示的方块的完整 ID（含特殊值），就会在其面前悬浮显示相应的方块，其他参数的决定方式如下：
 
@@ -65,7 +65,7 @@ let connections = [
 
 ### 端口定义
 
-<ElectricElement imgAltPrefix="复杂方块展示板" :connections="connections" imgSrc="/images/expand/leds/block_display_led_1.webp" :titleLevel="4"/>
+<ElectricElement imgAltPrefix="复杂方块展示板" :connections="connections" imgSrc="/images/expand/displays/block_display_led_1.webp" :titleLevel="4"/>
 
 > [!INFO] 💡 提示
 > 各方向的偏移范围为 ±4095.875 格

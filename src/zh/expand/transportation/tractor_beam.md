@@ -9,7 +9,7 @@ import UintColorConverter from "/components/UintColorConverter.vue";
 
 let connections = [
     new ElectricConnection(ElectricConnectorDirection.Top, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [
-        new IOPort(1, 16, "缩放大小", "每加 1，显示大小增加 1/8 倍，最大 8191.875 倍"),
+        new IOPort(1, 16, "缩放大小", "初始值为 0，每加 1，显示大小增加 1/256 倍，最大 255.996 倍"),
         new IOPort(17, 32, "Y 轴位置偏移", "每加 1，显示向上移动 1/8 格，最高位为 1 时改为向下")
     ]),
     new ElectricConnection(ElectricConnectorDirection.Right, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [

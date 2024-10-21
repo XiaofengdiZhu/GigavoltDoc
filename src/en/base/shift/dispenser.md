@@ -34,4 +34,4 @@ Stores items in a similar way to a chest,but allows shooting or dispensing them 
 <ElectricElement imgAltPrefix="GV Dispenser" :connections="connections" imgSrc="/images/base/shift/GVDispenser.webp"/>
 
 > [!TIP] 💡 Tip
-> In addition,`Gigavolt.Expand mod`has [Guided Dispenser]().
+> In addition,`Gigavolt.Expand mod`has [Guided Dispenser](../../expand/transportation/guided_dispenser).

@@ -45,7 +45,7 @@ let connections = [
 
 ## 简单图片显示器
 
-<img alt="简单图片显示器 图示" src="/images/expand/leds/image_display_led_0.webp" class="center_image small">
+<img alt="简单图片显示器 图示" src="/images/expand/displays/image_display_led_0.webp" class="center_image small">
 
 直接输入要显示的图片所在的存储器的 ID，就会在其表面显示相应的图片，显示的亮度根据环境亮度决定
 
@@ -60,7 +60,7 @@ let connections = [
 
 ### 端口定义
 
-<ElectricElement imgAltPrefix="复杂图片显示器" :connections="connections" imgSrc="/images/expand/leds/image_display_led_1.webp" :titleLevel="4"/>
+<ElectricElement imgAltPrefix="复杂图片显示器" :connections="connections" imgSrc="/images/expand/displays/image_display_led_1.webp" :titleLevel="4"/>
 
 > [!INFO] 💡 提示
 > 各方向的偏移范围为 ±4095.875 格

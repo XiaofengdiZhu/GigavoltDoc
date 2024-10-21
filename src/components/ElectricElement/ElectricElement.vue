@@ -11,12 +11,23 @@ const self = ref(null);
 const img = ref(null);
 const isWide = ref(false);
 
-let top: ElectricConnection | null = null, right: ElectricConnection | null = null, bottom: ElectricConnection | null = null, left: ElectricConnection | null = null, in_: ElectricConnection | null = null, all: ElectricConnection | null = null, topTitle: string | null, rightTitle: string | null, bottomTitle: string | null, leftTitle: string | null, inTitle: string | null, allTitle: string | null;
+let top: ElectricConnection | null = null,
+    right: ElectricConnection | null = null,
+    bottom: ElectricConnection | null = null,
+    left: ElectricConnection | null = null,
+    in_: ElectricConnection | null = null,
+    all: ElectricConnection | null = null,
+    topTitle: string | null,
+    rightTitle: string | null,
+    bottomTitle: string | null,
+    leftTitle: string | null,
+    inTitle: string | null,
+    allTitle: string | null;
 const {
     connections,
     imgAltPrefix
 } = defineProps<{
-    connections: ElectricConnection[], imgSrc?: string, imgAltPrefix: string, gateMask?: string, titleLevel?: number, serial?: number
+    connections: ElectricConnection[], imgSrc?: string, imgAltPrefix: string, gateMask?: boolean, titleLevel?: number, serial?: number
 }>();
 let imgAlt = `${imgAltPrefix} ${locale('imgAltSuffix')}`;
 if (connections.length > 0) {

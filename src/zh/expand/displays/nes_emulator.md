@@ -48,4 +48,4 @@ let connections = [
 
 > 各端口的输入会按或计算后作为最终输入
 
-<ElectricElement imgAltPrefix="红白机模拟器" :connections="connections" imgSrc="/images/expand/leds/GVNesEmulatorBlock.webp"/>
+<ElectricElement imgAltPrefix="红白机模拟器" :connections="connections" imgSrc="/images/expand/displays/GVNesEmulatorBlock.webp"/>
