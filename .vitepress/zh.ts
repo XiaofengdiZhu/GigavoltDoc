@@ -279,6 +279,10 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                         link: '/zh/expand/others/remote_controller'
                     },
                     {
+                        text: '开关柜',
+                        link: '/zh/expand/others/switch_cabinet'
+                    },
+                    {
                         text: '信号发生器',
                         link: '/zh/expand/others/signal_generator'
                     },

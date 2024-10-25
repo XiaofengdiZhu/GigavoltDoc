@@ -34,7 +34,7 @@ let connections = [
 It's similar to [Memory Bank](../../base/shift/memory_bank), but it has four dimensions but not two. You must manually set the ranges of four dimensions to initialize it before store data.
 
 The file saved to the save is a series of [WebP](https://developers.google.com/speed/webp) dynamic image files. Each image stores one three-dimensional data. X-axis is image width, Y-axis is image height, Z-axis is image time axis.
-The exported file format is `.GBFDMB`, which is essentially a [ZIP](https://support.pkware.com/pkzip/appnote) compressed file. The zip comment stores the range information. The files in the zip are the ones in the save, and they are named as their Z-Coordinate.
+The exported file format is `.GVFDMB`, which is essentially a [ZIP](https://support.pkware.com/pkzip/appnote) compressed file. The zip comment stores the range information. The files in the zip are the ones in the save, and they are named as their Z-Coordinate.
 
 > [!TIP] 💡 Tip
 > Please avoid using W and Z axis, or set the value as small as possible when initializing. Because the performance of multidimensional data in saving and other operations is poor, which may cause lag.

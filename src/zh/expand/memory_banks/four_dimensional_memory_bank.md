@@ -34,7 +34,7 @@ let connections = [
 和 [存储器](../../base/shift/memory_bank) 相似，但从二维扩展到了四维。初始化时，必须先指定四个维度的范围
 
 保存到存档的形式是一张张无损 [WebP](https://developers.google.com/speed/webp) 动图文件，每张图片存储一组三维数据，X 轴为图片宽度，Y 轴为图片高度，Z 轴为图片时间轴
-导出的文件格式是`.GBFDMB`，其本质是 [ZIP](https://support.pkware.com/pkzip/appnote) 压缩文件，在该文件的 zip 注释中存储了每个维度的范围等信息，解压后是一张张名称是 Z 轴坐标的 [WebP](https://developers.google.com/speed/webp) 动图文件
+导出的文件格式是`.GVFDMB`，其本质是 [ZIP](https://support.pkware.com/pkzip/appnote) 压缩文件，在该文件的 zip 注释中存储了每个维度的范围等信息，解压后是一张张名称是 Z 轴坐标的 [WebP](https://developers.google.com/speed/webp) 动图文件
 
 > [!TIP] 💡 提示
 > 请尽量避免使用 W 和 Z 坐标，初始化时也尽可能设置较小的值，因为多维度的数据在保存等操作下性能较差，可能造成卡顿

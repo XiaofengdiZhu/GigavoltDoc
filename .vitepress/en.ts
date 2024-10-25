@@ -280,6 +280,10 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                         link: '/en/expand/others/remote_controller'
                     },
                     {
+                        text: 'Switch Cabinet',
+                        link: '/en/expand/others/switch_cabinet'
+                    },
+                    {
                         text: 'Signal Generator',
                         link: '/en/expand/others/signal_generator'
                     },
