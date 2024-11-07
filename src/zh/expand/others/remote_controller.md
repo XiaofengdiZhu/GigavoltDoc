@@ -1,4 +1,4 @@
-# 遥控器
+# 遥控器 <Badge text="v2.0"/>
 
 <img alt="遥控器图示" src="/images/expand/others/remote_controller.webp" class="center_image">
 

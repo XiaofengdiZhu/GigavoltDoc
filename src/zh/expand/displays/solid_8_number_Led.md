@@ -1,4 +1,4 @@
-# 六面 8 数字 LED 灯 <Badge text="v2.0" type="info"/>
+# 六面 8 数字 LED 灯 <Badge text="v2.0"/>
 
 <img alt="六面 8 数字 LED 灯 图示" src="/images/expand/displays/GVSolid8NumberLedBlock.webp" class="center_image" style="width: 200px;">
 

@@ -283,6 +283,10 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                         link: '/zh/expand/others/switch_cabinet'
                     },
                     {
+                        text: '按钮柜',
+                        link: '/zh/expand/others/button_cabinet'
+                    },
+                    {
                         text: '信号发生器',
                         link: '/zh/expand/others/signal_generator'
                     },

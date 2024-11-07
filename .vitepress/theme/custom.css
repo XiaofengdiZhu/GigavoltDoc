@@ -184,20 +184,26 @@ html {
 }
 
 /*Home page*/
-@media (min-width: 1280px) {
+.is-home .text {
+    font-size: 40px;
+}
+
+@media (max-width: 1280px) {
     .is-home .text {
-        font-size: 44px;
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 640px) {
+    .is-home .text {
+        font-size: 24px;
     }
 }
 
 @media (min-width: 640px) {
     .is-home .text {
-        font-size: 36px;
+        max-width: 600px;
     }
-}
-
-.is-home .text {
-    font-size: 24px;
 }
 
 .is-home .VPFeature {

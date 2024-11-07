@@ -20,9 +20,11 @@ Besides `Gigavolt.Expand mod`, there are several mods that depend on `Gigavolt m
 
 ## Supported API Versions
 
-Currently, there is no stable Survivalcraft API version supporting the latest version for this mod. You will need to build it by yourself from [SurvivalCraft-UniAPI source code](https://gitee.com/THPRC/survivalcraft-api), or download the builds by others.
+The Current version of this mod can run on **API 1.72**. You can download it from [here](https://gitee.com/THPRC/survivalcraft-api/releases/tag/api1.72).
 
-Version 1.0 of this mod can run on API 1.53. You can download it from [here](https://gitee.com/THPRC/survivalcraft-api/releases/tag/api1.53P). In newer API versions, issues such as the inability to save memory data may occur.
+::: details Still using version 1.0 of this mod?
+Version 1.0 of this mod can run on API 1.53. You can download it from [here](https://gitee.com/THPRC/survivalcraft-api/releases/tag/api1.53P).
+:::
 
 ## Significance of 32-bit Bitwidth
 

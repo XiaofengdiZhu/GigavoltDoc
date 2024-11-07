@@ -1,12 +1,11 @@
 ---
 title: Home
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
     name: Gigavolt
     text: An Electric MOD for Survivalcraft
-    tagline: This is a mod for Survivalcraft that take a new Electric system with Gigavolt to the game. The original Electric system has 16 voltage levels (0 ~ 1.5 V), then Gigavolt expands it to 2<sup>32</sup> voltage levels (0 ~ 2<sup>32</sup>-1 V)
+    tagline: This is a mod for Survivalcraft that takes a new Electric system with Gigavolt to the game. The original Electric system has 16 voltage levels (0 ~ 1.5 V), then Gigavolt expands it to 2<sup>32</sup> voltage levels (0 ~ 2<sup>32</sup>-1 V)
     actions:
         -   theme: brand
             text: 📖 Start Learning

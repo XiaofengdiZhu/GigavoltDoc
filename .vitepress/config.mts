@@ -72,7 +72,7 @@ export default defineConfig({
         },
         footer: {
             message: 'Licensed under the <a href="https://github.com/XiaofengdiZhu/Gigavolt/blob/main/LICENSE.txt" target="_blank">Apache License 2.0</a>',
-            copyright: 'Copyright © 2023-2024 <a href="https://github.com/XiaofengdiZhu/" target="_blank">销锋镝铸 XiaofengdiZhu</a>'
+            copyright: 'Copyright © 2023-2024 <a href="https://github.com/XiaofengdiZhu/" target="_blank">XiaofengdiZhu 销锋镝铸</a>'
         },
         notFound: {
             title: 'PAGE NOT FOUND 未找到页面',

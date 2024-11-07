@@ -18,11 +18,13 @@ next: false
 
 除`十亿伏特 · 扩展 mod`外，当前还有数个前置包含`十亿伏特 mod`的 mod，可前往 [依赖者清单](about#依赖者) 查看
 
-## 支持的生存战争API版本
+## 支持的生存战争 API 版本
 
-暂时还没有稳定版支持最新版本的本 mod，你需要自行从 [SurvivalCraft-UniAPI源码](https://gitee.com/THPRC/survivalcraft-api) 构建，或者下载其他人构建的
+本 mod 当前最新正式版支持的 API 版本为 **1.72**，可从 [此处下载](https://gitee.com/THPRC/survivalcraft-api/releases/tag/api1.72)。
 
-本 mod 1.0 版本支持的 API 版本为 1.53，可从 [此处下载](https://gitee.com/THPRC/survivalcraft-api/releases/tag/api1.53P)。在新版本API可能出现无法保存存储器数据等问题
+::: details 还在使用 1.0 版本的本 mod？
+本 mod 1.0 版本支持的 API 版本为 1.53，可从 [此处下载](https://gitee.com/THPRC/survivalcraft-api/releases/tag/api1.53P)。
+:::
 
 ## 32 位位宽的意义
 

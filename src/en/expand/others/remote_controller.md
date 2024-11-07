@@ -1,4 +1,4 @@
-# Remote Controller
+# Remote Controller <Badge text="v2.0"/>
 
 <img alt="The Image of The Remote Controllers" src="/images/expand/others/remote_controller.webp" class="center_image">
 

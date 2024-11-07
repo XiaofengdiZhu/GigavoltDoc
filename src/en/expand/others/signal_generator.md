@@ -41,7 +41,7 @@ let connections = [
 ];
 </script>
 
-# Signal Generator
+# Signal Generator <Badge text="v2.0"/>
 
 For generating sine waves, triangular waves, sawtooth waves, and square waves. It occupies two blocks. If there is no enough room, you will not be able to place or rotate it. It works in two modes:
 

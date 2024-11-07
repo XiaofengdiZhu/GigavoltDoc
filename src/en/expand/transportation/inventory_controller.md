@@ -14,8 +14,8 @@ let connections = [
         new IOPort(1, 8, "Slot", "Specify the n+1th slot to control."),
         new IOPort(9, 16, "Count", "Specify how many items to control."),
         new IOPort(17, 17, "Whether Check Block Data", "See`Block Data`"),
-        new IOPort(18, 18, "Whether Control Player's Inventory", "If this is 0, this element controls the inventory of the behind block. Otherwise, the element controls the specified player's inventory."),
         new IOPort(18, 18, "Whether Control All", "If this is 1, the element will ignore`Count` in operation, and will control as much as possible."),
+        new IOPort(19, 19, "Whether Control Player's Inventory", "If this is 0, this element controls the inventory of the behind block. Otherwise, the element controls the specified player's inventory."),
         new IOPort(20, 24, "Player Index", "Specify which number player's inventory you want to control when`Whether Control Player's Inventory`is 1."),
         new IOPort(25, 32, "New Slot", "Specify the n+1th slot as the new slot when`Synchronous Operations`is 16(0x10).")
     ]),
@@ -30,7 +30,7 @@ let connections = [
 ];
 </script>
 
-# Inventory Controller
+# Inventory Controller <Badge text="v2.0"/>
 
 ## Overview
 

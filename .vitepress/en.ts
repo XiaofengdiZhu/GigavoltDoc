@@ -284,6 +284,10 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                         link: '/en/expand/others/switch_cabinet'
                     },
                     {
+                        text: 'Button Cabinet',
+                        link: '/en/expand/others/button_cabinet'
+                    },
+                    {
                         text: 'Signal Generator',
                         link: '/en/expand/others/signal_generator'
                     },

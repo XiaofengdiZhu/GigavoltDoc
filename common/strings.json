@@ -476,5 +476,15 @@
         "en": "Always 0."
       }
     }
+  },
+  "DownloadPage": {
+    "FetchingDownloadUrl": {
+      "zh": "获取下载链接中…",
+      "en": "Fetching download URL…"
+    },
+    "FetchDownloadUrlFailed": {
+      "zh": "获取下载链接失败，请尝试前往“历史版本”下载",
+      "en": "Failed to fetch download URL, please try to download from \"History Versions\"."
+    }
   }
 }

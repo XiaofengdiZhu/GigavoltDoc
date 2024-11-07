@@ -1,4 +1,4 @@
-# Switch Cabinet <Badge text="v2.0" type="info"/>
+# Switch Cabinet <Badge text="v2.0"/>
 
 <img alt="The Image of The Switch Cabinet" src="/images/expand/others/GVSwitchCabinetBlock.webp" class="center_image" style="width: 80px;">
 

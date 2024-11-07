@@ -1,12 +1,11 @@
 ---
 title: 首页
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
     name: 十亿伏特 Gigavolt
     text: 生存战争电路 MOD
-    tagline: 这是一个为生存战争游戏带来十亿伏特电力系统的 mod，将原版的 16 个电压级别（0 ~ 1.5 V）扩展到 2<sup>32</sup> 个（0 ~ 2<sup>32</sup>-1 V）
+    tagline: 这是一个为生存战争游戏带来十亿伏特电力系统的 mod，将原版的 16 个电压级别（0 ~ 1.5 V）扩展到 2^32^ 个（0 ~ 2^32^-1 V）
     image1:
         src: /imgs/GigavoltPosterGirl.webp
         alt: 十亿伏特看板娘
