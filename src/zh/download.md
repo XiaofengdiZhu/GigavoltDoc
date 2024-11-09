@@ -11,6 +11,8 @@ hero:
         -   theme: brand
             text: 十亿伏特 · 扩展
         -   theme: alt
+            text: 十亿伏特 · 帮助包
+        -   theme: alt
             text: 历史版本
             link: https://github.com/XiaofengdiZhu/Gigavolt/releases
         -   theme: alt
@@ -50,7 +52,13 @@ hero:
             versionBadge.textContent = json.tag_name;
             document.getElementsByClassName("name")[0].appendChild(versionBadge);
             for(let asset of json.assets) {
-                let actionIndex = asset.name.includes("Expand") ? 1 : 0;
+                let actionIndex = 0;
+                if(asset.name.includes("Expand")) {
+                    actionIndex = 1;
+                }
+                else if(asset.name.includes("Helper")) {
+                    actionIndex = 2;
+                }
                 actions[actionIndex].style.cursor = "pointer";
                 actions[actionIndex].firstChild.href = asset.browser_download_url;
             }

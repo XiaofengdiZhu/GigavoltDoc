@@ -39,6 +39,8 @@ let connections = [
 > [!TIP] 💡 提示
 > 请尽量避免使用 W 和 Z 坐标，初始化时也尽可能设置较小的值，因为多维度的数据在保存等操作下性能较差，可能造成卡顿
 
+> 另有 [易失版](volatile_memory_banks#易失性四维存储器)，但仍需初始化
+
 ## 端口定义
 
 <ElectricElement imgAltPrefix="四维存储器" :connections="connections" imgSrc="/images/expand/memory_banks/GVFourDimensionalMemoryBankBlock.webp"/>

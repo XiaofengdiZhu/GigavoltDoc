@@ -46,35 +46,35 @@
     },
     {
       "zh": "上上端",
-      "en": "Up Top"
+      "en": "Up Top "
     },
     {
       "zh": "上右端",
-      "en": "Up Right"
+      "en": "Up Right "
     },
     {
       "zh": "上左端",
-      "en": "Up Left"
+      "en": "Up Left "
     },
     {
       "zh": "上后端",
-      "en": "Up Back"
+      "en": "Up Back "
     },
     {
       "zh": "下下端",
-      "en": "Down Bottom"
+      "en": "Down Bottom "
     },
     {
       "zh": "下右端",
-      "en": "Down Right"
+      "en": "Down Right "
     },
     {
       "zh": "下左端",
-      "en": "Down Left"
+      "en": "Down Left "
     },
     {
       "zh": "下后端",
-      "en": "Down Back"
+      "en": "Down Back "
     }
   ],
   "ElectricConnectorType": [

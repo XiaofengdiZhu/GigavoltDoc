@@ -34,7 +34,7 @@ let connections = [
 保存到存档的形式是未经任何处理的二进制文件，可使用支持十六进制编辑的软件进行编辑  
 导出的文件格式是`.GBLMB`，其本质是 [ZIP](https://support.pkware.com/pkzip/appnote) 压缩文件，解压后可使用支持十六进制编辑的软件进行编辑
 
-> 另有 [易失版](volatile_memory_banks#易失性一维存储器)
+> 另有 [易失版](volatile_memory_banks#易失性一维存储器)，也无需初始化
 
 ## 端口定义
 

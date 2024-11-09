@@ -40,26 +40,30 @@ Thanks to the following long-term supporters and testers
 <table :class="$style.table_align_center">
     <thead>
         <tr>
-            <th>Size</th>
-            <th>Gigavolt</th>
-            <th>Gigavolt.Expand</th>
+            <th>MOD</th>
+            <th>64*</th>
+            <th>128*</th>
+            <th>1024*</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>64</td>
+            <td>Gigavolt</td>
             <td><img src="../public/logo_light_64.webp" alt="Gigavolt 64*64 Icon" /></td>
-            <td><img src="../public/logo_dark_64.webp" alt="Gigavolt.Expand 64*64 Icon" /></td>
-        </tr>
-        <tr>
-            <td>128</td>
             <td><img src="../public/logo_light_128.webp" alt="Gigavolt 128*128 Icon" /></td>
-            <td><img src="../public/logo_dark_128.webp" alt="Gigavolt.Expand 128*128 Icon" /></td>
+            <td><img src="../public/logo_light_1024.webp" alt="Gigavolt 1024*1024 Icon" /></td>
         </tr>
         <tr>
-            <td>1024</td>
-            <td><img src="../public/logo_light_1024.webp" alt="Gigavolt 1024*1024 Icon" /></td>
+            <td>Gigavolt.Expand</td>
+            <td><img src="../public/logo_dark_64.webp" alt="Gigavolt.Expand 64*64 Icon" /></td>
+            <td><img src="../public/logo_dark_128.webp" alt="Gigavolt.Expand 128*128 Icon" /></td>
             <td><img src="../public/logo_dark_1024.webp" alt="Gigavolt.Expand 1024*1024 Icon" /></td>
+        </tr>
+        <tr>
+            <td>Gigavolt.Helper</td>
+            <td>None</td>
+            <td><img src="../public/logo_helper_128.webp" alt="Gigavolt.Helper 128*128 Icon" /></td>
+            <td><img src="../public/logo_helper_1024.webp" alt="Gigavolt.Helper 1024*1024 Icon" /></td>
         </tr>
     </tbody>
 </table>
@@ -74,6 +78,10 @@ Thanks to the following long-term supporters and testers
 
 ::: details 🖼️ Gigavolt.Expand Yuru-chara
 ![Gigavolt.Expand Yuru-chara](../public/images/poster-girl/GigavoltExpandPosterGirl.webp)
+:::
+
+::: details 🖼️ Gigavolt.Helper Yuru-chara
+![Gigavolt.Helper Yuru-chara](../public/images/poster-girl/GigavoltHelperPosterGirl.webp)
 :::
 
 ## Develop plans

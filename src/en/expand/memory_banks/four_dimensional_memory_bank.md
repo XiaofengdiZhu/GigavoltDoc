@@ -39,6 +39,8 @@ The exported file format is `.GVFDMB`, which is essentially a [ZIP](https://supp
 > [!TIP] 💡 Tip
 > Please avoid using W and Z axis, or set the value as small as possible when initializing. Because the performance of multidimensional data in saving and other operations is poor, which may cause lag.
 
+> In addition, it has [Volatile type](volatile_memory_banks#volatile-four-dimensional-memory-bank), which still needs initialization.
+
 ## Ports Definition
 
 <ElectricElement imgAltPrefix="Four Dimensional Memory Bank" :connections="connections" imgSrc="/images/expand/memory_banks/GVFourDimensionalMemoryBankBlock.webp"/>

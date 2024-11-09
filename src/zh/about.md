@@ -40,26 +40,30 @@ mod 源码：[GitHub](https://github.com/XiaofengdiZhu/Gigavolt/)
 <table :class="$style.table_align_center">
     <thead>
         <tr>
-            <th>规格</th>
-            <th>十亿伏特</th>
-            <th>十亿伏特 · 扩展</th>
+            <th>MOD</th>
+            <th>64*</th>
+            <th>128*</th>
+            <th>1024*</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>64</td>
+            <td>十亿伏特</td>
             <td><img src="../public/logo_light_64.webp" alt="十亿伏特64*64图标" /></td>
-            <td><img src="../public/logo_dark_64.webp" alt="十亿伏特·扩展64*64图标" /></td>
-        </tr>
-        <tr>
-            <td>128</td>
             <td><img src="../public/logo_light_128.webp" alt="十亿伏特128*128图标" /></td>
-            <td><img src="../public/logo_dark_128.webp" alt="十亿伏特·扩展128*128图标" /></td>
+            <td><img src="../public/logo_light_1024.webp" alt="十亿伏特1024*1024图标" /></td>
         </tr>
         <tr>
-            <td>1024</td>
-            <td><img src="../public/logo_light_1024.webp" alt="十亿伏特1024*1024图标" /></td>
+            <td>十亿伏特 · 扩展</td>
+            <td><img src="../public/logo_dark_64.webp" alt="十亿伏特·扩展64*64图标" /></td>
+            <td><img src="../public/logo_dark_128.webp" alt="十亿伏特·扩展128*128图标" /></td>
             <td><img src="../public/logo_dark_1024.webp" alt="十亿伏特·扩展1024*1024图标" /></td>
+        </tr>
+        <tr>
+            <td>十亿伏特 · 帮助包</td>
+            <td>无</td>
+            <td><img src="../public/logo_helper_128.webp" alt="十亿伏特·帮助包128*128图标" /></td>
+            <td><img src="../public/logo_helper_1024.webp" alt="十亿伏特·帮助包1024*1024图标" /></td>
         </tr>
     </tbody>
 </table>
@@ -74,6 +78,10 @@ mod 源码：[GitHub](https://github.com/XiaofengdiZhu/Gigavolt/)
 
 ::: details 🖼️ 十亿伏特 · 扩展 看板娘
 ![十亿伏特 · 扩展看板娘](../public/images/poster-girl/GigavoltExpandPosterGirl.webp)
+:::
+
+::: details 🖼️ 十亿伏特 · 帮助包 看板娘
+![十亿伏特 · 帮助包看板娘](../public/images/poster-girl/GigavoltHelperPosterGirl.webp)
 :::
 
 ## 开发计划
