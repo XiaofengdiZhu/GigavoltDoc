@@ -1,0 +1,1 @@
+const o="/GigavoltDoc/images/expand/memory_banks/GVVolatileMemoryBankBlock.webp",a="/GigavoltDoc/images/expand/memory_banks/GVVolatileListMemoryBankBlock.webp",e="/GigavoltDoc/images/expand/memory_banks/GVVolatileFourDimensionalMemoryBankBlock.webp";export{o as _,a,e as b};
