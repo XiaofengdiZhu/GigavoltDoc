@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {ref, onMounted, onBeforeUnmount} from "vue";
+import {ref, onMounted, onBeforeUnmount, watch} from "vue";
 import {withBase} from "vitepress";
 import ElectricConnection from "./ElectricConnection";
 import ElectricConnectorDirection from "./ElectricConnectorDirection";
@@ -70,8 +70,10 @@ let imgHeight = ref(0);
 const checkWidth = () => {
     if (self.value) {
         isWide.value = self.value.clientWidth > 720;
-        if (img.value) {
-            imgHeight.value = img.value.clientHeight;
+        if (isWide.value && img.value) {
+            requestAnimationFrame(() => {
+                imgHeight.value = img.value.clientHeight;
+            });
         }
     }
 };
@@ -82,9 +84,6 @@ onMounted(() => {
 onBeforeUnmount(() => {
     window.removeEventListener('resize', checkWidth);
 });
-const imgLoaded = () => {
-    imgHeight.value = img.value.clientHeight;
-};
 </script>
 
 <template v-if="connections.length > 0">
@@ -93,7 +92,7 @@ const imgLoaded = () => {
         <ElectricConnectionTable :connection="all" :isWide="false" :titleLevel="titleLevel" :serial="serial"/>
     </template>
     <template v-else>
-        <div :class="$style.electricElementGraphic" :style="{gridTemplateColumns:isWide?'2.5fr 1fr 2.5fr':'1fr 1fr 1fr', gridTemplateRows:imgHeight>0?`auto ${imgHeight}px auto auto`:'auto'}" ref="self">
+        <div :class="$style.electricElementGraphic" :style="{gridTemplateColumns: isWide ? '2.5fr 1fr 2.5fr' : '1fr 1fr 1fr', gridTemplateRows:imgHeight > 0 ? `auto ${imgHeight}px auto auto` : 'auto'}" ref="self">
             <div :class="[$style.surroundConnection, top.Type == ElectricConnectorType.Input ? $style.input : $style.output]" style="grid-row-start:1;grid-column: 1 / 3; justify-self: end; align-self: end;" v-if="top != null">
                 <ElectricConnectionTable :connection="top" :isWide="true" v-if="isWide" :titleLevel="titleLevel" :serial="serial"/>
                 <a :class="$style.narrowA" :href="`#${topTitle}${serial??''}`" v-else>{{ topTitle }}</a>
@@ -107,7 +106,7 @@ const imgLoaded = () => {
                 <a :class="$style.narrowA" style="writing-mode: vertical-lr;" :href="`#${leftTitle}${serial??''}`" v-else>{{ leftTitle }}</a>
             </div>
             <div style="grid-row-start: 2; grid-column-start: 2; place-self: stretch" v-if="imgSrc">
-                <img :src="withBase(imgSrc)" style="width: 100%; image-rendering: pixelated; object-fit: contain;" :alt="imgAlt" :title="imgAlt" :class="{'gate_mask': gateMask}" class="no_hover" ref="img" @load="imgLoaded"/>
+                <img :src="withBase(imgSrc)" style="width: 100%; image-rendering: pixelated; object-fit: contain;" :alt="imgAlt" :title="imgAlt" :class="{'gate_mask': gateMask}" class="no_hover" ref="img"/>
             </div>
             <div :class="[$style.surroundConnection, bottom.Type == ElectricConnectorType.Input ? $style.input : $style.output]" style="grid-row-start: 3; grid-column: 2 / 4;" v-if="bottom != null">
                 <ElectricConnectionTable :connection="bottom" :isWide="true" v-if="isWide" :titleLevel="titleLevel" :serial="serial"/>

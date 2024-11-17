@@ -234,6 +234,10 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                     {
                         text: 'Camera',
                         link: '/en/expand/sensors/camera'
+                    },
+                    {
+                        text: 'Touchpad',
+                        link: '/en/expand/sensors/touchpad'
                     }
                 ]
             },

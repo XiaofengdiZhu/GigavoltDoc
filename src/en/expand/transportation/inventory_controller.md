@@ -34,7 +34,8 @@ let connections = [
 
 ## Overview
 
-You can use it to control items stored in the inventory of a block like a chest, furnace, and dispenser, or a player's inventory.
+You can use it to control items stored in the inventory of a block like a chest, furnace, and dispenser, or a player's inventory.  
+And you can place several extension poles or fetchers, whose vertical lines are parallel, at back to control items in farther chests.
 
 ## Ports Definition
 

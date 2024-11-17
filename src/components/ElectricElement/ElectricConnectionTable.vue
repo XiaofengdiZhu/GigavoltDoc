@@ -38,7 +38,7 @@ let title = locale("ElectricConnectorDirection", connection.Direction) + locale(
     padding: 6px 8px;
 }
 
-.wide {
+main .wide {
     h3& {
         margin: 0 !important;
     }

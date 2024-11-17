@@ -153,7 +153,7 @@ pip install antlr4-tools
 
 <style module>
 .table_align_center {
-    & th {
+    & tr th {
         text-align: center;
     }
     & td {

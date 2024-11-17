@@ -9,6 +9,7 @@ import {pagefindPlugin, chineseSearchOptimize} from 'vitepress-plugin-pagefind';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: 'Gigavolt Doc 十亿伏特文档',
+    description: 'The document for Gigavolt mod of Survivalcraft. 生存战争十亿伏特mod的文档',
     srcDir: './src',
     outDir: './docs',
     base: '/GigavoltDoc/',
@@ -124,6 +125,7 @@ export default defineConfig({
     locales: {
         en: {
             title: 'Gigavolt Doc',
+            description: 'The document for Gigavolt mod of Survivalcraft.',
             titleTemplate: 'Gigavolt Doc',
             label: 'English',
             lang: 'en',
@@ -139,6 +141,7 @@ export default defineConfig({
         },
         zh: {
             title: '十亿伏特文档',
+            description: '生存战争十亿伏特mod的文档',
             titleTemplate: '十亿伏特文档',
             label: '中文',
             lang: 'zh',

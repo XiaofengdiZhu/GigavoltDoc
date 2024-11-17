@@ -77,8 +77,10 @@ let imgHeight = ref(0);
 const checkWidth = () => {
     if (self.value) {
         isWide.value = self.value.clientWidth > 720;
-        if (img.value) {
-            imgHeight.value = img.value.clientHeight;
+        if (isWide.value && img.value) {
+            requestAnimationFrame(() => {
+                imgHeight.value = img.value.clientHeight;
+            });
         }
     }
 };
@@ -89,9 +91,6 @@ onMounted(() => {
 onBeforeUnmount(() => {
     window.removeEventListener('resize', checkWidth);
 });
-const imgLoaded = () => {
-    imgHeight.value = img.value.clientHeight;
-};
 </script>
 
 <template v-if="connections.length > 0">
@@ -113,7 +112,7 @@ const imgLoaded = () => {
             <a :class="$style.narrowA" style="writing-mode: vertical-lr;" :href="`#${upLeftTitle}${serial??''}`" v-else>{{ upLeftTitle }}</a>
         </div>
         <div style="grid-row: 2 / 4; grid-column-start: 2; place-self: stretch" v-if="imgSrc">
-            <img :src="withBase(imgSrc)" style="width: 100%; image-rendering: pixelated; object-fit: contain;" :alt="imgAlt" :title="imgAlt" class="no_hover" ref="img" @load="imgLoaded"/>
+            <img :src="withBase(imgSrc)" style="width: 100%; image-rendering: pixelated; object-fit: contain;" :alt="imgAlt" :title="imgAlt" class="no_hover" ref="img"/>
         </div>
         <div :class="[$style.surroundConnection, downRight.Type == ElectricConnectorType.Input ? $style.input : $style.output]" style="grid-row-start: 3; grid-column-start: 3; display: flex;" v-if="downRight != null">
             <ElectricConnectionTable :connection="downRight" :isWide="true" v-if="isWide" :titleLevel="titleLevel" :serial="serial"/>

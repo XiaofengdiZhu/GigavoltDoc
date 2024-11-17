@@ -233,6 +233,10 @@ export const sidebar: DefaultTheme.SidebarItem[] = [
                     {
                         text: '照相机',
                         link: '/zh/expand/sensors/camera'
+                    },
+                    {
+                        text: '触摸板',
+                        link: '/zh/expand/sensors/touchpad'
                     }
                 ]
             },
