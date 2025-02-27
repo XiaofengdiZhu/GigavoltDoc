@@ -48,9 +48,9 @@ A standard electric board has 5 ports. The maximum bitwidth for the vanilla elec
 * A 1-bit bitwidth can only represent 0 or 1.
 * A 2-bit bitwidth can represent 0, 1, 2, or 3, as shown in the table below:
 
-|:---:|:--:|:--:|
-| **Switch** | On <span class="mono">1</span> | Off <span class="mono">0</span> |
-| On <span class="mono">1</span> | Binary <span class="mono">11</span><br/>Decimal <span class="mono">3</span> | Binary <span class="mono">10</span><br/>Decimal <span class="mono">2</span> |
+|             Switch              |    <span :class="$style.body_font">On <span class="mono">1</span></span>    |   <span :class="$style.body_font">Off <span class="mono">0</span></span>    |
+|:-------------------------------:|:---------------------------------------------------------------------------:|:---------------------------------------------------------------------------:|
+| On <span class="mono">1</span>  | Binary <span class="mono">11</span><br/>Decimal <span class="mono">3</span> | Binary <span class="mono">10</span><br/>Decimal <span class="mono">2</span> |
 | Off <span class="mono">0</span> | Binary <span class="mono">01</span><br/>Decimal <span class="mono">1</span> | Binary <span class="mono">00</span><br/>Decimal <span class="mono">0</span> |
 
 * A 3-bit width can represent integers from 0 to 7, with each bit's contribution as follows:
@@ -152,5 +152,10 @@ One step further, this mod also provides [Transformers](base/new/elements#transf
 <style module>
 .negative_table tr > td:not(:first-child){
     font-family: var(--vp-font-family-mono);
+}
+
+.body_font {
+    font-weight: 400;
+    color: var(--vp-c-text-1);
 }
 </style>

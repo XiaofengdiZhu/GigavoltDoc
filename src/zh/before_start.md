@@ -47,8 +47,8 @@ next: false
 * 1 位的位宽只能表示 0 或 1
 * 2 位的位宽可以表示 0、1、2、3，如下表所示
 
-|:---:|:--:|:--:|
-| **开关** | 开 <span class="mono">1</span> | 关 <span class="mono">0</span> |
+|              开关               |    <span :class="$style.body_font">开 <span class="mono">1</span></span>    |    <span :class="$style.body_font">关 <span class="mono">0</span></span>    |
+|:-----------------------------:|:--------------------------------------------------------------------------:|:--------------------------------------------------------------------------:|
 | 开 <span class="mono">1</span> | 二进制 <span class="mono">11</span><br/>十进制 <span class="mono">&ensp;3</span> | 二进制 <span class="mono">10</span><br/>十进制 <span class="mono">&ensp;2</span> |
 | 关 <span class="mono">0</span> | 二进制 <span class="mono">01</span><br/>十进制 <span class="mono">&ensp;1</span> | 二进制 <span class="mono">00</span><br/>十进制 <span class="mono">&ensp;0</span> |
 
@@ -153,5 +153,10 @@ $$\pm((2^{12}-1)+(1 - {1 \over 2^3}))=\pm(4096 + 0.875)=\pm4096.875$$
 <style module>
 .negative_table tr > td:not(:first-child){
     font-family: var(--vp-font-family-mono);
+}
+
+.body_font {
+    font-weight: 400;
+    color: var(--vp-c-text-1);
 }
 </style>

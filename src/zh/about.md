@@ -144,7 +144,7 @@ pip install antlr4-tools
     * 数学公式：[markdown-it-mathjax3](https://github.com/nzt/markdown-it-mathjax3#readme)
     * 任务列表：[markdown-it-task-lists](https://github.com/revin/markdown-it-task-lists#readme)
     * 上标：[markdown-it-sup](https://github.com/markdown-it/markdown-it-sup#readme)
-    * 高级表格：[markdown-it-multimd-table](https://github.com/redbug312/markdown-it-multimd-table#readme)
+    * 高级表格：[markdown-it-multimd-table](https://github.com/jppellet/markdown-it-multimd-table-ext#readme)
 
 ## 依赖者
 

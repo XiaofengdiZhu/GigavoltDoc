@@ -144,7 +144,7 @@ pip install antlr4-tools
     * MathJax：[markdown-it-mathjax3](https://github.com/nzt/markdown-it-mathjax3#readme)
     * Task list：[markdown-it-task-lists](https://github.com/revin/markdown-it-task-lists#readme)
     * Superscript：[markdown-it-sup](https://github.com/markdown-it/markdown-it-sup#readme)
-    * Advanced table：[markdown-it-multimd-table](https://github.com/redbug312/markdown-it-multimd-table#readme)
+    * Advanced table：[markdown-it-multimd-table](https://github.com/jppellet/markdown-it-multimd-table-ext#readme)
 
 ## Dependents
 

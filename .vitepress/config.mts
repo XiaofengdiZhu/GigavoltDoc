@@ -1,7 +1,7 @@
 import {defineConfig} from 'vitepress';
 import taskLists from 'markdown-it-task-lists';
 import sup from 'markdown-it-sup';
-import multimd_table from 'markdown-it-multimd-table';
+import multimd_table from 'markdown-it-multimd-table-ext';
 import {nav as nav_zh, sidebar as sidebar_zh} from "./zh";
 import {nav as nav_en, sidebar as sidebar_en} from "./en";
 import {pagefindPlugin, chineseSearchOptimize} from 'vitepress-plugin-pagefind';

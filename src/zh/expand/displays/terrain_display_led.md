@@ -43,7 +43,7 @@ let connections = [
 
 用于显示地层图像，分为以下两个版本
 
-## 简单图片显示器
+## 简单地层显示器
 
 <img alt="简单地层显示器 图示" src="/images/expand/displays/terrain_display_led_0.webp" class="center_image small">
 
