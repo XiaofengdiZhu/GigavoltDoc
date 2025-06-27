@@ -18,11 +18,13 @@ next: false
 
 ## 支持的生存战争 API 版本
 
-本 mod 当前最新正式版支持的 API 版本为 **1.72**，可从 [此处下载](https://gitee.com/THPRC/survivalcraft-api/releases/tag/api1.72)。
+> 点击版本号可下载
 
-::: details 还在使用 1.0 版本的本 mod？
-本 mod 1.0 版本支持的 API 版本为 1.53，可从 [此处下载](https://gitee.com/THPRC/survivalcraft-api/releases/tag/api1.53P)。
-:::
+|                                mod 版本                                |                                    API 版本                                     |
+|:--------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|
+| [2.1](https://github.com/XiaofengdiZhu/Gigavolt/releases/tag/v2.1.1) | [1.8.1.1](https://gitee.com/SC-SPM/SurvivalcraftApi/releases/tag/API_1.8.1.1) |
+|  [2.0](https://github.com/XiaofengdiZhu/Gigavolt/releases/tag/v2.0)  |    [1.72](https://gitee.com/SC-SPM/SurvivalcraftApi/releases/tag/API_OLD)     |
+|  [1.0](https://github.com/XiaofengdiZhu/Gigavolt/releases/tag/v1.0)  |    [1.53](https://gitee.com/SC-SPM/SurvivalcraftApi/releases/tag/API_OLD)     |
 
 ## 帮助包 mod
 

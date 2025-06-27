@@ -45,7 +45,7 @@ Default output is 1.5 V.
 
 * Default output is 0xFFFFFFFF V.
 
-> [!CAUTION] ⚠ Important Caution
+> [!CAUTION] ⚠️ Important Caution
 > Other elements whose vanilla version output 1.5 V in default, will output 0xFFFFFFFF V in default. This feature also affects the classic elements.
 
 * You can manually edit the output duration of buttons.

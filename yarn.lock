@@ -1547,10 +1547,10 @@ tslib@^2.2.0:
   resolved "https://mirrors.cloud.tencent.com/npm/tslib/-/tslib-2.8.1.tgz#612efe4ed235d567e8aba5f2a5fab70280ade83f"
   integrity sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==
 
-typescript@^5.6.3:
-  version "5.7.3"
-  resolved "https://mirrors.cloud.tencent.com/npm/typescript/-/typescript-5.7.3.tgz#919b44a7dbb8583a9b856d162be24a54bf80073e"
-  integrity sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==
+typescript@^5.8.3:
+  version "5.8.3"
+  resolved "https://mirrors.cloud.tencent.com/npm/typescript/-/typescript-5.8.3.tgz#92f8a3e5e3cf497356f4178c34cd65a7f5e8440e"
+  integrity sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==
 
 uc.micro@^2.0.0, uc.micro@^2.1.0:
   version "2.1.0"
@@ -1634,7 +1634,7 @@ vitepress-plugin-comment-with-giscus@^1.1.15:
   dependencies:
     "@giscus/vue" "^2.2.8"
 
-vitepress-plugin-pagefind@^0.4.10:
+vitepress-plugin-pagefind@^0.4.13:
   version "0.4.13"
   resolved "https://mirrors.cloud.tencent.com/npm/vitepress-plugin-pagefind/-/vitepress-plugin-pagefind-0.4.13.tgz#84c32c070589e18e81ec9e9e201c0dd72eb798f1"
   integrity sha512-Cv5B2xXpOj+XDHnUdzNnzeY8B4pDZ+LrRdafv/1MAGF2JYoXUA3edgH3RhTwh2QfqVLBTfLKtreLYwUpRowr3g==

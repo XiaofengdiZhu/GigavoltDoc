@@ -214,7 +214,7 @@ According to the examples above, you may have a basic understanding of the Gigav
 * If any error occurs during the process, the calculation will stop immediately and output 0 V. Details of the error can be found in the game log.
 * Numbers in rules are decimal by default. To use hexadecimal numbers, add`0x`before the hexadecimal number. To use binary numbers, add`0b`before the binary number. Radix point is not supported for non-decimal numbers.
 
-> [!WARNING] ⚠ WARNING
+> [!WARNING] ⚠️ WARNING
 > The rule is case-sensitive!
 
 ## About NCalc

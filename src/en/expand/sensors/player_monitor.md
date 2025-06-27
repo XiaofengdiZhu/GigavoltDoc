@@ -61,5 +61,5 @@ You can get various information about a player by using this element.
 |       33        |           State 3           | If the player is swimming, the right output will be 0xFFFFFFFF V.<br/>Under water depth is a fraction.                                                                                                         |         Swimming          |       Under Water Depth        |               /                |
 |       48        |           Capture           | Capture the player's screen to the memory bank specified by the back input. Outputs are 0 V.<br/>If the game has only one player and the resolution is high, the image will contain UI, otherwise it will not. |             /             |               /                |               /                |
 
-> [!WARNING] ⚠ Warning
+> [!WARNING] ⚠️ Warning
 > Capture is resource-intensive, please do that only when necessary.

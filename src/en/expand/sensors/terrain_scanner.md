@@ -35,7 +35,7 @@ let connections = [
 
 Scans the blocks parallel to the face of the scanner, and stores the result to the specified memory bank. You can adjust the start distance and range.
 
-> [!WARNING] ⚠ Attention
+> [!WARNING] ⚠️ Attention
 > If the scanning succeeds, the original data in the memory bank will be overwritten!
 
 ## Ports Definition

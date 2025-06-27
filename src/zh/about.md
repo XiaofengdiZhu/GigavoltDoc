@@ -124,8 +124,8 @@ pip install antlr4-tools
 
 ### 十亿伏特 mod
 
-* 开发框架：[.NET 8](https://dotnet.microsoft.com/)
-* 游戏：[SurvivalCraft-UniAPI](https://gitee.com/THPRC/survivalcraft-api)
+* 开发框架：[.NET 9](https://dotnet.microsoft.com/)
+* 游戏：[SurvivalcraftApi](https://gitee.com/SC-SPM/SurvivalcraftApi)
 * 真值表表达式计算：[NCalc2](https://github.com/XiaofengdiZhu/NCalc2)
 * 少量图标：[Google Fonts](https://fonts.google.com/icons)
 

@@ -45,7 +45,7 @@ import Detonator from "/components/Detonator/Detonator.vue";
 
 * 默认输出 0xFFFFFFFF V
 
-> [!CAUTION] ⚠ 不会重复的说明
+> [!CAUTION] ⚠️ 不会重复的说明
 > 其他原本默认输出 1.5 V 的元件也将默认输出 0xFFFFFFFF V，包括经典版元件
 
 * 按钮可通过手动编辑，设置输出的持续周期数

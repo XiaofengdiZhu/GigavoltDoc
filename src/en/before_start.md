@@ -18,11 +18,13 @@ If you have mastered the vanilla electric elements, please read these contents f
 
 ## Supported API Versions
 
-The Current version of this mod can run on **API 1.72**. You can download it from [here](https://gitee.com/THPRC/survivalcraft-api/releases/tag/api1.72).
+> You can click the version number to download
 
-::: details Still using version 1.0 of this mod?
-Version 1.0 of this mod can run on API 1.53. You can download it from [here](https://gitee.com/THPRC/survivalcraft-api/releases/tag/api1.53P).
-:::
+|                             mod Version                              |                                  API Version                                  |
+|:--------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|
+| [2.1](https://github.com/XiaofengdiZhu/Gigavolt/releases/tag/v2.1.1) | [1.8.1.1](https://gitee.com/SC-SPM/SurvivalcraftApi/releases/tag/API_1.8.1.1) |
+|  [2.0](https://github.com/XiaofengdiZhu/Gigavolt/releases/tag/v2.0)  |    [1.72](https://gitee.com/SC-SPM/SurvivalcraftApi/releases/tag/API_OLD)     |
+|  [1.0](https://github.com/XiaofengdiZhu/Gigavolt/releases/tag/v1.0)  |    [1.53](https://gitee.com/SC-SPM/SurvivalcraftApi/releases/tag/API_OLD)     |
 
 ## Helper mod
 

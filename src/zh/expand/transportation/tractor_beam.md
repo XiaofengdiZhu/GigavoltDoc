@@ -28,7 +28,7 @@ let connections = [
         
     ]),
     new ElectricConnection(ElectricConnectorDirection.Left, ElectricConnectorType.Input, ElectricConnectionDisplayMode.StartAndEnd, [
-        new IOPort(1, 1, "捕获/释放", "从 0 变为 1 时，将尝试捕获或释放方块  \n释放时，子地形必须与主世界平行，且缩放为 1.0"),
+        new IOPort(1, 1, "捕获/释放", "从 0 变为 1 时，将尝试捕获方块；从 1 变成 0 时，将尝试释放方块  \n释放时，子地形必须与主世界平行，且缩放为 1.0"),
         new IOPort(2, 2, "位置提示", "为 1 时，将持续显示一根线来提示当前各输入指向的位置  \n从 0 变为 1 时，能预览能被捕获到的方块")
     ])
 ];

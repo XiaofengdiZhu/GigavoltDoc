@@ -124,8 +124,8 @@ pip install antlr4-tools
 
 ### Gigavolt mod
 
-* Develop framework：[.NET 8](https://dotnet.microsoft.com/)
-* Game：[SurvivalCraft-UniAPI](https://gitee.com/THPRC/survivalcraft-api)
+* Develop framework：[.NET 9](https://dotnet.microsoft.com/)
+* Game：[SurvivalCraftApi](https://gitee.com/SC-SPM/SurvivalcraftApi)
 * Calculation library of truth table：[NCalc2](https://github.com/XiaofengdiZhu/NCalc2)
 * Some icons：[Google Fonts](https://fonts.google.com/icons)
 
