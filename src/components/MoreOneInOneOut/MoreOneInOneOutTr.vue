@@ -82,6 +82,7 @@ function voltage2Decimal(voltage: string) {
         <td>{{ data.Name }}</td>
         <td>
             <table :class="$style.table">
+                <tbody>
                 <tr>
                     <td>{{ locale('MoreOneInOneOut', 'Decimal') }}</td>
                     <td><input type="number" inputmode="decimal" :value="data.inputDecimal" :class="$style.input" @input="onDecimalInputChange"></td>
@@ -90,10 +91,12 @@ function voltage2Decimal(voltage: string) {
                     <td>{{ locale('MoreOneInOneOut', 'Voltage') }}</td>
                     <td><input type="text" pattern="[0-9a-fA-F]{1,8}" :value="data.inputVoltage" :class="$style.input" @input="onVoltageInputChange"></td>
                 </tr>
+                </tbody>
             </table>
         </td>
         <td>
             <table :class="$style.table">
+                <tbody>
                 <tr>
                     <td>{{ locale('MoreOneInOneOut', 'Decimal') }}</td>
                     <td><label :class="$style.output">{{ data.outputDecimal.toFixed(8) }}</label></td>
@@ -102,6 +105,7 @@ function voltage2Decimal(voltage: string) {
                     <td>{{ locale('MoreOneInOneOut', 'Voltage') }}</td>
                     <td><label :class="$style.output">{{ data.outputVoltage }}</label></td>
                 </tr>
+                </tbody>
             </table>
         </td>
     </tr>

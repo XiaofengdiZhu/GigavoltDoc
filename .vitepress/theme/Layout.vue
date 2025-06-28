@@ -3,6 +3,7 @@ import {useData, withBase} from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 import {nextTick, provide} from 'vue';
 import HomeLogo from '../../src/components/HomeLogo.vue';
+import RegisterSW from "./components/RegisterSW.vue";
 
 const {Layout} = DefaultTheme;
 const {isDark} = useData();
@@ -54,6 +55,9 @@ function changeFavicon(isDark: boolean) {
     <Layout>
         <template #home-hero-before>
             <HomeLogo/>
+        </template>
+        <template #layout-bottom>
+            <RegisterSW/>
         </template>
     </Layout>
 </template>

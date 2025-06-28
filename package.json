@@ -13,6 +13,8 @@
   },
   "type": "module",
   "devDependencies": {
+    "@vite-pwa/vitepress": "^1.0.0",
+    "vite-plugin-pwa": "^1.0.0",
     "markdown-it": "^14.1.0",
     "markdown-it-mathjax3": "^4.3.2",
     "markdown-it-multimd-table-ext": "^4.2.32",

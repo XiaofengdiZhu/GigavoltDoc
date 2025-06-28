@@ -5,9 +5,10 @@ import multimd_table from 'markdown-it-multimd-table-ext';
 import {nav as nav_zh, sidebar as sidebar_zh} from "./zh";
 import {nav as nav_en, sidebar as sidebar_en} from "./en";
 import {pagefindPlugin, chineseSearchOptimize} from 'vitepress-plugin-pagefind';
+import {withPwa} from '@vite-pwa/vitepress';
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default withPwa(defineConfig({
     title: 'Gigavolt Doc 十亿伏特文档',
     description: 'The document for Gigavolt mod of Survivalcraft. 生存战争十亿伏特mod的文档',
     srcDir: './src',
@@ -73,7 +74,7 @@ export default defineConfig({
         },
         footer: {
             message: 'Licensed under the <a href="https://github.com/XiaofengdiZhu/Gigavolt/blob/main/LICENSE.txt" target="_blank">Apache License 2.0</a>',
-            copyright: 'Copyright © 2023-2024 <a href="https://github.com/XiaofengdiZhu/" target="_blank">XiaofengdiZhu 销锋镝铸</a>'
+            copyright: 'Copyright © 2023-2025 <a href="https://github.com/XiaofengdiZhu/" target="_blank">XiaofengdiZhu 销锋镝铸</a>'
         },
         notFound: {
             title: 'PAGE NOT FOUND 未找到页面',
@@ -135,7 +136,7 @@ export default defineConfig({
                 sidebar: sidebar_en,
                 footer: {
                     message: 'Licensed under the <a href="https://github.com/XiaofengdiZhu/Gigavolt/blob/main/LICENSE.txt" target="_blank">Apache License 2.0</a>',
-                    copyright: 'Copyright © 2023-2024 <a href="https://github.com/XiaofengdiZhu/" target="_blank">XiaofengdiZhu</a>'
+                    copyright: 'Copyright © 2023-2025 <a href="https://github.com/XiaofengdiZhu/" target="_blank">XiaofengdiZhu</a>'
                 }
             }
         },
@@ -172,7 +173,7 @@ export default defineConfig({
                 },
                 footer: {
                     message: '开源协议：<a href="https://github.com/XiaofengdiZhu/Gigavolt/blob/main/LICENSE.txt" target="_blank">Apache License 2.0</a>',
-                    copyright: 'Copyright © 2023-2024 <a href="https://github.com/XiaofengdiZhu/" target="_blank">销锋镝铸</a>'
+                    copyright: 'Copyright © 2023-2025 <a href="https://github.com/XiaofengdiZhu/" target="_blank">销锋镝铸</a>'
                 },
                 notFound: {
                     title: '未找到页面',
@@ -182,5 +183,58 @@ export default defineConfig({
                 }
             }
         }
+    },
+    pwa: {
+        //mode: 'development',
+        base: '/GigavoltDoc/',
+        scope: '/GigavoltDoc/',
+        outDir: "../docs",
+        registerType: 'autoUpdate',
+        manifest: {
+            id: 'xfdz.GigavoltDoc',
+            name: 'Gigavolt Doc 十亿伏特文档',
+            short_name: 'Gigavolt Doc',
+            theme_color: '#ffffff',
+            icons: [
+                {
+                    src: 'logo_light_128.webp',
+                    sizes: '128x128',
+                    type: 'image/webp',
+                    purpose: 'any'
+                },
+                {
+                    src: 'logo_light_1024.webp',
+                    sizes: '1024x1024',
+                    type: 'image/webp',
+                    purpose: 'any'
+                }
+            ]
+        },
+        workbox: {
+            globPatterns: ['**/*.{css,js,html,svg,png,webp,woff2,webmanifest}'],
+            runtimeCaching: [
+                {
+                    urlPattern: /.*\.{svg,png,webp,woff2}/i,
+                    handler: "CacheFirst",
+                    options: {
+                        cacheName: "static-cache",
+                        expiration: {
+                            maxEntries: 200,
+                            maxAgeSeconds: 60 * 60 * 24 * 365
+                        },
+                        cacheableResponse: {
+                            statuses: [
+                                0,
+                                200
+                            ]
+                        }
+                    }
+                }
+            ]
+        } /*devOptions: {
+            enabled: true,
+            suppressWarnings: true,
+            navigateFallback: '/'
+        }*/
     }
-})
+}))
