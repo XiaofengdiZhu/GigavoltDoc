@@ -20,11 +20,12 @@ next: false
 
 > 点击版本号可下载
 
-|                                mod 版本                                |                                    API 版本                                     |
-|:--------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|
-| [2.1](https://github.com/XiaofengdiZhu/Gigavolt/releases/tag/v2.1.1) | [1.8.1.1](https://gitee.com/SC-SPM/SurvivalcraftApi/releases/tag/API_1.8.1.1) |
-|  [2.0](https://github.com/XiaofengdiZhu/Gigavolt/releases/tag/v2.0)  |    [1.72](https://gitee.com/SC-SPM/SurvivalcraftApi/releases/tag/API_OLD)     |
-|  [1.0](https://github.com/XiaofengdiZhu/Gigavolt/releases/tag/v1.0)  |    [1.53](https://gitee.com/SC-SPM/SurvivalcraftApi/releases/tag/API_OLD)     |
+|                                 mod 版本                                 |                                    API 版本                                     |
+|:----------------------------------------------------------------------:|:-----------------------------------------------------------------------------:|
+| [2.1.2](https://github.com/XiaofengdiZhu/Gigavolt/releases/tag/v2.1.2) |   [1.8.2](https://gitee.com/SC-SPM/SurvivalcraftApi/releases/tag/API_1.8.2)   |
+| [2.1.1](https://github.com/XiaofengdiZhu/Gigavolt/releases/tag/v2.1.1) | [1.8.1.1](https://gitee.com/SC-SPM/SurvivalcraftApi/releases/tag/API_1.8.1.1) |
+|   [2.0](https://github.com/XiaofengdiZhu/Gigavolt/releases/tag/v2.0)   |    [1.72](https://gitee.com/SC-SPM/SurvivalcraftApi/releases/tag/API_OLD)     |
+|   [1.0](https://github.com/XiaofengdiZhu/Gigavolt/releases/tag/v1.0)   |    [1.53](https://gitee.com/SC-SPM/SurvivalcraftApi/releases/tag/API_OLD)     |
 
 ## 帮助包 mod
 

@@ -13,18 +13,18 @@
   },
   "type": "module",
   "devDependencies": {
-    "@vite-pwa/vitepress": "^1.0.0",
-    "vite-plugin-pwa": "^1.0.0",
+    "@vite-pwa/vitepress": "^1.0.1",
+    "vite-plugin-pwa": "^1.1.0",
     "markdown-it": "^14.1.0",
-    "markdown-it-mathjax3": "^4.3.2",
+    "markdown-it-mathjax3": "^5.2.0",
     "markdown-it-multimd-table-ext": "^4.2.32",
     "markdown-it-sup": "^2.0.0",
     "markdown-it-task-lists": "^2.1.1",
     "qrcode.vue": "^3.6.0",
-    "typescript": "^5.8.3",
-    "vitepress": "^1.6.3",
+    "typescript": "^5.9.3",
+    "vitepress": "^1.6.4",
     "vitepress-plugin-comment-with-giscus": "^1.1.15",
-    "vitepress-plugin-pagefind": "^0.4.13"
+    "vitepress-plugin-pagefind": "^0.4.16"
   },
   "scripts": {
     "dev": "vitepress dev --host",

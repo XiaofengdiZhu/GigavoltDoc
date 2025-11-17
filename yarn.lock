@@ -1318,6 +1318,62 @@
   resolved "https://mirrors.cloud.tencent.com/npm/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.34.8.tgz#4cdb2cfae69cdb7b1a3cc58778e820408075e928"
   integrity sha512-U0FaE5O1BCpZSeE6gBl3c5ObhePQSfk9vDRToMmTkbhCOgW4jqvtS5LGyQ76L1fH8sM0keRp4uDTsbjiUyjk0g==
 
+"@se-oss/deasync-darwin-arm64@1.0.1":
+  version "1.0.1"
+  resolved "http://mirrors.cloud.tencent.com/npm/@se-oss/deasync-darwin-arm64/-/deasync-darwin-arm64-1.0.1.tgz#4fa435a33bc6b4d644ec36204f1b7521ce4f7097"
+  integrity sha512-0YWmIDEGQfW3GGopmZHhfA6mamsG0HFKZhmBzHVyFiMKkJts8kpQwGbGrWlK8eOAoPCihOsG6tCotYR3p7HZaQ==
+
+"@se-oss/deasync-darwin-x64@1.0.1":
+  version "1.0.1"
+  resolved "http://mirrors.cloud.tencent.com/npm/@se-oss/deasync-darwin-x64/-/deasync-darwin-x64-1.0.1.tgz#b80dcb457666ebb3749805af57f2e5e7f78ba7ea"
+  integrity sha512-r3FRTLIXqGqOb1DjTLW3YhO/Dd1vA2qRLP0Ym3Wmk3yMv6c/nm15zg6UVoXbgBu8cjbvcsI/OfbHPdErmjMWsw==
+
+"@se-oss/deasync-linux-arm64-gnu@1.0.1":
+  version "1.0.1"
+  resolved "http://mirrors.cloud.tencent.com/npm/@se-oss/deasync-linux-arm64-gnu/-/deasync-linux-arm64-gnu-1.0.1.tgz#2e7c9ae6ecb580e6dacb97affc092c5738006407"
+  integrity sha512-657uRew7fZAx663Li03ilLV2lN09Dqb/NxawlDu8kKmboK1BLitHJRS+taiT5oFZqyIDrU45tlQKfCrW0p0sYA==
+
+"@se-oss/deasync-linux-arm64-musl@1.0.1":
+  version "1.0.1"
+  resolved "http://mirrors.cloud.tencent.com/npm/@se-oss/deasync-linux-arm64-musl/-/deasync-linux-arm64-musl-1.0.1.tgz#9fdf2a3450af2aaaaea4d7843d4a7d14c9874c6a"
+  integrity sha512-IE3fIQPIJtko4lx9sRam+Zz0P4xbpAPJgDCHaz6k9cP1yUvVI179B4IZRnFx0GyjyQpm0KhHoIGHJc4KUmA81Q==
+
+"@se-oss/deasync-linux-x64-gnu@1.0.1":
+  version "1.0.1"
+  resolved "http://mirrors.cloud.tencent.com/npm/@se-oss/deasync-linux-x64-gnu/-/deasync-linux-x64-gnu-1.0.1.tgz#1e61f7034fc18a44bdb99431893d57c89db202bd"
+  integrity sha512-XQl7etZESGIjIraCyxfAey8ZTIJUB4dUFU3rPR/xLVn9bKpZGlJLIms0z3hoHX9mipO+Cqo53vK4IVm6A7U/ww==
+
+"@se-oss/deasync-linux-x64-musl@1.0.1":
+  version "1.0.1"
+  resolved "http://mirrors.cloud.tencent.com/npm/@se-oss/deasync-linux-x64-musl/-/deasync-linux-x64-musl-1.0.1.tgz#44f278f1c83fef2512d724b315488de46f220531"
+  integrity sha512-vWgFAZlqImqMV6jhCWV7C9wcCS1eb1ajhlKduBRPfyUxxkoObe+EqTG2BKJAuafxp3/KS1aUsIMJma9mhwFvow==
+
+"@se-oss/deasync-win32-arm64-msvc@1.0.1":
+  version "1.0.1"
+  resolved "http://mirrors.cloud.tencent.com/npm/@se-oss/deasync-win32-arm64-msvc/-/deasync-win32-arm64-msvc-1.0.1.tgz#a2bd4374aef4d80202e6f98805b35d32dcfe95e8"
+  integrity sha512-yk7lEE7Zd8GX7o6CuUbg3HnnmUhBx4tgfn5ff3eoq05CgBO6Z3ZtL4l+utAe1cxcFaXPhyvcgnHYyA4OF544tg==
+
+"@se-oss/deasync-win32-x64-msvc@1.0.1":
+  version "1.0.1"
+  resolved "http://mirrors.cloud.tencent.com/npm/@se-oss/deasync-win32-x64-msvc/-/deasync-win32-x64-msvc-1.0.1.tgz#a2fb75346ab9bb7ac25874e3486d2a1f4c1a20ae"
+  integrity sha512-ixizmuLGRPGyAesWUNWVzVOsvuunNb/qMqU8SmjfLR/vVgzdQEkSHFf+fkX9GXPN6FDv+DAz5uskTzhjUyCXFA==
+
+"@se-oss/deasync@^1.0.1":
+  version "1.0.1"
+  resolved "http://mirrors.cloud.tencent.com/npm/@se-oss/deasync/-/deasync-1.0.1.tgz#18301ef127366e2bda5f2ebb10670dde16d8e326"
+  integrity sha512-Ha7P/xCNxOuH72BNdLRWs4TT8rsMMrERnHtfKWBeTWu+UFW9OBTrRgfZJOlbAAQFR0l4Q30cpAn8CuR7PXWcPg==
+  dependencies:
+    type-fest "^4.37.0"
+  optionalDependencies:
+    "@se-oss/deasync-darwin-arm64" "1.0.1"
+    "@se-oss/deasync-darwin-x64" "1.0.1"
+    "@se-oss/deasync-linux-arm64-gnu" "1.0.1"
+    "@se-oss/deasync-linux-arm64-musl" "1.0.1"
+    "@se-oss/deasync-linux-x64-gnu" "1.0.1"
+    "@se-oss/deasync-linux-x64-musl" "1.0.1"
+    "@se-oss/deasync-win32-arm64-msvc" "1.0.1"
+    "@se-oss/deasync-win32-x64-msvc" "1.0.1"
+
 "@shikijs/core@2.5.0", "@shikijs/core@^2.1.0":
   version "2.5.0"
   resolved "https://mirrors.cloud.tencent.com/npm/@shikijs/core/-/core-2.5.0.tgz#e14d33961dfa3141393d4a76fc8923d0d1c4b62f"
@@ -1382,10 +1438,10 @@
   resolved "https://mirrors.cloud.tencent.com/npm/@shikijs/vscode-textmate/-/vscode-textmate-10.0.2.tgz#a90ab31d0cc1dfb54c66a69e515bf624fa7b2224"
   integrity sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==
 
-"@sugarat/theme-shared@0.0.4":
-  version "0.0.4"
-  resolved "https://mirrors.cloud.tencent.com/npm/@sugarat/theme-shared/-/theme-shared-0.0.4.tgz#9e95b9aea24a41bc7880967b7e4c37aedc00f837"
-  integrity sha512-pz58/c8hKTlKqi+pGZEmizGJ6GGPY/If/HKzOkLDg9WYPcBXQ8mP86aN/zIIqe+X0AXmmNOsiFswH7DDtu3Zsg==
+"@sugarat/theme-shared@0.0.6":
+  version "0.0.6"
+  resolved "http://mirrors.cloud.tencent.com/npm/@sugarat/theme-shared/-/theme-shared-0.0.6.tgz#b373742a34894a9ab6d3b7c65ed698fbeb486406"
+  integrity sha512-858llnOYVBkzXy9/WICD/xNeGI3V+FDzfRaF8JACN/WIhyADB4crpjjgMgy04MgnE3QLUYiIH0ZvgFps1XOqSA==
   dependencies:
     cross-spawn "^7.0.3"
     gray-matter "^4.0.3"
@@ -1477,10 +1533,10 @@
   resolved "https://mirrors.cloud.tencent.com/npm/@ungap/structured-clone/-/structured-clone-1.3.0.tgz#d06bbb384ebcf6c505fde1c3d0ed4ddffe0aaff8"
   integrity sha512-WmoN8qaIAo7WTYWbAZuG8PYEhn5fkz7dZrqTBZ7dtt//lL2Gwms1IcnQ5yHqjDfX8Ft5j4YzDM23f87zBfDe9g==
 
-"@vite-pwa/vitepress@^1.0.0":
-  version "1.0.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/@vite-pwa/vitepress/-/vitepress-1.0.0.tgz#b49d21d538e5cca3264e39e01e5a45493403e879"
-  integrity sha512-i5RFah4urA6tZycYlGyBslVx8cVzbZBcARJLDg5rWMfAkRmyLtpRU6usGfVOwyN9kjJ2Bkm+gBHXF1hhr7HptQ==
+"@vite-pwa/vitepress@^1.0.1":
+  version "1.0.1"
+  resolved "http://mirrors.cloud.tencent.com/npm/@vite-pwa/vitepress/-/vitepress-1.0.1.tgz#f643b4f5329933870e671c7c3576575ea856af5d"
+  integrity sha512-INBxiNLZpef349KSmQ6zHWB4uqIgZgvJnwzH3bedW/7d/Ej0lK5HP95fiBdIc2wHUtmR3Znnegmt3zLESVWrpA==
 
 "@vitejs/plugin-vue@^5.2.1":
   version "5.2.1"
@@ -1681,11 +1737,6 @@ algoliasearch@^5.14.2:
     "@algolia/requester-fetch" "5.20.3"
     "@algolia/requester-node-http" "5.20.3"
 
-ansi-colors@^4.1.1:
-  version "4.1.3"
-  resolved "https://mirrors.cloud.tencent.com/npm/ansi-colors/-/ansi-colors-4.1.3.tgz#37611340eb2243e70cc604cad35d63270d48781b"
-  integrity sha512-/6w/C21Pm1A7aZitlI5Ni/2J6FFQN8i1Cvz3kHABAAbw93v/NlvKdVOqz7CCWz/3iv/JplRSEEZ83XION15ovw==
-
 ansi-styles@^4.1.0:
   version "4.3.0"
   resolved "http://mirrors.cloud.tencent.com/npm/ansi-styles/-/ansi-styles-4.3.0.tgz#edd803628ae71c04c85ae7a0906edad34b648937"
@@ -1782,11 +1833,6 @@ birpc@^0.2.19:
   resolved "https://mirrors.cloud.tencent.com/npm/birpc/-/birpc-0.2.19.tgz#cdd183a4a70ba103127d49765b4a71349da5a0ca"
   integrity sha512-5WeXXAvTmitV1RqJFppT5QtUiz2p1mRSYU000Jkft5ZUCLJIk4uQriYNO50HknxKwM6jd8utNc66K1qGIwwWBQ==
 
-boolbase@^1.0.0:
-  version "1.0.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
-  integrity sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==
-
 brace-expansion@^1.1.7:
   version "1.1.12"
   resolved "http://mirrors.cloud.tencent.com/npm/brace-expansion/-/brace-expansion-1.1.12.tgz#ab9b454466e5a8cc3a187beaad580412a9c5b843"
@@ -1871,30 +1917,6 @@ character-entities-legacy@^3.0.0:
   resolved "https://mirrors.cloud.tencent.com/npm/character-entities-legacy/-/character-entities-legacy-3.0.0.tgz#76bc83a90738901d7bc223a9e93759fdd560125b"
   integrity sha512-RpPp0asT/6ufRm//AJVwpViZbGM/MkjQFxJccQRHmISF/22NBtsHqAWmL+/pmkPWoIUJdWyeVleTl1wydHATVQ==
 
-cheerio-select@^1.5.0:
-  version "1.6.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/cheerio-select/-/cheerio-select-1.6.0.tgz#489f36604112c722afa147dedd0d4609c09e1696"
-  integrity sha512-eq0GdBvxVFbqWgmCm7M3XGs1I8oLy/nExUnh6oLqmBditPO9AqQJrkslDpMun/hZ0yyTs8L0m85OHp4ho6Qm9g==
-  dependencies:
-    css-select "^4.3.0"
-    css-what "^6.0.1"
-    domelementtype "^2.2.0"
-    domhandler "^4.3.1"
-    domutils "^2.8.0"
-
-cheerio@1.0.0-rc.10:
-  version "1.0.0-rc.10"
-  resolved "https://mirrors.cloud.tencent.com/npm/cheerio/-/cheerio-1.0.0-rc.10.tgz#2ba3dcdfcc26e7956fc1f440e61d51c643379f3e"
-  integrity sha512-g0J0q/O6mW8z5zxQ3A8E8J1hUgp4SMOvEoW/x84OwyHKe/Zccz83PVT4y5Crcr530FV6NgmKI1qvGTKVl9XXVw==
-  dependencies:
-    cheerio-select "^1.5.0"
-    dom-serializer "^1.3.2"
-    domhandler "^4.2.0"
-    htmlparser2 "^6.1.0"
-    parse5 "^6.0.1"
-    parse5-htmlparser2-tree-adapter "^6.0.1"
-    tslib "^2.2.0"
-
 color-convert@^2.0.1:
   version "2.0.1"
   resolved "http://mirrors.cloud.tencent.com/npm/color-convert/-/color-convert-2.0.1.tgz#72d3a68d598c9bdb3af2ad1e84f21d896abd4de3"
@@ -1912,20 +1934,10 @@ comma-separated-tokens@^2.0.0:
   resolved "https://mirrors.cloud.tencent.com/npm/comma-separated-tokens/-/comma-separated-tokens-2.0.3.tgz#4e89c9458acb61bc8fef19f4529973b2392839ee"
   integrity sha512-Fu4hJdvzeylCfQPp9SGWidpzrMs7tTrlu6Vb8XGaRGck8QSNZJJp538Wrb60Lax4fPwR64ViY468OIUTbRlGZg==
 
-commander@9.2.0:
-  version "9.2.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/commander/-/commander-9.2.0.tgz#6e21014b2ed90d8b7c9647230d8b7a94a4a419a9"
-  integrity sha512-e2i4wANQiSXgnrBlIatyHtP1odfUp0BbV5Y5nEGbxtIrStkEOAAzCUirvLBNXHLr7kwLvJl6V+4V3XV9x7Wd9w==
-
 commander@^2.20.0:
   version "2.20.3"
   resolved "http://mirrors.cloud.tencent.com/npm/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
-
-commander@^6.1.0:
-  version "6.2.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/commander/-/commander-6.2.1.tgz#0792eb682dfbc325999bb2b84fddddba110ac73c"
-  integrity sha512-U7VdrJFnJgo4xjrHpTzu0yrHPGImdsmD95ZlgYSEajAn2JKzDhDTPG9kBTefmObL2w/ngeZnilk+OV9CG3d7UA==
 
 common-tags@^1.8.0:
   version "1.8.2"
@@ -1969,22 +1981,6 @@ crypto-random-string@^2.0.0:
   version "2.0.0"
   resolved "http://mirrors.cloud.tencent.com/npm/crypto-random-string/-/crypto-random-string-2.0.0.tgz#ef2a7a966ec11083388369baa02ebead229b30d5"
   integrity sha512-v1plID3y9r/lPhviJ1wrXpLeyUIGAZ2SHNYTEapm7/8A9nLPoyvVp3RK/EPFqn5kEznyWgYZNsRtYYIWbuG8KA==
-
-css-select@^4.3.0:
-  version "4.3.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/css-select/-/css-select-4.3.0.tgz#db7129b2846662fd8628cfc496abb2b59e41529b"
-  integrity sha512-wPpOYtnsVontu2mODhA19JrqWxNsfdatRKd64kmpRbQgh1KtItko5sTnEpPdpSaJszTOhEMlF/RPz28qj4HqhQ==
-  dependencies:
-    boolbase "^1.0.0"
-    css-what "^6.0.1"
-    domhandler "^4.3.1"
-    domutils "^2.8.0"
-    nth-check "^2.0.1"
-
-css-what@^6.0.1:
-  version "6.1.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/css-what/-/css-what-6.1.0.tgz#fb5effcf76f1ddea2c81bdfaa4de44e79bac70f4"
-  integrity sha512-HTUrgRJ7r4dsZKU6GjmpfRK1O76h97Z8MfS1G0FozR+oF2kG6Vfe8JE6zwrkbxigziPHinCJ+gCPjA9EaBDtRw==
 
 csstype@^3.1.3:
   version "3.1.3"
@@ -2060,43 +2056,6 @@ devlop@^1.0.0:
   dependencies:
     dequal "^2.0.0"
 
-dom-serializer@^1.0.1, dom-serializer@^1.3.2:
-  version "1.4.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/dom-serializer/-/dom-serializer-1.4.1.tgz#de5d41b1aea290215dc45a6dae8adcf1d32e2d30"
-  integrity sha512-VHwB3KfrcOOkelEG2ZOfxqLZdfkil8PtJi4P8N2MMXucZq2yLp75ClViUlOVwyoHEDjYU433Aq+5zWP61+RGag==
-  dependencies:
-    domelementtype "^2.0.1"
-    domhandler "^4.2.0"
-    entities "^2.0.0"
-
-domelementtype@^2.0.1, domelementtype@^2.2.0:
-  version "2.3.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/domelementtype/-/domelementtype-2.3.0.tgz#5c45e8e869952626331d7aab326d01daf65d589d"
-  integrity sha512-OLETBj6w0OsagBwdXnPdN0cnMfF9opN69co+7ZrbfPGrdpPVNBUj02spi6B1N7wChLQiPn4CSH/zJvXw56gmHw==
-
-domhandler@^3.3.0:
-  version "3.3.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/domhandler/-/domhandler-3.3.0.tgz#6db7ea46e4617eb15cf875df68b2b8524ce0037a"
-  integrity sha512-J1C5rIANUbuYK+FuFL98650rihynUOEzRLxW+90bKZRWB6A1X1Tf82GxR1qAWLyfNPRvjqfip3Q5tdYlmAa9lA==
-  dependencies:
-    domelementtype "^2.0.1"
-
-domhandler@^4.0.0, domhandler@^4.2.0, domhandler@^4.3.1:
-  version "4.3.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/domhandler/-/domhandler-4.3.1.tgz#8d792033416f59d68bc03a5aa7b018c1ca89279c"
-  integrity sha512-GrwoxYN+uWlzO8uhUXRl0P+kHE4GtVPfYzVLcUxPL7KNdHKj66vvlhiweIHqYYXWlw+T8iLMp42Lm67ghw4WMQ==
-  dependencies:
-    domelementtype "^2.2.0"
-
-domutils@^2.4.2, domutils@^2.5.2, domutils@^2.8.0:
-  version "2.8.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/domutils/-/domutils-2.8.0.tgz#4437def5db6e2d1f5d6ee859bd95ca7d02048135"
-  integrity sha512-w96Cjofp72M5IIhpjgobBimYEfoPjx1Vx0BSX9P30WBdZW2WIKU0T1Bd0kz2eNZ9ikjKgHbEyKx8BB6H1L3h3A==
-  dependencies:
-    dom-serializer "^1.0.1"
-    domelementtype "^2.2.0"
-    domhandler "^4.2.0"
-
 dunder-proto@^1.0.0, dunder-proto@^1.0.1:
   version "1.0.1"
   resolved "http://mirrors.cloud.tencent.com/npm/dunder-proto/-/dunder-proto-1.0.1.tgz#d7ae667e1dc83482f8b70fd0f6eefc50da30f58a"
@@ -2122,11 +2081,6 @@ emoji-regex-xs@^1.0.0:
   version "1.0.0"
   resolved "https://mirrors.cloud.tencent.com/npm/emoji-regex-xs/-/emoji-regex-xs-1.0.0.tgz#e8af22e5d9dbd7f7f22d280af3d19d2aab5b0724"
   integrity sha512-LRlerrMYoIDrT6jgpeZ2YYl/L8EulRTt5hQcYjy5AInh7HWXKimpqx68aknBFpGL2+/IcogTcaydJEgaTmOpDg==
-
-entities@^2.0.0:
-  version "2.2.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/entities/-/entities-2.2.0.tgz#098dc90ebb83d8dffa089d55256b351d34c4da55"
-  integrity sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A==
 
 entities@^4.4.0, entities@^4.5.0:
   version "4.5.0"
@@ -2262,16 +2216,6 @@ escalade@^3.2.0:
   version "3.2.0"
   resolved "http://mirrors.cloud.tencent.com/npm/escalade/-/escalade-3.2.0.tgz#011a3f69856ba189dffa7dc8fcce99d2a87903e5"
   integrity sha512-WUj2qlxaQtO4g6Pq5c29GTcWGDyd8itL8zTlipgECz3JesAiiOKotd8JU6otB3PACgG6xkJUyVhboMS+bje/jA==
-
-escape-goat@^3.0.0:
-  version "3.0.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/escape-goat/-/escape-goat-3.0.0.tgz#e8b5fb658553fe8a3c4959c316c6ebb8c842b19c"
-  integrity sha512-w3PwNZJwRxlp47QGzhuEBldEqVHHhh8/tIPcl6ecf2Bou99cdAt0knihBV0Ecc7CGxYduXVBDheH1K2oADRlvw==
-
-esm@^3.2.25:
-  version "3.2.25"
-  resolved "https://mirrors.cloud.tencent.com/npm/esm/-/esm-3.2.25.tgz#342c18c29d56157688ba5ce31f8431fbb795cc10"
-  integrity sha512-U1suiZ2oDVWv4zPO56S0NcR5QriEahGtdN2OR6FiOG4WJvcjBVFB0qI4+eKoWFH483PKGuLuu6V8Z4T5g63UVA==
 
 esprima@^4.0.0:
   version "4.0.1"
@@ -2559,26 +2503,6 @@ html-void-elements@^3.0.0:
   version "3.0.0"
   resolved "https://mirrors.cloud.tencent.com/npm/html-void-elements/-/html-void-elements-3.0.0.tgz#fc9dbd84af9e747249034d4d62602def6517f1d7"
   integrity sha512-bEqo66MRXsUGxWHV5IP0PUiAWwoEjba4VCzg0LjFJBpchPaTfyfCKTG6bc5F8ucKec3q5y6qOdGyYTSBEvhCrg==
-
-htmlparser2@^5.0.0:
-  version "5.0.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/htmlparser2/-/htmlparser2-5.0.1.tgz#7daa6fc3e35d6107ac95a4fc08781f091664f6e7"
-  integrity sha512-vKZZra6CSe9qsJzh0BjBGXo8dvzNsq/oGvsjfRdOrrryfeD9UOBEEQdeoqCRmKZchF5h2zOBMQ6YuQ0uRUmdbQ==
-  dependencies:
-    domelementtype "^2.0.1"
-    domhandler "^3.3.0"
-    domutils "^2.4.2"
-    entities "^2.0.0"
-
-htmlparser2@^6.1.0:
-  version "6.1.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/htmlparser2/-/htmlparser2-6.1.0.tgz#c4d762b6c3371a05dbe65e94ae43a9f845fb8fb7"
-  integrity sha512-gyyPk6rgonLFEDGoeRgQNaEUvdJ4ktTmmUh/h2t7s+M8oPpIPxgNACWa+6ESR57kXstwqPiCut0V8NRpcwgU7A==
-  dependencies:
-    domelementtype "^2.0.1"
-    domhandler "^4.0.0"
-    domutils "^2.5.2"
-    entities "^2.0.0"
 
 idb@^7.0.1:
   version "7.1.1"
@@ -2879,17 +2803,6 @@ jsonpointer@^5.0.0:
   resolved "http://mirrors.cloud.tencent.com/npm/jsonpointer/-/jsonpointer-5.0.1.tgz#2110e0af0900fd37467b5907ecd13a7884a1b559"
   integrity sha512-p/nXbhSEcu3pZRdkW1OfJhpsVtW1gd4Wa1fnQc9YLiTfAjn0312eMKimbdIQzuZl9aa9xUGaRlP9T/CJE/ditQ==
 
-juice@^8.0.0:
-  version "8.1.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/juice/-/juice-8.1.0.tgz#4ea23362522fe06418229943237ee3751a4fca70"
-  integrity sha512-FLzurJrx5Iv1e7CfBSZH68dC04EEvXvvVvPYB7Vx1WAuhCp1ZPIMtqxc+WTWxVkpTIC2Ach/GAv0rQbtGf6YMA==
-  dependencies:
-    cheerio "1.0.0-rc.10"
-    commander "^6.1.0"
-    mensch "^0.3.4"
-    slick "^1.12.2"
-    web-resource-inliner "^6.0.1"
-
 kind-of@^6.0.0, kind-of@^6.0.2:
   version "6.0.3"
   resolved "https://mirrors.cloud.tencent.com/npm/kind-of/-/kind-of-6.0.3.tgz#07c05034a6c349fa06e24fa35aa76db4580ce4dd"
@@ -2973,13 +2886,13 @@ mark.js@8.11.1:
   resolved "https://mirrors.cloud.tencent.com/npm/mark.js/-/mark.js-8.11.1.tgz#180f1f9ebef8b0e638e4166ad52db879beb2ffc5"
   integrity sha512-1I+1qpDt4idfgLQG+BNWmrqku+7/2bi5nLf4YwF8y8zXvmfiTBY3PV3ZibfrjBueCByROpuBjLLFCajqkgYoLQ==
 
-markdown-it-mathjax3@^4.3.2:
-  version "4.3.2"
-  resolved "https://mirrors.cloud.tencent.com/npm/markdown-it-mathjax3/-/markdown-it-mathjax3-4.3.2.tgz#1e34aa86f8560b283fd283008334adc2d6b05a37"
-  integrity sha512-TX3GW5NjmupgFtMJGRauioMbbkGsOXAAt1DZ/rzzYmTHqzkO1rNAdiMD4NiruurToPApn2kYy76x02QN26qr2w==
+markdown-it-mathjax3@^5.2.0:
+  version "5.2.0"
+  resolved "http://mirrors.cloud.tencent.com/npm/markdown-it-mathjax3/-/markdown-it-mathjax3-5.2.0.tgz#dbb3e0d059a3673339162d1d468ba52f3c5d7720"
+  integrity sha512-R+XAy5/7vSGuhG9Z0/cJm6zKxOzStcScfSKVwoarh4nBra+v1KClvbALr/xFTEe9iQhwfQM4SJnO68LXL+btMA==
   dependencies:
-    juice "^8.0.0"
-    mathjax-full "^3.2.0"
+    "@se-oss/deasync" "^1.0.1"
+    mathxyjax3 "^0.8.3"
 
 markdown-it-multimd-table-ext@^4.2.32:
   version "4.2.32"
@@ -3013,15 +2926,10 @@ math-intrinsics@^1.1.0:
   resolved "http://mirrors.cloud.tencent.com/npm/math-intrinsics/-/math-intrinsics-1.1.0.tgz#a0dd74be81e2aa5c2f27e65ce283605ee4e2b7f9"
   integrity sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==
 
-mathjax-full@^3.2.0:
-  version "3.2.2"
-  resolved "https://mirrors.cloud.tencent.com/npm/mathjax-full/-/mathjax-full-3.2.2.tgz#43f02e55219db393030985d2b6537ceae82f1fa7"
-  integrity sha512-+LfG9Fik+OuI8SLwsiR02IVdjcnRCy5MufYLi0C3TdMT56L/pjB0alMVGgoWJF8pN9Rc7FESycZB9BMNWIid5w==
-  dependencies:
-    esm "^3.2.25"
-    mhchemparser "^4.1.0"
-    mj-context-menu "^0.6.1"
-    speech-rule-engine "^4.0.6"
+mathxyjax3@^0.8.3:
+  version "0.8.3"
+  resolved "http://mirrors.cloud.tencent.com/npm/mathxyjax3/-/mathxyjax3-0.8.3.tgz#e505008b2c15f0f6608590c93a882a791635c1a4"
+  integrity sha512-eXjFaiyQsTdVOeTFoFaFJ/r1FITpB1f9c5MW4FETfcoVV/+xa5SD9pS05AwugzL/gNuDtWXrTOSmoD2e0Du+UA==
 
 mdast-util-to-hast@^13.0.0:
   version "13.2.0"
@@ -3042,16 +2950,6 @@ mdurl@^2.0.0:
   version "2.0.0"
   resolved "https://mirrors.cloud.tencent.com/npm/mdurl/-/mdurl-2.0.0.tgz#80676ec0433025dd3e17ee983d0fe8de5a2237e0"
   integrity sha512-Lf+9+2r+Tdp5wXDXC4PcIBjTDtq4UKjCPMQhKIuzpJNW0b96kVqSwW0bT7FhRSfmAiFYgP+SCRvdrDozfh0U5w==
-
-mensch@^0.3.4:
-  version "0.3.4"
-  resolved "https://mirrors.cloud.tencent.com/npm/mensch/-/mensch-0.3.4.tgz#770f91b46cb16ea5b204ee735768c3f0c491fecd"
-  integrity sha512-IAeFvcOnV9V0Yk+bFhYR07O3yNina9ANIN5MoXBKYJ/RLYPurd2d0yw14MDhpr9/momp0WofT1bPUh3hkzdi/g==
-
-mhchemparser@^4.1.0:
-  version "4.2.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/mhchemparser/-/mhchemparser-4.2.1.tgz#d73982e66bc06170a85b1985600ee9dabe157cb0"
-  integrity sha512-kYmyrCirqJf3zZ9t/0wGgRZ4/ZJw//VwaRVGA75C4nhE60vtnIzhl9J9ndkX/h6hxSN7pjg/cE0VxbnNM+bnDQ==
 
 micromark-util-character@^2.0.0:
   version "2.1.1"
@@ -3085,11 +2983,6 @@ micromark-util-types@^2.0.0:
   resolved "https://mirrors.cloud.tencent.com/npm/micromark-util-types/-/micromark-util-types-2.0.2.tgz#f00225f5f5a0ebc3254f96c36b6605c4b393908e"
   integrity sha512-Yw0ECSpJoViF1qTU4DC6NwtC4aWGt1EkzaQB8KPPyCRR8z9TWeV0HbEFGTO+ZY1wB22zmxnJqhPyTpOVCpeHTA==
 
-mime@^2.4.6:
-  version "2.6.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/mime/-/mime-2.6.0.tgz#a2a682a95cd4d0cb1d6257e28f83da7e35800367"
-  integrity sha512-USPkMeET31rOMiarsBNIHZKLGgvKc/LrjofAnBlOttf5ajRvqiRA8QsenbcooctK6d6Ts6aqZXBA+XbkKthiQg==
-
 minimatch@^3.1.1, minimatch@^3.1.2:
   version "3.1.2"
   resolved "http://mirrors.cloud.tencent.com/npm/minimatch/-/minimatch-3.1.2.tgz#19cd194bfd3e428f049a70817c038d89ab4be35b"
@@ -3114,11 +3007,6 @@ mitt@^3.0.0, mitt@^3.0.1:
   resolved "https://mirrors.cloud.tencent.com/npm/mitt/-/mitt-3.0.1.tgz#ea36cf0cc30403601ae074c8f77b7092cdab36d1"
   integrity sha512-vKivATfr97l2/QBCYAkXYDbrIWPM2IIKEl7YPhjCvKlG3kE2gm+uBo6nEXK3M5/Ffh/FLpKExzOQ3JJoJGFKBw==
 
-mj-context-menu@^0.6.1:
-  version "0.6.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/mj-context-menu/-/mj-context-menu-0.6.1.tgz#a043c5282bf7e1cf3821de07b13525ca6f85aa69"
-  integrity sha512-7NO5s6n10TIV96d4g2uDpG7ZDpIhMh0QNfGdJw/W47JswFcosz457wqz/b5sAKvl12sxINGFCn80NZHKwxQEXA==
-
 ms@^2.1.3:
   version "2.1.3"
   resolved "http://mirrors.cloud.tencent.com/npm/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
@@ -3134,24 +3022,10 @@ nanoid@^4.0.0:
   resolved "https://mirrors.cloud.tencent.com/npm/nanoid/-/nanoid-4.0.2.tgz#140b3c5003959adbebf521c170f282c5e7f9fb9e"
   integrity sha512-7ZtY5KTCNheRGfEFxnedV5zFiORN1+Y1N6zvPTnHQd8ENUvfaDBeuJDZb2bN/oXwXxu3qkTXDzy57W5vAmDTBw==
 
-node-fetch@^2.6.0:
-  version "2.7.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/node-fetch/-/node-fetch-2.7.0.tgz#d0f0fa6e3e2dc1d27efcd8ad99d550bda94d187d"
-  integrity sha512-c4FRfUm/dbcWZ7U+1Wq0AwCyFL+3nt2bEw05wfxSz+DWpWsitgmSgYmy2dQdWyKC1694ELPqMs/YzUSNozLt8A==
-  dependencies:
-    whatwg-url "^5.0.0"
-
 node-releases@^2.0.19:
   version "2.0.19"
   resolved "http://mirrors.cloud.tencent.com/npm/node-releases/-/node-releases-2.0.19.tgz#9e445a52950951ec4d177d843af370b411caf314"
   integrity sha512-xxOWJsBKtzAq7DY0J+DTzuz58K8e7sJbdgwkbMWQe8UYB6ekmsQ45q0M/tJDsGaZmbC+l7n57UV8Hl5tHxO9uw==
-
-nth-check@^2.0.1:
-  version "2.1.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/nth-check/-/nth-check-2.1.1.tgz#c9eab428effce36cd6b92c924bdb000ef1f1ed1d"
-  integrity sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==
-  dependencies:
-    boolbase "^1.0.0"
 
 object-inspect@^1.13.3, object-inspect@^1.13.4:
   version "1.13.4"
@@ -3199,18 +3073,6 @@ own-keys@^1.0.1:
     get-intrinsic "^1.2.6"
     object-keys "^1.1.1"
     safe-push-apply "^1.0.0"
-
-parse5-htmlparser2-tree-adapter@^6.0.1:
-  version "6.0.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/parse5-htmlparser2-tree-adapter/-/parse5-htmlparser2-tree-adapter-6.0.1.tgz#2cdf9ad823321140370d4dbf5d3e92c7c8ddc6e6"
-  integrity sha512-qPuWvbLgvDGilKc5BoicRovlT4MtYT6JfJyBOMDsKoiT+GiuP5qyrPCnR9HcPECIJJmZh5jRndyNThnhhb/vlA==
-  dependencies:
-    parse5 "^6.0.1"
-
-parse5@^6.0.1:
-  version "6.0.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/parse5/-/parse5-6.0.1.tgz#e1a1c085c569b3dc08321184f19a39cc27f7c30b"
-  integrity sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw==
 
 path-is-absolute@^1.0.0:
   version "1.0.1"
@@ -3588,11 +3450,6 @@ side-channel@^1.1.0:
     side-channel-map "^1.0.1"
     side-channel-weakmap "^1.0.2"
 
-slick@^1.12.2:
-  version "1.12.2"
-  resolved "https://mirrors.cloud.tencent.com/npm/slick/-/slick-1.12.2.tgz#bd048ddb74de7d1ca6915faa4a57570b3550c2d7"
-  integrity sha512-4qdtOGcBjral6YIBCWJ0ljFSKNLz9KkhbWtuGvUyRowl1kxfuE1x/Z/aJcaiilpb3do9bl5K7/1h9XC5wWpY/A==
-
 smob@^1.0.0:
   version "1.5.0"
   resolved "http://mirrors.cloud.tencent.com/npm/smob/-/smob-1.5.0.tgz#85d79a1403abf128d24d3ebc1cdc5e1a9548d3ab"
@@ -3637,15 +3494,6 @@ speakingurl@^14.0.1:
   version "14.0.1"
   resolved "https://mirrors.cloud.tencent.com/npm/speakingurl/-/speakingurl-14.0.1.tgz#f37ec8ddc4ab98e9600c1c9ec324a8c48d772a53"
   integrity sha512-1POYv7uv2gXoyGFpBCmpDVSNV74IfsWlDW216UPjbWufNf+bSU6GdbDsxdcxtfwb4xlI3yxzOTKClUosxARYrQ==
-
-speech-rule-engine@^4.0.6:
-  version "4.0.7"
-  resolved "https://mirrors.cloud.tencent.com/npm/speech-rule-engine/-/speech-rule-engine-4.0.7.tgz#b655dacbad3dae04acc0f7665e26ef258397dd09"
-  integrity sha512-sJrL3/wHzNwJRLBdf6CjJWIlxC04iYKkyXvYSVsWVOiC2DSkHmxsqOhEeMsBA9XK+CHuNcsdkbFDnoUfAsmp9g==
-  dependencies:
-    commander "9.2.0"
-    wicked-good-xpath "1.3.0"
-    xmldom-sre "0.1.31"
 
 sprintf-js@~1.0.2:
   version "1.0.3"
@@ -3802,25 +3650,20 @@ tr46@^1.0.1:
   dependencies:
     punycode "^2.1.0"
 
-tr46@~0.0.3:
-  version "0.0.3"
-  resolved "https://mirrors.cloud.tencent.com/npm/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
-  integrity sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==
-
 trim-lines@^3.0.0:
   version "3.0.1"
   resolved "https://mirrors.cloud.tencent.com/npm/trim-lines/-/trim-lines-3.0.1.tgz#d802e332a07df861c48802c04321017b1bd87338"
   integrity sha512-kRj8B+YHZCc9kQYdWfJB2/oUl9rA99qbowYYBtr4ui4mZyAQ2JpvVBd/6U2YloATfqBhBTSMhTpgBHtU0Mf3Rg==
 
-tslib@^2.2.0:
-  version "2.8.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/tslib/-/tslib-2.8.1.tgz#612efe4ed235d567e8aba5f2a5fab70280ade83f"
-  integrity sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==
-
 type-fest@^0.16.0:
   version "0.16.0"
   resolved "https://mirrors.cloud.tencent.com/npm/type-fest/-/type-fest-0.16.0.tgz#3240b891a78b0deae910dbeb86553e552a148860"
   integrity sha512-eaBzG6MxNzEn9kiwvtre90cXaNLkmadMWa1zQMs3XORCXNbsH/OewwbxC5ia9dCxIxnTAsSxXJaa/p5y8DlvJg==
+
+type-fest@^4.37.0:
+  version "4.41.0"
+  resolved "http://mirrors.cloud.tencent.com/npm/type-fest/-/type-fest-4.41.0.tgz#6ae1c8e5731273c2bf1f58ad39cbae2c91a46c58"
+  integrity sha512-TeTSQ6H5YHvpqVwBRcnLDCBnDOHWYu7IvGbHT6N8AOymcr9PJGjc1GTtiWZTYg0NCgYwvnYWEkVChQAr9bjfwA==
 
 typed-array-buffer@^1.0.3:
   version "1.0.3"
@@ -3867,10 +3710,10 @@ typed-array-length@^1.0.7:
     possible-typed-array-names "^1.0.0"
     reflect.getprototypeof "^1.0.6"
 
-typescript@^5.8.3:
-  version "5.8.3"
-  resolved "https://mirrors.cloud.tencent.com/npm/typescript/-/typescript-5.8.3.tgz#92f8a3e5e3cf497356f4178c34cd65a7f5e8440e"
-  integrity sha512-p1diW6TqL9L07nNxvRMM7hMMw4c5XOo/1ibL4aAIGmSAt9slTE1Xgw5KWuof2uTOvCg9BY7ZRi+GaF+7sfgPeQ==
+typescript@^5.9.3:
+  version "5.9.3"
+  resolved "http://mirrors.cloud.tencent.com/npm/typescript/-/typescript-5.9.3.tgz#5b4f59e15310ab17a216f5d6cf53ee476ede670f"
+  integrity sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==
 
 uc.micro@^2.0.0, uc.micro@^2.1.0:
   version "2.1.0"
@@ -3973,11 +3816,6 @@ update-browserslist-db@^1.1.3:
     escalade "^3.2.0"
     picocolors "^1.1.1"
 
-valid-data-url@^3.0.0:
-  version "3.0.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/valid-data-url/-/valid-data-url-3.0.1.tgz#826c1744e71b5632e847dd15dbd45b9fb38aa34f"
-  integrity sha512-jOWVmzVceKlVVdwjNSenT4PbGghU0SBIizAev8ofZVgivk/TVHXSbNL8LP6M3spZvkR9/QolkyJavGSX5Cs0UA==
-
 vfile-message@^4.0.0:
   version "4.0.2"
   resolved "https://mirrors.cloud.tencent.com/npm/vfile-message/-/vfile-message-4.0.2.tgz#c883c9f677c72c166362fd635f21fc165a7d1181"
@@ -3994,10 +3832,10 @@ vfile@^6.0.0:
     "@types/unist" "^3.0.0"
     vfile-message "^4.0.0"
 
-vite-plugin-pwa@^1.0.0:
-  version "1.0.0"
-  resolved "http://mirrors.cloud.tencent.com/npm/vite-plugin-pwa/-/vite-plugin-pwa-1.0.0.tgz#bd0ee81e71851bd45cae2f4aec90e52e9833152d"
-  integrity sha512-X77jo0AOd5OcxmWj3WnVti8n7Kw2tBgV1c8MCXFclrSlDV23ePzv2eTDIALXI2Qo6nJ5pZJeZAuX0AawvRfoeA==
+vite-plugin-pwa@^1.1.0:
+  version "1.1.0"
+  resolved "http://mirrors.cloud.tencent.com/npm/vite-plugin-pwa/-/vite-plugin-pwa-1.1.0.tgz#3c08c638be084abda48fac977eac3e9cbcfb0d96"
+  integrity sha512-VsSpdubPzXhHWVINcSx6uHRMpOHVHQcHsef1QgkOlEoaIDAlssFEW88LBq1a59BuokAhsh2kUDJbaX1bZv4Bjw==
   dependencies:
     debug "^4.3.6"
     pretty-bytes "^6.1.1"
@@ -4023,21 +3861,21 @@ vitepress-plugin-comment-with-giscus@^1.1.15:
   dependencies:
     "@giscus/vue" "^2.2.8"
 
-vitepress-plugin-pagefind@^0.4.13:
-  version "0.4.13"
-  resolved "https://mirrors.cloud.tencent.com/npm/vitepress-plugin-pagefind/-/vitepress-plugin-pagefind-0.4.13.tgz#84c32c070589e18e81ec9e9e201c0dd72eb798f1"
-  integrity sha512-Cv5B2xXpOj+XDHnUdzNnzeY8B4pDZ+LrRdafv/1MAGF2JYoXUA3edgH3RhTwh2QfqVLBTfLKtreLYwUpRowr3g==
+vitepress-plugin-pagefind@^0.4.16:
+  version "0.4.16"
+  resolved "http://mirrors.cloud.tencent.com/npm/vitepress-plugin-pagefind/-/vitepress-plugin-pagefind-0.4.16.tgz#4a35e41748caf81e9189559430502302a0722b08"
+  integrity sha512-P2rI06L9FepHnc/ANfZ2xir9I7mESgTdxsBLqR+Ni4FrWI/Ns6ybRmeqG/B5SDHLhelf7tQon01Ye7lYpwOV5g==
   dependencies:
-    "@sugarat/theme-shared" "0.0.4"
+    "@sugarat/theme-shared" "0.0.6"
     "@vueuse/core" "^9.6.0"
     javascript-stringify "^2.1.0"
     vue "^3.5.12"
     vue-command-palette "0.1.4"
 
-vitepress@^1.6.3:
-  version "1.6.3"
-  resolved "https://mirrors.cloud.tencent.com/npm/vitepress/-/vitepress-1.6.3.tgz#4e4662ce2ad55ef64604ecf4f96231a8da2fe9ba"
-  integrity sha512-fCkfdOk8yRZT8GD9BFqusW3+GggWYZ/rYncOfmgcDtP3ualNHCAg+Robxp2/6xfH1WwPHtGpPwv7mbA3qomtBw==
+vitepress@^1.6.4:
+  version "1.6.4"
+  resolved "http://mirrors.cloud.tencent.com/npm/vitepress/-/vitepress-1.6.4.tgz#1b6c68fede541a3f401a66263dce0c985e2d8d92"
+  integrity sha512-+2ym1/+0VVrbhNyRoFFesVvBvHAVMZMK0rw60E3X/5349M1GuVdKeazuksqopEdvkKwKGs21Q729jX81/bkBJg==
   dependencies:
     "@docsearch/css" "3.8.2"
     "@docsearch/js" "3.8.2"
@@ -4083,35 +3921,10 @@ vue@^3.5.12, vue@^3.5.13:
     "@vue/server-renderer" "3.5.13"
     "@vue/shared" "3.5.13"
 
-web-resource-inliner@^6.0.1:
-  version "6.0.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/web-resource-inliner/-/web-resource-inliner-6.0.1.tgz#df0822f0a12028805fe80719ed52ab6526886e02"
-  integrity sha512-kfqDxt5dTB1JhqsCUQVFDj0rmY+4HLwGQIsLPbyrsN9y9WV/1oFDSx3BQ4GfCv9X+jVeQ7rouTqwK53rA/7t8A==
-  dependencies:
-    ansi-colors "^4.1.1"
-    escape-goat "^3.0.0"
-    htmlparser2 "^5.0.0"
-    mime "^2.4.6"
-    node-fetch "^2.6.0"
-    valid-data-url "^3.0.0"
-
-webidl-conversions@^3.0.0:
-  version "3.0.1"
-  resolved "https://mirrors.cloud.tencent.com/npm/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
-  integrity sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==
-
 webidl-conversions@^4.0.2:
   version "4.0.2"
   resolved "http://mirrors.cloud.tencent.com/npm/webidl-conversions/-/webidl-conversions-4.0.2.tgz#a855980b1f0b6b359ba1d5d9fb39ae941faa63ad"
   integrity sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg==
-
-whatwg-url@^5.0.0:
-  version "5.0.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
-  integrity sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==
-  dependencies:
-    tr46 "~0.0.3"
-    webidl-conversions "^3.0.0"
 
 whatwg-url@^7.0.0:
   version "7.1.0"
@@ -4181,11 +3994,6 @@ which@^2.0.1:
   integrity sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==
   dependencies:
     isexe "^2.0.0"
-
-wicked-good-xpath@1.3.0:
-  version "1.3.0"
-  resolved "https://mirrors.cloud.tencent.com/npm/wicked-good-xpath/-/wicked-good-xpath-1.3.0.tgz#81b0e95e8650e49c94b22298fff8686b5553cf6c"
-  integrity sha512-Gd9+TUn5nXdwj/hFsPVx5cuHHiF5Bwuc30jZ4+ronF1qHK5O7HD0sgmXWSEgwKquT3ClLoKPVbO6qGwVwLzvAw==
 
 workbox-background-sync@7.3.0:
   version "7.3.0"
@@ -4349,11 +4157,6 @@ wrappy@1:
   version "1.0.2"
   resolved "http://mirrors.cloud.tencent.com/npm/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==
-
-xmldom-sre@0.1.31:
-  version "0.1.31"
-  resolved "https://mirrors.cloud.tencent.com/npm/xmldom-sre/-/xmldom-sre-0.1.31.tgz#10860d5bab2c603144597d04bf2c4980e98067f4"
-  integrity sha512-f9s+fUkX04BxQf+7mMWAp5zk61pciie+fFLC9hX9UVvCeJQfNHRHXpeo5MPcR0EUf57PYLdt+ZO4f3Ipk2oZUw==
 
 yallist@^3.0.2:
   version "3.1.1"
